@@ -52,6 +52,11 @@ export default class Product extends PageManager {
 
         this.productReviewHandler();
         this.bulkPricingHandler();
+        this.helloWorld();
+    }
+    helloWorld() {
+        console.log("[assets/js/theme/product.js]: Hello World!");
+        console.log("[assets/js/theme/product.js]: " + this.context.productThumbSize);
     }
 
     productReviewHandler() {

@@ -10,6 +10,7 @@ product:
         limit: {{theme_settings.productpage_similar_by_views_count}}
 ---
 {{#partial "page"}}
+    {{inject 'productThumbSize' theme_settings.productthumb_size}}
     {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
 
     {{#each product.shipping_messages}}
