@@ -44,12 +44,16 @@
             {{/if}}
         </li>
         <li class="navUser-item navUser-item--cart">
+
+
+
             <a
                 class="navUser-action"
                 data-cart-preview
                 data-dropdown="cart-preview-dropdown"
                 data-options="align:right"
                 href="{{urls.cart}}">
+                <svg><use xlink:href="#icon-shopping-bag" ></use></svg>
                 <span class="navUser-item-cartLabel">{{lang 'common.cart'}}</span> <span class="countPill cart-quantity"></span>
             </a>
 

@@ -11,15 +11,27 @@ blog:
     recent_posts:
         limit: {{theme_settings.homepage_blog_posts_count}}
 ---
-{{#partial "hero"}}
+
+{{!--{{#partial "hero"}}
     {{{region name="home_below_menu"}}}
     {{#if carousel}}
         {{> components/carousel arrows=theme_settings.homepage_show_carousel_arrows}}
     {{/if}}
     {{{region name="home_below_carousel"}}}
-{{/partial}}
+{{/partial}}--}}
+
+
 
 {{#partial "page"}}
+    <div class="main-page-intro">
+        <div class="left-block">
+            <img src="{{cdn 'assets/img/added/skylarking_newtown_1.jpg'}}">
+        </div>
+        <div class="right-block">
+            <img src="{{cdn 'assets/img/added/skylarking_newtown_2.jpg'}}">
+
+        </div>
+    </div>
 
     {{#each shipping_messages}}
         {{> components/common/alert-info message}}
