@@ -1,0 +1,60 @@
+// very important rule to change the main body .containerclass
+
+.main-custom-container{
+
+padding: 0
+}
+
+
+//end important rule
+
+
+
+
+.half-white{
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  //background-color: #F7F7F7;
+  //margin-bottom: 19em;
+}
+
+
+.main-intro-desk{
+  display:none;
+  .main-intro-desk__left{
+
+  }
+  .main-intro-desk__right{
+
+  }
+}
+
+
+.main-intro-mob{
+  position: relative;
+  //height: 30vh;
+  //background-color: #F7F7F7;
+
+  .main-intro-mob__title{
+
+  }
+  .main-intro-mob__pics{
+    position: relative;
+    padding: 2em 0;
+    top: 1em;
+    .main-intro-mob__pics--small{
+      position: absolute;
+      left: 1em;
+      bottom: 0;
+    }
+
+  }
+
+}
+.half-grey{
+background-color: #F7F7F7;
+.my-carousel{
+  padding-top: 13em;
+}
+}

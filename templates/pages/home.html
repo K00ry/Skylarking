@@ -23,35 +23,70 @@ blog:
 
 
 {{#partial "page"}}
-    <div class="main-page-intro">
-        <div class="left-block">
-            <img src="{{cdn 'assets/img/added/skylarking_newtown_1.jpg'}}">
+    <div class="half-white">
+        <div class="main-intro-desk container">
+            <div class="main-intro-desk__left">
+                <img src="{{cdn 'assets/img/added/skylarking_newtown_1.jpg'}}" >
+                <p>Quality materials transformed by hand
+                    into unique pieces to adorn and enjoy
+                </p>
+            </div>
+            <div class="main-intro-desk__right">
+                <img src="{{cdn 'assets/img/added/skylarking_newtown_2.jpg'}}">
+                <p>Individually crafted pieces
+                    of wearable jewellery</p>
+            </div>
         </div>
-        <div class="right-block">
-            <img src="{{cdn 'assets/img/added/skylarking_newtown_2.jpg'}}">
+        <div class="main-intro-mob container">
+            <div class="main-intro-mob__title">
 
+                <p>Quality materials transformed by hand
+                    into unique pieces to adorn and enjoy
+                </p>
+                <p>Individually crafted pieces
+                    of wearable jewellery</p>
+            </div>
+            <div class="main-intro-mob__pics">
+                <img class="main-intro-mob__pics--big" src="{{cdn 'assets/img/added/skylarking_newtown_2_mob.jpg'}}">
+                <img class="main-intro-mob__pics--small" src="{{cdn 'assets/img/added/skylarking_newtown_1_mob.jpg'}}" >
+
+            </div>
         </div>
     </div>
+
+    <div class=" half-grey">
+        <div class="container my-carousel">
+            {{#if products.new}}
+                {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
+            {{/if}}
+            {{{region name="home_below_new_products"}}}
+
+        </div>
+
+    </div>
+
+
+
 
     {{#each shipping_messages}}
         {{> components/common/alert-info message}}
     {{/each}}
 
-<div class="main full">
-    {{#if products.featured}}
+{{!--<div class="main full">--}}
+   {{!-- {{#if products.featured}}
         {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
     {{/if}}
-    {{{region name="home_below_featured_products"}}}
+    {{{region name="home_below_featured_products"}}}--}}
 
-    {{#if products.top_sellers}}
+    {{!--{{#if products.top_sellers}}
         {{> components/products/top products=products.top_sellers columns=theme_settings.homepage_top_products_column_count}}
     {{/if}}
-    {{{region name="home_below_top_products"}}}
+    {{{region name="home_below_top_products"}}}--}}
 
-    {{#if products.new}}
+   {{!-- {{#if products.new}}
         {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
     {{/if}}
-    {{{region name="home_below_new_products"}}}
-</div>
+    {{{region name="home_below_new_products"}}}--}}
+{{!--</div>--}}
 {{/partial}}
 {{> layout/base}}

@@ -8,7 +8,6 @@
 
 // Header
 @import "header/header";
-@import "kooryCustom/header/header";
 
 
 // Page
@@ -53,6 +52,12 @@
 
 // Account
 @import "account/account";
+
+
+
+//my custom
+@import "kooryCustom/header/header";
+@import "kooryCustom/body/body";
 
 
 
