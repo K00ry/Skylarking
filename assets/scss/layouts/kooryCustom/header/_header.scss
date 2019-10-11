@@ -24,6 +24,12 @@
   background: #555465;
   width: 1rem;
 }
+.mobileMenu-toggle .mobileMenu-toggleIcon, .mobileMenu-toggle .mobileMenu-toggleIcon::before, .mobileMenu-toggle .mobileMenu-toggleIcon::after{
+
+  background: #555465;
+  height: 1px;
+
+}
 
 .countPill{
   position: absolute;

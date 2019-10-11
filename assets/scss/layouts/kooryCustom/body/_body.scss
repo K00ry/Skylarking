@@ -38,11 +38,26 @@ padding: 0
 
   .main-intro-mob__title{
 
+
+    color: #555465;
+    h3{
+      font-family: 'Optima', serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    p{
+      font-family: 'Optima', sans-serif;
+      line-height: 20px;
+    font-size: 14px;
+    }
+
   }
   .main-intro-mob__pics{
     position: relative;
-    padding: 2em 0;
-    top: 1em;
+    padding: 1em 0;
+    //top: 1em;
     .main-intro-mob__pics--small{
       position: absolute;
       left: 1em;
