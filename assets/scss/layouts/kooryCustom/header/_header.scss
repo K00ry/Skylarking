@@ -1,24 +1,48 @@
 
-//.header{
-//  transition: all .5s ;
-//
-//
-//
-// }
-//.header.is-open{
-//}
-//.navPages-container{
-//  display: block;
-//  //background-color: #fff;
-//  opacity: 0;
-//  transition: all .5s ;
-//
-//}
-//.navPages-container.is-open{
-//  opacity: 1;
-//}
+.header{
+ border:none;
+  position: fixed;
+  height: 75px;
 
 
+
+ }
+
+
+
+.header-logo {
+  display: flex;
+  font-size: 0;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  border-bottom: 1px solid #DFDFE1;
+  height: 75px;
+}
+.header-logo > a {
+  margin: auto;
+  color: #333333;
+  display: inline-block;
+  padding:  -1em;
+  position: relative;
+  text-decoration: none;
+  width: 30%;
+  z-index: 20;
+}
+
+.navPages-container.is-open{
+  padding-top:74px;
+}
+
+
+
+
+.mobileMenu-toggle {
+
+  padding: 0 1.5rem;
+  top: 1rem;
+
+}
 
 .mobileMenu-toggle .mobileMenu-toggleIcon{
   background: #555465;
@@ -41,8 +65,10 @@
   right: 16px;
 
 }
-//.navUser{right: 21px;
-//  top: 16px;}
+.navUser{
+  right: 6px;
+  top: 40px;
+}
 
 
 .navUser-action{
@@ -53,8 +79,9 @@
   padding: 1em ;
 }
 .navUser-action svg{
-  margin-top: 8px;
-  //position: absolute;
+  margin-top: 12px;
+  fill: #515060;
+  stroke:#515060;
   width: 20px;
   height: 20px;
 

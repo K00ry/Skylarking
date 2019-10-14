@@ -4,6 +4,10 @@
 
 padding: 0
 }
+.body {
+  margin-bottom: 6rem;
+  margin-top: 3rem;
+}
 
 
 //end important rule
@@ -15,8 +19,7 @@ padding: 0
   display: flex;
   flex-direction: column;
   height: 40vh;
-  //background-color: #F7F7F7;
-  //margin-bottom: 19em;
+
 }
 
 
@@ -54,6 +57,7 @@ padding: 0
 
   }
   .main-intro-mob__pics{
+    display: flex;
     position: relative;
     padding: 1em 0;
     //top: 1em;
