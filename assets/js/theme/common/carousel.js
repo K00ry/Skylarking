@@ -2,9 +2,16 @@ import 'slick-carousel';
 
 export default function () {
     const $carousel = $('[data-slick]');
+
     if ($carousel.length) {
         const multipleSlides = $carousel[0].childElementCount > 1;
-        $carousel.slick({ dots: multipleSlides });
+        // console.log(multipleSlides);
+        $carousel.slick({ dots: false,
+            variableWidth: true,
+            arrows:false,
+            infinite: false,
+          //  multipleSlides
+        });
     }
 
     // Alternative image styling for IE, which doesn't support objectfit

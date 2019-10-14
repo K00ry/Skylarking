@@ -33,8 +33,7 @@ padding: 0
 
 .main-intro-mob{
   position: relative;
-  //height: 30vh;
-  //background-color: #F7F7F7;
+
 
   .main-intro-mob__title{
 
@@ -73,3 +72,45 @@ background-color: #F7F7F7;
   padding-top: 13em;
 }
 }
+.page-heading{
+  font-family: 'Optima', serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  //display: flex;
+  //align-items: center;
+  //text-align: center;
+}
+
+
+//carousel
+
+.card-img-container:after{
+  padding-bottom: 100%;
+}
+
+.card-title > a,.price--withTax{
+  font-family: 'songti',sans-serif;
+  color:#555465;
+  //font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.slick-initialized .slick-slide{
+  width: 150px;
+}
+//.slick-next:before,
+//.slick-prev:before {
+//  display: none;
+//}
+//.slick-dots,
+//.slick-next,
+//.slick-prev {
+//  display: none;
+//  //position: inherit;
+//}
+//.slick-track {
+//  left: -20px;
+//}
