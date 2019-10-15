@@ -1,0 +1,84 @@
+//////////shared styles
+
+.bespoke_img{
+  margin-bottom: 40px;
+}
+
+.bespoke_p{
+  font-family: 'Optima', serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 40px;
+  color: #555465;
+
+}
+
+///////
+
+
+.bespoke{
+  display: flex;
+  flex-direction: column;
+}
+
+.bespoke-intro{
+
+  display: flex;
+  flex-direction: column;
+  font-family: 'Optima', serif;
+  color:#555465;
+  text-align: center;
+
+
+  .bespoke-intro__title{
+    font-family: 'Optima', serif;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+
+  }
+  .bespoke-intro__p{
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
+.grey-m{
+  position: absolute;
+  width: 100%;
+  bottom: 31%;
+  height: 120vh;
+  background-color: #F7F7F7;
+  //z-index: -1;
+}
+
+
+.bespoke-layout-mob{
+  //padding-top: -2em;
+  //position: relative;
+
+  .bs-first{
+    //position: relative;
+    //height: 80vh;
+    margin-bottom: 40px;
+  }
+  .bs-first__img {
+    //top: -50px;
+    //position: absolute;
+  }
+  .bs-first__p{
+    //padding-top: 20em;
+
+  }
+
+ .bs-second{
+  //display: none;
+  }
+
+}
+.bespoke-layout-desk{
+  display:none;
+}

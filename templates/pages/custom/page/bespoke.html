@@ -1,33 +1,46 @@
 {{#partial "page"}}
-<div class="half-white">
-    <div class="main-intro-desk container">
-        <div class="main-intro-desk__left">
-            <img src="{{cdn 'assets/img/added/skylarking_newtown_1.jpg'}}" >
-            <p>Quality materials transformed by hand
-                into unique pieces to adorn and enjoy
-            </p>
+
+    <div class="container bespoke-intro">
+        <h2 class="bespoke-intro__title">Bespoke</h2>
+        <p class="bespoke-intro__p bespoke_p">{{lang 'bespoke.intro_message' }}</p>
+    </div>
+    <div class="grey-m"></div>
+
+
+
+    <div class="container bespoke-layout-mob">
+        <div class="bs-first">
+            <img class="bs-first__img bespoke_img" src="{{cdn 'webdav:bespoke_mob.jpg'}}">
+            <p class="bs-first__p bespoke_p">{{lang 'bespoke.first_section_p'}}</p>
         </div>
-        <div class="main-intro-desk__right">
-            <img src="{{cdn 'assets/img/added/skylarking_newtown_2.jpg'}}">
-            <p>Individually crafted pieces
-                of wearable jewellery</p>
+        <div class="bs-second">
+            <img class="bs-second__img bespoke_img" src="{{cdn 'webdav:collaborative_mob.jpg'}}">
+            <p class="bs-second__p bespoke_p">{{lang 'bespoke.second_section_p'}}</p>
         </div>
     </div>
-    <div class="main-intro-mob container">
-        <div class="main-intro-mob__title">
-            <h3>Individually crafted pieces
-                of wearable jewellery</h3>
-            <p>Quality materials transformed by hand
-                into unique pieces to adorn and enjoy
-            </p>
 
+
+    <div class="container bespoke-layout-desk">
+        <div class="bs-left">
+            <img class="bs-first__img" src="{{cdn 'webdav:bespoke_mob.jpg'}}">
+            <p class="bs-second__p ">{{lang 'bespoke.second_section_p'}}</p>
         </div>
-        <div class="main-intro-mob__pics">
-            <img class="main-intro-mob__pics--big" src="{{cdn 'assets/img/added/skylarking_newtown_2_mob.jpg'}}">
-            <img class="main-intro-mob__pics--small" src="{{cdn 'assets/img/added/skylarking_newtown_1_mob.jpg'}}" >
 
+        <div class="bs-right">
+            <p class="bs-first__p">{{lang 'bespoke.first_section_p'}}</p>
+            <img class="bs-second__img" src="{{cdn 'webdav:collaborative_mob.jpg'}}">
         </div>
     </div>
-</div>
+
+    <div class="container bs-third">
+        <img class="bs-third__img bespoke_img" src="{{cdn 'webdav:unique_m.jpg'}}">
+        <p class="bs-third__p bespoke_p">{{lang 'bespoke.third_section_p'}}</p>
+    </div>
+
+
+
+
+
+
 {{/partial}}
 {{> layout/base}}

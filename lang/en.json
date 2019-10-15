@@ -785,10 +785,10 @@
         "comments": "Comments"
     },
     "newsletter": {
-        "subscribe": "Subscribe to our newsletter",
+        "subscribe": "NEWSLETTER",
         "subscribe_intro": "Get the latest updates on new products and upcoming sales",
-        "subscribe_submit": "Subscribe",
-        "email_placeholder": "Your email address",
+        "subscribe_submit": " ",
+        "email_placeholder": "Your email",
         "subscribed_heading": "Thanks for Subscribing!",
         "subscribed_heading_error": "Oops...",
         "subscribed_message": "Thank you for joining our mailing list. You'll be sent the next issue of our newsletter shortly",
@@ -869,5 +869,11 @@
     },
     "maintenance": {
         "down": "Down for Maintenance"
+    },
+    "bespoke": {
+        "intro_message": "If you are looking for something completely unique and personal then maybe a bespoke item \nis something to consider",
+        "first_section_p": "The commission process is collaborative. You come \nto me with an initial idea and I sketch out some options until we’ve decided on a final design. Each design \nis then carefully crafted by me in my workshop. \nThe collaboration can be via email or you can make \nan appointment with me in the Skylarking shop.",
+        "second_section_p": "I can work to any budget and bespoke items can feature sterling silver, yellow gold, white gold and \nyour choice of semi precious or precious gemstones.",
+        "third_section_p": "Bespoke items are often chosen as a unique way to mark a special birthday, anniversary, christening gift, bridal gifts and of course bespoke engagement rings and wedding bands."
     }
 }
