@@ -875,5 +875,15 @@
         "first_section_p": "The commission process is collaborative. You come \nto me with an initial idea and I sketch out some options until we’ve decided on a final design. Each design \nis then carefully crafted by me in my workshop. \nThe collaboration can be via email or you can make \nan appointment with me in the Skylarking shop.",
         "second_section_p": "I can work to any budget and bespoke items can feature sterling silver, yellow gold, white gold and \nyour choice of semi precious or precious gemstones.",
         "third_section_p": "Bespoke items are often chosen as a unique way to mark a special birthday, anniversary, christening gift, bridal gifts and of course bespoke engagement rings and wedding bands."
-    }
+    },
+    "about":{
+        "intro_message":"Ruth studied in Cornwall after discovering a love \nof jewellery making whilst attending an evening \ncourse at flux studios, London. Ruth graduated from her jewellery and silversmithing degree in 2012 with \nFirst Class Hons.",
+        "second_p": "During Ruth's studies she was awarded the Goldsmiths Metal Bursary Award and attended a summer school at Goldsmiths Hall. Ruth exhibited at New designs in 2012 and at her end of year show in Truro, Cornwall she sold her final piece to a local collector. ",
+        "third_p": "Shortly after graduating Ruth return to her birthplace on the Isle of Wight where she lives with her two daughters, Suki and Florence and her husband Reuben.",
+        "quote": "I work intuitively following a personal journey from the moment \nI am inspired, during the design process and whilst physically \nmaking an item of jewellery.",
+        "closing_p_first": "Ruth opened Skylarking, her shop and workshop in 2015, all items of jewellery are designed and made by Ruth \non the Isle of Wight. ",
+        "closing_p_last": "All designs go through a careful process. The initial sketch is made and developed, then each design is handcrafted in either silver, gold or white gold adding pearls or precious and semi precious stones sometimes."
+    },
+    "size-guide":{},
+    "collections":{}
 }

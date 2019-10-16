@@ -5,7 +5,8 @@
 const breakpointSizes = {
     large: 1261,
     medium: 801,
-    small: 551,
+    small: 551
+
 };
 
 /**

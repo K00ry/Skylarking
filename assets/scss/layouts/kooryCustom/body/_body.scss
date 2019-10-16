@@ -1,3 +1,40 @@
+//////////shared styles
+
+.main_img {
+  margin-bottom: 40px;
+}
+
+.main_p{
+  font-family: 'Optima', serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 40px;
+  color: #555465;
+}
+
+.main_title{
+  font-family: 'Optima', serif;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  color:#555465;
+  text-align: center;
+}
+
+.grey-m{
+  position: absolute;
+  width: 100%;
+  bottom: 31%;
+  height: 120vh;
+  background-color: #F7F7F7;
+  z-index: -1;
+}
+
+///////
+
+
 // very important rule to change the main body .containerclass
 
 .main-custom-container{
@@ -5,10 +42,9 @@
 padding: 0
 }
 .body {
-  margin-bottom: 6rem;
-  margin-top: 3rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
 }
-
 
 //end important rule
 
@@ -60,7 +96,6 @@ padding: 0
     display: flex;
     position: relative;
     padding: 1em 0;
-    //top: 1em;
     .main-intro-mob__pics--small{
       position: absolute;
       left: 1em;
@@ -81,9 +116,6 @@ background-color: #F7F7F7;
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
-  //display: flex;
-  //align-items: center;
-  //text-align: center;
 }
 
 
@@ -96,7 +128,6 @@ background-color: #F7F7F7;
 .card-title > a,.price--withTax{
   font-family: 'songti',sans-serif;
   color:#555465;
-  //font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
@@ -105,16 +136,4 @@ background-color: #F7F7F7;
 .slick-initialized .slick-slide{
   width: 150px;
 }
-//.slick-next:before,
-//.slick-prev:before {
-//  display: none;
-//}
-//.slick-dots,
-//.slick-next,
-//.slick-prev {
-//  display: none;
-//  //position: inherit;
-//}
-//.slick-track {
-//  left: -20px;
-//}
+
