@@ -57,6 +57,7 @@ export default class Product extends PageManager {
     helloWorld() {
         console.log("[assets/js/theme/product.js]: Hello World!");
         console.log("[assets/js/theme/product.js]: " + this.context.productThumbSize);
+        // console.log({{{JSONstringify urls.account}}});
     }
 
     productReviewHandler() {

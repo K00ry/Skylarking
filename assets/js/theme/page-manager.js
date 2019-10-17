@@ -8,6 +8,8 @@ export default class PageManager {
     }
 
     onReady() {
+
+
     }
 
     static load(context) {

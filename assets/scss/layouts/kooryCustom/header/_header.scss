@@ -33,6 +33,11 @@
   margin: auto;
   border-bottom: 1px solid #DFDFE1;
   height: 75px;
+  @include breakpoint("small") {
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
 }
 .header-logo > a {
   margin: auto;
@@ -45,8 +50,6 @@
   z-index: 20;
   @include breakpoint("small") {
     width: 15%;
-
-
     }
 }
 
@@ -151,6 +154,13 @@
 .navUser-section {
   @include breakpoint("small") {
     position: relative;
+    //.navUser-item{
+    //  display: none;
+    //}
+    //.navUser-item--cart{
+    //  display: block;
+    //
+    //}
   }
 }
 
