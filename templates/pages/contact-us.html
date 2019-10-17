@@ -2,10 +2,29 @@
 
 {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
 
-<main class="page">
-    {{#unless theme_settings.hide_contact_us_page_heading }}
-        <h1 class="page-heading">{{page.title}}</h1>
-    {{/unless}}
+
+
+
+
+    <div class="container contacts-intro-m">
+        {{#unless theme_settings.hide_contact_us_page_heading }}
+            <h1 class="main_title">{{page.title}}</h1>
+        {{/unless}}
+        <img class="contacts-intro-m__img main_img" src="{{cdn 'webdav:handmade-m.jpg'}}">
+        <address class="contacts-intro-m__address">
+            <div class="online-contact">
+                <a href="tel:+447707270936" class="main_p">07707270936</a>
+                <a href="mailto: hello@skylarking.com" class="main_p">hello@skylarking.com</a>
+            </div>
+            <div class="physical-contact main_p">
+                10 Birmingham Road <br>
+                Cowes<br>
+                Isle of Wight<br>
+                PO31 7BH
+            </div>
+        </address>
+    </div>
+    <div class="grey-m "></div>
 
     {{#if page.sub_pages}}
         <nav class="navBar navBar--sub">
@@ -17,17 +36,17 @@
         </nav>
     {{/if}}
 
-    <div id="contact-us-page" class="page-content page-content--centered">
-        {{#if forms.contact.success}}
-            <div id="contact-us-success">{{{lang 'forms.contact_us.successful' shopPath=urls.home}}}</div>
-        {{else}}
-            <p>{{{page.content}}}</p>
-            {{> components/page/contact-us-form}}
-        {{/if}}
+{{!--    <div id="contact-us-page" class="page-content page-content--centered">--}}
+{{!--        {{#if forms.contact.success}}--}}
+{{!--            <div id="contact-us-success">{{{lang 'forms.contact_us.successful' shopPath=urls.home}}}</div>--}}
+{{!--        {{else}}--}}
+{{!--            <p>{{{page.content}}}</p>--}}
+{{!--            {{> components/page/contact-us-form}}--}}
+{{!--        {{/if}}--}}
 
-    </div>
+{{!--    </div>--}}
 
-</main>
+
 
 {{/partial}}
 

@@ -3,6 +3,21 @@
  border:none;
   position: fixed;
   height: 75px;
+  @include breakpoint("small") {
+    display: flex;
+    flex-direction: row-reverse;
+
+    overflow: visible;
+    position: relative;
+  }
+
+  &.is-open {
+
+
+    @include breakpoint("small") {
+      height: auto;
+    }
+  }
 
 
 
@@ -28,10 +43,63 @@
   text-decoration: none;
   width: 30%;
   z-index: 20;
+  @include breakpoint("small") {
+    width: 15%;
+
+
+    }
 }
 
+
+.navPages-container {
+
+  @include breakpoint("small") {
+    background: transparent;
+    display: block;
+    height: auto;
+    padding: 0;
+    position: relative;
+  }
+}
 .navPages-container.is-open{
   padding-top:74px;
+}
+
+.navPages {
+
+  @include breakpoint("small") {
+    @include grid-row(); // 1
+    @include nav($style: "navBar", $wrapper: "nav");
+    background: none;
+    font-size: 0; // 1
+    overflow-y: visible;
+    padding: 0;
+    text-align: center;
+    .navPages-quickSearch,.navPages-list--user{
+      display: none;
+
+    }
+  }
+
+  .navPage-subMenu-list {
+
+    @include breakpoint("small") {
+
+      @include grid-row();
+      border-left: 0;
+      margin: auto;
+      padding-left: 0;
+
+    }
+  }
+}
+.navPages-list {
+
+
+  @include breakpoint("small") {
+    display: inline-block;
+    float: none;
+  }
 }
 
 
@@ -41,6 +109,9 @@
 
   padding: 0 1.5rem;
   top: 1rem;
+  @include breakpoint("small") {
+    display: none;
+  }
 
 }
 
@@ -68,6 +139,19 @@
 .navUser{
   right: 6px;
   top: 40px;
+  @include breakpoint("small") {
+    padding: 0 spacing("single");
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    z-index: zIndex("high");
+  }
+}
+.navUser-section {
+  @include breakpoint("small") {
+    position: relative;
+  }
 }
 
 
@@ -84,5 +168,25 @@
   stroke:#515060;
   width: 20px;
   height: 20px;
+  @include breakpoint("small") {
+   display: none;
+  }
+}
+.navUser-item {
 
+
+  @include breakpoint("small") {
+    display: block;
+
+    &.navUser-item--social {
+      margin-top: rem-calc(5px);
+      padding-right: rem-calc(5px);
+    }
+
+    &.navUser-item--divider {
+      font-size: rem-calc(25px);
+      margin-top: rem-calc(8px);
+      padding-left: rem-calc(2px);
+    }
+  }
 }

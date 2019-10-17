@@ -1,0 +1,27 @@
+.contacts-intro-m__address{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .online-contact{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    .main_p{
+      font-style: normal;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+
+
+  }
+
+  .physical-contact{
+    width: 50%;
+    font-style: normal;
+
+  }
+
+
+}

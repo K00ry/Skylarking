@@ -1,3 +1,27 @@
+// very important rule to change the main body .containerclass
+body{
+  @include breakpoint("small") {
+    padding-top: 0;
+  }
+}
+.main-custom-container{
+
+  padding: 0
+}
+.body {
+  margin-bottom: 0;
+  margin-top: 2rem;
+  @include breakpoint("small") {
+    margin-top: 6rem;
+
+  }
+}
+
+//end important rule
+
+
+
+
 //////////shared styles
 
 .main_img {
@@ -35,18 +59,7 @@
 ///////
 
 
-// very important rule to change the main body .containerclass
 
-.main-custom-container{
-
-padding: 0
-}
-.body {
-  margin-bottom: 0;
-  margin-top: 2rem;
-}
-
-//end important rule
 
 
 
