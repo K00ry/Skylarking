@@ -6,22 +6,45 @@
   @include breakpoint("small") {
     display: flex;
     flex-direction: row-reverse;
-
     overflow: visible;
-    position: relative;
+    //position: relative;
+    //position: fixed;
+    //width: 500px;
+    //height: 200px;
+    margin: 0 auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
   }
 
   &.is-open {
-
-
     @include breakpoint("small") {
       height: auto;
     }
   }
-
-
-
  }
+
+.header-border{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  border-bottom: 1px solid #ECEAEA;
+
+}
+
+
+.navPages-item-page-for-mobile{
+
+  @include breakpoint("small") {
+   display: none;
+  }
+}
+.navPages-item-page{
+  display: none;
+  @include breakpoint("small") {
+    display: block;
+  }
+
+}
 
 
 
@@ -34,9 +57,10 @@
   border-bottom: 1px solid #DFDFE1;
   height: 75px;
   @include breakpoint("small") {
-    position: absolute;
-    width: 100%;
+
+    width: auto;
     left: 0;
+    border-bottom: none;
   }
 }
 .header-logo > a {
@@ -49,7 +73,8 @@
   width: 30%;
   z-index: 20;
   @include breakpoint("small") {
-    width: 15%;
+    width: 40%;
+    padding-top:1em;
     }
 }
 
@@ -57,6 +82,7 @@
 .navPages-container {
 
   @include breakpoint("small") {
+    width: 32%;
     background: transparent;
     display: block;
     height: auto;
@@ -67,22 +93,41 @@
 .navPages-container.is-open{
   padding-top:74px;
 }
+.navPages-list {
+  @include breakpoint("small") {
+
+    display: flex;
+    flex-direction: row;
+
+  }
+}
 
 .navPages {
 
   @include breakpoint("small") {
-    @include grid-row(); // 1
-    @include nav($style: "navBar", $wrapper: "nav");
-    background: none;
-    font-size: 0; // 1
-    overflow-y: visible;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
     padding: 0;
-    text-align: center;
+    .navPages-item{
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+
+    //@include grid-row(); // 1
+    //@include nav($style: "navBar", $wrapper: "nav");
+    //background: none;
+    //font-size: 0; // 1
+    //overflow-y: visible;
+    //padding: 0;
+    //text-align: center;
     .navPages-quickSearch,.navPages-list--user{
       display: none;
-
     }
   }
+
+
 
   .navPage-subMenu-list {
 
@@ -96,14 +141,7 @@
     }
   }
 }
-.navPages-list {
 
-
-  @include breakpoint("small") {
-    display: inline-block;
-    float: none;
-  }
-}
 
 
 
@@ -143,12 +181,38 @@
   right: 6px;
   top: 40px;
   @include breakpoint("small") {
-    padding: 0 spacing("single");
-    position: relative;
-    right: auto;
-    top: auto;
+    height: 100%;
+    width: 32%;
     transform: none;
-    z-index: zIndex("high");
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    top: 0;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    .navUser-section{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 100%;
+
+    }
+    .navUser-item{
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+
+
+
+    //padding: 0 spacing("single");
+    //position: relative;
+    //right: auto;
+    //top: auto;
+    //transform: none;
+    //z-index: zIndex("high");
   }
 }
 .navUser-section {
@@ -165,13 +229,47 @@
 }
 
 
+  .navPages-action{
+    @include breakpoint("small") {
+      padding: 1em 1em 1em 1em;
+      font-family: 'Optima', serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #555465;
+      text-transform: inherit;
+
+    }
+  }
+
+  .navPages ul :first-child a{
+    @include breakpoint("small") {
+      padding: 1em 1em 1em 0em;
+
+    }
+  }
+
+
+
 .navUser-action{
   position: relative;
   z-index: zIndex("low");
-}
-.navUser-action{
   padding: 1em ;
+  @include breakpoint("small") {
+    padding: 1em 0em 1em 1em;
+    font-family: 'Optima', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555465;
+    text-transform: inherit;
+  }
 }
+
+
+
 .navUser-action svg{
   margin-top: 10px;
   fill: #515060;

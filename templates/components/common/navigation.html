@@ -43,6 +43,20 @@
                 {{!--{{/if}}--}}
             {{!--{{/if}}--}}
         {{!--</li>--}}
+        {{#each pages}}
+            {{#if this.name '==' 'bespoke' }}
+            {{!--<h2>kossher</h2>--}}
+
+           {{!-- {{else if this.name '==' 'Size guide'}}--}}
+
+            {{else if this.name '==' 'Blog'}}
+
+            {{else}}
+                <li class="navUser-item navPages-item-page">
+                    <a class="navPages-action{{#if name '==' ../page.title}} activePage{{/if}}" href="{{url}}">{{name}}</a>
+                </li>
+            {{/if}}
+        {{/each}}
         <li class="navUser-item navUser-item--cart">
 
 
