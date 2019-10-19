@@ -1,11 +1,13 @@
 // very important rule to change the main body .containerclass
+
+
 body{
+
   @include breakpoint("small") {
     padding-top: 0;
   }
 }
 .main-custom-container{
-
   padding: 0
 }
 .body {
@@ -22,6 +24,15 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
 //////////shared styles
 
 .main_img {
@@ -34,7 +45,7 @@ body{
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 40px;
-  color: #555465;
+  color: $gray-d;
 }
 
 .main_title{
@@ -43,7 +54,7 @@ body{
   line-height: 30px;
   margin-bottom: 15px;
   margin-top: 30px;
-  color:#555465;
+  color:$gray-d;
   text-align: center;
 }
 
@@ -59,7 +70,17 @@ body{
 ///////
 
 
+.home-gray{
+  height: 74vh;
+  bottom: 25%;
+  @include breakpoint("small"){
+    height: 80vh;
+    bottom: 14%;
 
+
+  }
+
+}
 
 
 
@@ -68,16 +89,64 @@ body{
   display: flex;
   flex-direction: column;
   height: 40vh;
+  @include breakpoint("small"){
+    height: auto;
+    padding-top: 40px;
+
+  }
 
 }
 
 
 .main-intro-desk{
   display:none;
-  .main-intro-desk__left{
-
+  @include breakpoint("small"){
+    display: flex;
+    justify-content: space-between;
   }
-  .main-intro-desk__right{
+    .main-intro-desk__left{
+      @include breakpoint("small") {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        p {
+          margin-top: 1.5rem;
+          font-family: 'Optima', serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 24px;
+          color: $gray-d;
+        }
+      }
+      @include breakpoint("medium") {
+        width: 40%;
+      }
+    }
+    .main-intro-desk__right {
+      @include breakpoint("small") {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        p {
+          font-family: 'Optima', serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 30px;
+          color: $gray-d;
+        }
+      }
+      @include breakpoint("medium") {
+        width: 40%;
+      }
+    }
+}
+
+.main-intro-mob{
+
+  @include breakpoint("small"){
+    display:none;
 
   }
 }
@@ -90,7 +159,7 @@ body{
   .main-intro-mob__title{
 
 
-    color: #555465;
+    color: $gray-d;
     h3{
       font-family: 'Optima', serif;
       font-style: normal;
@@ -118,12 +187,16 @@ body{
   }
 
 }
-.half-grey{
-background-color: #F7F7F7;
+
 .my-carousel{
   padding-top: 13em;
+  @include breakpoint("small"){
+    padding-top: 5em;
+
+  }
+
 }
-}
+
 .page-heading{
   font-family: 'Optima', serif;
   font-weight: normal;
@@ -140,7 +213,7 @@ background-color: #F7F7F7;
 
 .card-title > a,.price--withTax{
   font-family: 'songti',sans-serif;
-  color:#555465;
+  color:$gray-d;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
@@ -148,5 +221,20 @@ background-color: #F7F7F7;
 
 .slick-initialized .slick-slide{
   width: 150px;
+  height: auto;
+  @include breakpoint("small"){
+    width: 187px;;
+
+
+  }
 }
+
+  .slick-next::before, .slick-prev::before {
+    //@include breakpoint("small"){
+    //  width: 30px;
+    //  height: 30px;
+    //
+    //}
+
+  }
 

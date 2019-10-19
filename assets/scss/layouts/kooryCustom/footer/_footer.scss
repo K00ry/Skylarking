@@ -21,7 +21,7 @@
 border-radius: 0;
   border-color: #DEDEE0;
   font-family: 'songti',sans-serif;
-  color:#555465;
+  color:$gray-d;
 
 }
 
@@ -31,7 +31,7 @@ border-radius: 0;
 
 .footer-info-heading{
   font-family: 'songti',sans-serif;
-  color:#555465;
+  color:$gray-d;
   font-size: 16px;
   line-height: 16px;
   text-align: center;
@@ -70,7 +70,7 @@ margin: auto;
 
 .powered-by{
   font-family: 'songti',sans-serif;
-  color:#555465;
+  color:$gray-d;
   font-size: 16px;
   line-height: 24px;
 }

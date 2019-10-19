@@ -6,11 +6,24 @@ export default function () {
     if ($carousel.length) {
         const multipleSlides = $carousel[0].childElementCount > 1;
         // console.log(multipleSlides);
-        $carousel.slick({ dots: false,
+        $carousel.slick({
+            dots: false,
             variableWidth: true,
-            arrows:false,
+            arrows:true,
             infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
           //  multipleSlides
+            responsive: [
+                {
+                    arrows:false,
+                    breakpoint: 551,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+
+                }
+
+            ]
         });
     }
 

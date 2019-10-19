@@ -1,4 +1,10 @@
+/// color palate variables
 
+$gray-d :#555465;
+$gray-m: rgba($gray-d ,.6);
+$gray-l :#DEDEE0;
+
+//
 .header{
  border:none;
   position: fixed;
@@ -157,12 +163,12 @@
 }
 
 .mobileMenu-toggle .mobileMenu-toggleIcon{
-  background: #555465;
+  background: $gray-d;
   width: 1rem;
 }
 .mobileMenu-toggle .mobileMenu-toggleIcon, .mobileMenu-toggle .mobileMenu-toggleIcon::before, .mobileMenu-toggle .mobileMenu-toggleIcon::after{
 
-  background: #555465;
+  background: $gray-d;
   height: 1px;
 
 }
@@ -237,7 +243,7 @@
       font-weight: normal;
       font-size: 14px;
       line-height: 17px;
-      color: #555465;
+      color: $gray-d;
       text-transform: inherit;
 
     }
@@ -263,7 +269,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    color: #555465;
+    color: $gray-d;
     text-transform: inherit;
   }
 }

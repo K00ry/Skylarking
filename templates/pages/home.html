@@ -20,22 +20,26 @@ blog:
     {{{region name="home_below_carousel"}}}
 {{/partial}}--}}
 
-
+<div class="grey-m home-gray"></div>
 
 {{#partial "page"}}
     <div class="half-white">
         <div class="main-intro-desk container">
             <div class="main-intro-desk__left">
-                <img src="{{cdn 'assets/img/added/skylarking_newtown_1.jpg'}}" >
-                <p>Quality materials transformed by hand
+                <img src="{{cdn 'assets/img/added/skylarking_newtown_2.jpg'}}">
+                <p>Quality materials transformed by hand<br>
                     into unique pieces to adorn and enjoy
                 </p>
+
             </div>
             <div class="main-intro-desk__right">
-                <img src="{{cdn 'assets/img/added/skylarking_newtown_2.jpg'}}">
                 <p>Individually crafted pieces
                     of wearable jewellery</p>
+                <img src="{{cdn 'assets/img/added/skylarking_newtown_1.jpg'}}" >
+
+
             </div>
+
         </div>
         <div class="main-intro-mob container">
             <div class="main-intro-mob__title">
@@ -49,12 +53,11 @@ blog:
             <div class="main-intro-mob__pics">
                 <img class="main-intro-mob__pics--big" src="{{cdn 'assets/img/added/skylarking_newtown_2_mob.jpg'}}">
                 <img class="main-intro-mob__pics--small" src="{{cdn 'assets/img/added/skylarking_newtown_1_mob.jpg'}}" >
-
             </div>
         </div>
     </div>
 
-    <div class=" half-grey">
+
         <div class="container my-carousel">
             {{#if products.new}}
                 {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
@@ -63,7 +66,7 @@ blog:
 
         </div>
 
-    </div>
+
 
 
 
