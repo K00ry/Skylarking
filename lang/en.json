@@ -884,6 +884,18 @@
         "closing_p_first": "Ruth opened Skylarking, her shop and workshop in 2015, all items of jewellery are designed and made by Ruth \non the Isle of Wight. ",
         "closing_p_last": "All designs go through a careful process. The initial sketch is made and developed, then each design is handcrafted in either silver, gold or white gold adding pearls or precious and semi precious stones sometimes."
     },
-    "size-guide":{},
+    "size-guide":{
+        "intro_title":"Necklaces",
+        "intro_message": "You can use this chart to determine your preferred length.  Please note if you choose a non standard length when buying your order may be a little delayed. ",
+        "second_title": "Bracelets and bangles",
+        "second_first_p": "Bracelets: 7 inches, suitable for a medium wrist - or choose from options.\nIf you would like a different size please make a note at order. ",
+        "second_seconed_p": "Bangels: 8 inches circumference, suitable for a small to medium wrist.\nFor larger hands please either choose options or ask for 8.5 or 9 inches.",
+        "third_title": "Rings",
+        "third_first_p":"Use the chart to determine your ring size. The images\nare not to scale. If you are measuring a ring, please measure its inside diameter.",
+        "third_second_p":"Fingers do change size slightly through the day, if you measure when you are warmer or at the end of the day you may get a better idea of fit and prevent it being too tight. If for any reason the ring doesn't fit I can re-size\nit (buyer pays postage).",
+        "last_one": "Didn’t find the right size?",
+        "last_two": "Just let us know and we will create a bespoke item especially for you. If you need help with sizing, please don’t hesitate to contact us for advice via email hello@skylarking.com or by phone 07707270936."
+
+    },
     "collections":{}
 }

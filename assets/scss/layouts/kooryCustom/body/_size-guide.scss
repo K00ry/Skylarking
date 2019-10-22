@@ -1,0 +1,130 @@
+
+.size-g-gray{
+  height: auto;
+
+}
+.size-guide-intro{
+  display: flex;
+  flex-direction: column;
+  @include breakpoint('small'){
+    flex-direction: row;
+    justify-content: center;
+    .size-guide-intro__copy{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .main_title{
+        text-align: left;
+      }
+    }
+  }
+  .size-guide-intro__img--m{
+    @include breakpoint('small'){
+      display: none;
+    }
+  }
+
+  .size-guide-intro__img--d {
+    display: none;
+    @include breakpoint('small'){
+      display: block;
+      width: 50%;
+      img{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+
+.size-guide-middle{
+  background-color: $low_gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .size-guide-middle__block{
+    @include breakpoint('small'){
+      padding: 10px 0;
+      width: 62%;
+      margin: auto;
+
+    }
+  }
+
+  .main_p{
+    text-align: center;
+  }
+
+  .size-guide-middle__p{
+    margin-bottom: 20px;
+  }
+
+}
+
+.size-guide-third{
+  .border-helper{
+  @include breakpoint('small'){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  }
+  .size-guide-third__copy{
+
+    @include breakpoint('small'){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 40%;
+      //border-bottom: 1px solid $gray-l;
+      .main_title{
+        text-align: left;
+      }
+      .size-guide-middle__p{
+        margin-bottom: 20px;
+      }
+    }
+
+  }
+
+
+  .size-guide-third__svg{
+    padding-bottom: 40px;
+    //border-bottom: 1px solid $gray-l;
+    @include breakpoint('small'){
+      padding-bottom: 0;
+    }
+  svg{
+    width: 330px;
+    height: 400px;
+    @include breakpoint('small'){
+      width: 430px;
+      height: 500px;
+    }
+  }
+  }
+
+}
+.size-guide-last{
+  padding-top: 40px ;
+  @include breakpoint('small'){
+  }
+  .border-helper{
+    padding-bottom:40px;
+
+
+    @include breakpoint('small'){
+      width: 64%;
+      margin: auto;
+      border: none;
+
+    }
+  }
+  .main_p{
+    text-align: center;
+    margin-bottom: 0;
+  }
+}

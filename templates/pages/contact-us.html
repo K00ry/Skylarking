@@ -1,17 +1,21 @@
+
+<div class="grey-m contact-gray"></div>
 {{#partial "page"}}
 
-{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+{{!--{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}--}}
 
-
-
-
-
-    <div class="container contacts-intro-m">
+    <div class="container contacts-header">
         {{#unless theme_settings.hide_contact_us_page_heading }}
             <h1 class="main_title">{{page.title}}</h1>
         {{/unless}}
+    </div>
+
+    <div class="container contacts-intro">
+
+
         <img class="contacts-intro-m__img main_img" src="{{cdn 'webdav:handmade-m.jpg'}}">
-        <address class="contacts-intro-m__address">
+        <address class="contacts-intro__address">
+            <h2 class="contacts-intro__title main_title">{{page.title}}</h2>
             <div class="online-contact">
                 <a href="tel:+447707270936" class="main_p">07707270936</a>
                 <a href="mailto: hello@skylarking.com" class="main_p">hello@skylarking.com</a>
@@ -24,7 +28,8 @@
             </div>
         </address>
     </div>
-    <div class="grey-m "></div>
+
+
 
     {{#if page.sub_pages}}
         <nav class="navBar navBar--sub">
@@ -36,6 +41,12 @@
         </nav>
     {{/if}}
 
+<div class="google-map container">
+    <div class="mapHelper">
+        <div id="map"></div>
+    </div>
+</div>
+
 {{!--    <div id="contact-us-page" class="page-content page-content--centered">--}}
 {{!--        {{#if forms.contact.success}}--}}
 {{!--            <div id="contact-us-success">{{{lang 'forms.contact_us.successful' shopPath=urls.home}}}</div>--}}
@@ -43,8 +54,206 @@
 {{!--            <p>{{{page.content}}}</p>--}}
 {{!--            {{> components/page/contact-us-form}}--}}
 {{!--        {{/if}}--}}
-
 {{!--    </div>--}}
+
+<script>
+    function initMap() {
+
+        let skylarMarker = "";
+        let mapZoom;
+        if (document.documentElement.clientWidth < 500) {
+            skylarMarker = "{{cdn 'webdav:gm-m.png'}}";
+            mapZoom =15;
+        } else {
+            skylarMarker = "{{cdn 'webdav:gm-d.png'}}";
+            mapZoom = 15;
+        }
+
+        let options= {
+            zoom : mapZoom,
+            center:{lat: 50.760307, lng: -1.296936},
+            styles:[
+                {
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#f5f5f5"
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#616161"
+                        }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#f5f5f5"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.land_parcel",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#bdbdbd"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#eeeeee"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#757575"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#e5e5e5"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#757575"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#dadada"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#616161"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#e5e5e5"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#eeeeee"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#c9c9c9"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#9e9e9e"
+                        }
+                    ]
+                }
+            ],
+
+
+            disableDefaultUI: true
+
+        };
+
+
+
+        const map = new google.maps.Map(
+                document.getElementById('map'), options);
+
+        const marker = new google.maps.Marker({
+            position: {lat:50.760307, lng:-1.296936},
+            map: map,
+            icon:skylarMarker,
+        });
+    }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgrwvg2tZEZpRfbWhDkEpOoFK8KBnVEnI&callback=initMap">
+</script>
 
 
 

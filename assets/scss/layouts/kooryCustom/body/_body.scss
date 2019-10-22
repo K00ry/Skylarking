@@ -63,8 +63,11 @@ body{
   width: 100%;
   bottom: 31%;
   height: 120vh;
-  background-color: #F7F7F7;
+  background-color: $low_gray;
   z-index: -1;
+}
+.border-helper{
+  border-bottom: 1px solid $gray-l;
 }
 
 ///////
