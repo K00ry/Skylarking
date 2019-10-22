@@ -73,7 +73,13 @@
   }
   }
   .size-guide-third__copy{
-
+    .size-guide-middle__p{
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .main_p{
+    text-align: center;
+    }
     @include breakpoint('small'){
       display: flex;
       flex-direction: column;
@@ -83,9 +89,10 @@
       .main_title{
         text-align: left;
       }
-      .size-guide-middle__p{
-        margin-bottom: 20px;
+      .main_p{
+        text-align: left;
       }
+
     }
 
   }
