@@ -235,7 +235,10 @@ $low_gray:#F7F7F7;
     //}
   }
 }
+.navPages{
 
+  height: 100vh;
+}
 
   .navPages-action{
     @include breakpoint("small") {
