@@ -1,6 +1,9 @@
 // very important rule to change the main body .containerclass
 
 
+@media only screen and (min-width: 375px){
+}
+
 body{
 
   @include breakpoint("small") {
@@ -8,7 +11,9 @@ body{
   }
 }
 .main-custom-container{
-  padding: 0
+  padding: 0;
+
+
 }
 .body {
   margin-bottom: 0;

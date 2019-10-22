@@ -1,3 +1,4 @@
+<div class="grey-m quote__grey-m"></div>
 {{#partial "page"}}
 
     <div class="container about-intro-m">
@@ -10,27 +11,34 @@
 
     <div class="container about-intro-d">
         <div class=" about-intro__desc">
-            <h2 class="about-intro__title">About</h2>
+            <h2 class="about-intro__title main_title">About</h2>
             <p class="about-intro__p--1 main_p">{{lang 'about.intro_message' }}</p>
             <p class="about-intro__p--2 main_p">{{lang 'about.second_p' }}</p>
             <p class="about-intro__p--3 main_p">{{lang 'about.third_p' }}</p>
         </div>
         <div class="about-intro__img">
-            <img class="about-intro__img main_img" alt="Ruth standing outside her store" src="{{cdn 'webdav:goldsmith_m.jpg'}}">
+            <img class=" main_img" alt="Ruth standing outside her store" src="{{cdn 'webdav:goldsmith_d.jpg'}}">
         </div>
     </div>
 
-    <div class="grey-m quote__grey-m"></div>
+
 
     <div class="container quote">
-        <p class="quote__p main_p">"{{lang 'about.quote' }}"</p>
+        <div class="quote__block">
+        <p class="quote__block--p main_p">"{{lang 'about.quote' }}"</p>
         <svg><use xlink:href="#icon-signature" ></use></svg>
+        </div>
     </div>
 
     <div class="container closing">
-        <img class="closing__img main_img" alt="manikin and mirror" src="{{cdn 'webdav:stones_m.jpg'}}">
-        <p class="closing__p main_p">{{lang 'about.closing_p_first' }}</p>
-        <p class="closing__p main_p">{{lang 'about.closing_p_last' }}</p>
+        <div class="closing__block">
+            <img class="closing__img main_img" alt="manikin and mirror" src="{{cdn 'webdav:stones_m.jpg'}}">
+        </div>
+        <div class="closing__block">
+            <h3 class="closing__block--title main_title">{{lang 'about.closing_title' }}</h3>
+            <p class="closing__block--p main_p">{{lang 'about.closing_p_first' }}</p>
+            <p class="closing__block--p main_p">{{lang 'about.closing_p_last' }}</p>
+        </div>
 
     </div>
 

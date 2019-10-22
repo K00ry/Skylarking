@@ -4,6 +4,9 @@
 .about-intro-m{
   display: flex;
 flex-direction: column;
+  @include breakpoint('small'){
+    display: none;
+  }
   .about-intro__img{
     margin-bottom:40px;
 
@@ -14,28 +17,57 @@ flex-direction: column;
 }
 .about-intro-d{
   display:none;
+  @include breakpoint('small'){
+    padding-top:60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .about-intro__desc{
+    @include breakpoint('small'){
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    .about-intro__p--2,.about-intro__p--1 {
+      margin-bottom: 10px;
+      }
+      .about-intro__title{
+        text-align: left;
+      }
+    }
+  }
+  .about-intro__img{
+    @include breakpoint('small') {
+      width: 45%;
+    }
+  }
 }
 .quote__grey-m{
-  //height: 47vh;
   height: 300px;
-  bottom: 31%;;
+  bottom: 38%;
 
-  @media only screen and (min-width: 375px){
-    //height: 42vh;
-    bottom: 33%;
-
+  @include breakpoint('small') {
+    height: 340px;
+    bottom: 44%;
   }
-
-
 
 }
 
 .quote{
   padding-top: 50px;
   padding-bottom: 50px;
-  position: relative;
+  @include breakpoint('small') {
+    display: flex;
+  }
 
-  p{
+  .quote__block{
+    position: relative;
+    @include breakpoint('small') {
+      margin: auto;
+      width:60%
+    }
+  }
+  .quote__block--p{
     font-family: 'Optima', serif;
     font-style: italic;
     font-weight: normal;
@@ -47,18 +79,45 @@ flex-direction: column;
     position: absolute;
     width: 140px;
     height: 24px;
-    right:23px;
-    bottom:50px;
+    right: 0px;
+    top: 76px
   }
 }
-.closing__p,.about-intro__p--2{
+
+.closing{
+  @include breakpoint('small') {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .closing__block{
+    @include breakpoint('small') {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .closing__block--title{
+    display: none;
+    @include breakpoint('small') {
+      text-align: left;
+      display: block;
+    }
+  }
+}
+.closing__block--p,.about-intro__p--2{
   margin-bottom: 20px;
 
 }
 
-.closing__p:last-child{
+.closing__block--p:last-child{
   margin-bottom: 0;
   padding-bottom: 40px;
-
   border-bottom: 1px solid #DFDFE1;
+  @include breakpoint('small') {
+    border: none;
+  }
+
 }
