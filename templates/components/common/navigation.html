@@ -45,12 +45,10 @@
         {{!--</li>--}}
         {{#each pages}}
             {{#if this.name '==' 'bespoke' }}
-            {{!--<h2>kossher</h2>--}}
-
-           {{!-- {{else if this.name '==' 'Size guide'}}--}}
 
             {{else if this.name '==' 'Blog'}}
 
+            {{else if this.name '==' 'Rings'}}
             {{else}}
                 <li class="navUser-item navPages-item-page">
                     <a class="navPages-action{{#if name '==' ../page.title}} activePage{{/if}}" href="{{url}}">{{name}}</a>

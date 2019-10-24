@@ -9,7 +9,13 @@
         {{#each categories}}
             <li class="navPages-item">
             {{#if ../theme_settings.navigation_design '===' 'simple'}}
-                {{> components/common/navigation-list}}
+                {{#if this.name '==' 'collections' }}
+                    {{> components/common/navigation-list}}
+                {{else if this.name '==' 'Shop'}}
+                    {{> components/common/navigation-list}}
+                {{else}}
+
+                {{/if}}
             {{/if}}
             {{#if ../theme_settings.navigation_design '===' 'alternate'}}
                 {{> components/common/navigation-list-alternate}}
@@ -20,7 +26,6 @@
 
             {{#each pages}}
                 {{#if this.name '==' 'Blog' }}
-                {{else if this.name '==' 'Collections'}}
 
                 {{else if this.name '==' 'Shop'}}
 

@@ -1,7 +1,20 @@
+<h2>Leaf and Flora</h2>
 <ul class="productGrid">
     {{#each products}}
-    <li class="product">
-            {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
-    </li>
+        {{#if this.brand.name '==' 'Leaf and flora' }}
+            <li class="product">
+                    {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
+            </li>
+        {{/if}}
+    {{/each}}
+</ul>
+<h2>Beaded collection</h2>
+<ul class="productGrid">
+    {{#each products}}
+        {{#if this.brand.name '==' 'Beaded' }}
+            <li class="product">
+                {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
+            </li>
+        {{/if}}
     {{/each}}
 </ul>
