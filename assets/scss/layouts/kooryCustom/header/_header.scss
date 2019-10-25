@@ -125,14 +125,6 @@ $low_gray:#F7F7F7;
       margin-bottom: auto;
     }
 
-
-    //@include grid-row(); // 1
-    //@include nav($style: "navBar", $wrapper: "nav");
-    //background: none;
-    //font-size: 0; // 1
-    //overflow-y: visible;
-    //padding: 0;
-    //text-align: center;
     .navPages-quickSearch,.navPages-list--user{
       display: none;
     }

@@ -44,21 +44,20 @@
             {{!--{{/if}}--}}
         {{!--</li>--}}
         {{#each pages}}
-            {{#if this.name '==' 'bespoke' }}
-
-            {{else if this.name '==' 'Blog'}}
-
-            {{else if this.name '==' 'Rings'}}
-            {{else}}
+            {{#if name '==' 'About' }}
                 <li class="navUser-item navPages-item-page">
-                    <a class="navPages-action{{#if name '==' ../page.title}} activePage{{/if}}" href="{{url}}">{{name}}</a>
+                    <a class="navPages-action{{#if name '==' ../../page.title}} activePage{{/if}}" href="{{url}}">{{name}}</a>
                 </li>
+            {{else}}
+                {{#if name '==' 'Size guide' }}
+                        <li class="navUser-item navPages-item-page">
+                            <a class="navPages-action{{#if name '==' ../../../page.title}} activePage{{/if}}" href="{{url}}">{{name}}</a>
+                        </li>
+                {{else}}
+                {{/if}}
             {{/if}}
         {{/each}}
         <li class="navUser-item navUser-item--cart">
-
-
-
             <a
                 class="navUser-action"
                 data-cart-preview

@@ -3,40 +3,33 @@
 {{!--        {{> components/common/quick-search}}--}}
 {{!--    </div>--}}
 {{!--    <script>--}}
-{{!--        console.log({{{JSONstringify pages}}});--}}
+{{!--        console.log({{{JSONstringify is_active}}});--}}
 {{!--    </script>--}}
     <ul class="navPages-list{{#if theme_settings.navigation_design '!==' 'simple'}} navPages-list-depth-max{{/if}}">
         {{#each categories}}
-            <li class="navPages-item">
-            {{#if ../theme_settings.navigation_design '===' 'simple'}}
+{{!--            <li class="navPages-item">--}}
+{{!--            {{#if ../theme_settings.navigation_design '===' 'simple'}}--}}
                 {{#if this.name '==' 'collections' }}
                     {{> components/common/navigation-list}}
-                {{else if this.name '==' 'Shop'}}
-                    {{> components/common/navigation-list}}
                 {{else}}
-
+                    {{#if this.name '==' 'Shop' }}
+                        {{> components/common/navigation-list}}
+                    {{else}}
+                    {{/if}}
                 {{/if}}
-            {{/if}}
-            {{#if ../theme_settings.navigation_design '===' 'alternate'}}
+{{!--            {{/if}}--}}
+           {{!-- {{#if ../theme_settings.navigation_design '===' 'alternate'}}
                 {{> components/common/navigation-list-alternate}}
-            {{/if}}
-            </li>
+            {{/if}}--}}
+{{!--            </li>--}}
         {{/each}}
         {{#unless theme_settings.hide_content_navigation}}
 
             {{#each pages}}
-                {{#if this.name '==' 'Blog' }}
-
-                {{else if this.name '==' 'Shop'}}
-
-                {{else if this.name '==' 'About'}}
-
-                {{else if this.name '==' 'Size guide'}}
-
-                {{else}}
-                    <li class="navPages-item navPages-item-page">
-                        <a class="navPages-action{{#if name '==' ../page.title}} activePage{{/if}}" href="{{url}}">{{name}}</a>
-                    </li>
+                {{#if name '===' 'Bespoke' }}
+                        <li class="navPages-item navPages-item-page">
+                            <a class="navPages-action{{#if name '==' ../../page.title}} activePage{{/if}}" href="{{url}}">{{name}}</a>
+                        </li>
                 {{/if}}
              {{/each}}
             {{#each pages}}

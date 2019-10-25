@@ -1,13 +1,41 @@
 .footer{
 
   border-top: none;
+  @include breakpoint("small") {
+    background-color: $low_gray;
+  }
+}
+.footer-info{
+  @include breakpoint("small") {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 80px;
+
+    .footer-info-heading{
+      text-align: left;
+    }
+  }
+}
+.footer-logo__block{
+  width: 70%;
+
+
 }
 
 .footer-info-col{
   margin-bottom: 0;
+    @include breakpoint("medium") {
+      width: width("6/12");
+    }
 }
 .footer-info-col--small{
   display: none;
+  @include breakpoint("small") {
+    display: inline-block;
+
+  }
+
 }
 
 .form{
@@ -16,6 +44,10 @@
 .form-fieldset{
   margin:auto;
   width: 70%;
+  @include breakpoint("small") {
+    margin: 0;
+    width: 100%;
+  }
 }
 .form-input{
 border-radius: 0;
@@ -29,11 +61,12 @@ border-radius: 0;
   position: relative;
 }
 
-.footer-info-heading{
+
+.footer-info-heading, .footer-info-list a {
   font-family: 'songti',sans-serif;
   color:$gray-d;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 30px;
   text-align: center;
   font-weight: 300;
   margin-bottom: 21px;
