@@ -130,7 +130,13 @@ body{
         }
       }
       @include breakpoint("medium") {
-        width: 40%;
+        p {
+
+          font-size: 34px;
+          line-height: 40px;
+
+        }
+
       }
     }
     .main-intro-desk__right {
@@ -148,7 +154,10 @@ body{
         }
       }
       @include breakpoint("medium") {
-        width: 40%;
+        p {
+          font-size: 34px;
+          line-height: 40px;
+        }
       }
     }
 }

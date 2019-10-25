@@ -10,7 +10,11 @@
         "call_us": "Call us at {phone_number}"
     },
     "home": {
-        "heading": "Home"
+        "heading": "Home",
+        "intro_right":"Individually crafted pieces \nof wearable jewellery",
+        "intro_left":"Quality materials transformed by hand \ninto unique pieces to adorn and enjoy \n",
+        "instagram_title":"Join us in Instagram",
+        "instagram_p":"Follow @skylarking_silver to be updated on new products and bespoke items "
     },
     "blog": {
         "recent_posts": "Recent Posts",
