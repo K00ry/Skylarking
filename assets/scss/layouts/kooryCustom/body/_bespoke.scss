@@ -1,6 +1,15 @@
 
 
+.bespoke_m{
+  height: 800px;
+  bottom: 42%;
+  @include breakpoint('small') {
+    height: 50vh;
+    bottom: 68%;
+  }
 
+
+}
 .bespoke{
   display: flex;
   flex-direction: column;
@@ -10,38 +19,38 @@
 
   display: flex;
   flex-direction: column;
-
-
-
-
   .bespoke-intro__title{
 
   }
   .bespoke-intro__p{
+    text-align: center;
     width: 96%;
     margin-left: auto;
     margin-right: auto;
-
+    @include breakpoint("small") {
+     text-align: center;
+      width: 80%;
+      //font-size: 22px;
+      //line-height: 30px;
+    }
   }
 }
 
 
 
 .bespoke-layout-mob{
-  //padding-top: -2em;
-  //position: relative;
+  @include breakpoint("small") {
+    display: none;
+  }
 
   .bs-first{
-    //position: relative;
-    //height: 80vh;
+
     margin-bottom: 40px;
   }
   .bs-first__img {
-    //top: -50px;
-    //position: absolute;
+
   }
   .bs-first__p{
-    //padding-top: 20em;
 
   }
 
@@ -52,4 +61,56 @@
 }
 .bespoke-layout-desk{
   display:none;
+  @include breakpoint("small") {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .main_p{
+      font-size: 13px;
+      line-height: 18px;
+
+    }
+  }
+  .bs-left{
+    width: 45%;
+
+  }
+  .bs-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 45%;
+  }
+
+}
+
+.bs-third{
+  @include breakpoint("small") {
+    padding-bottom: 80px;
+    padding-top: 80px;
+
+    .main_p{
+      margin: auto;
+      font-size: 13px;
+      //line-height: 26px;
+      text-align: center;
+      width: 45%;
+
+    }
+
+  }
+  .bs-third__img--m{
+    display: block;
+    @include breakpoint("small") {
+      display: none;
+
+    }
+  }
+  .bs-third__img--d{
+    display: none;
+    @include breakpoint("small") {
+      display: block;
+    }
+  }
+
 }

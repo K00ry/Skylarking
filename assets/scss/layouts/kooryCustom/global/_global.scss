@@ -1,0 +1,115 @@
+/// color palate variables
+
+$gray-d :rgba(#555465,1);
+//$gray-d :rgba(#555465,.6);
+//$gray-m: rgba($gray-d ,.6);
+$gray-l : #DEDEE0;
+$low_gray:  #F7F7F7;
+$line-gray: #ECEAEA;
+
+
+
+
+// very important rule to change the main body .containerclass
+
+
+.container {
+
+
+  @include breakpoint("large") {
+    padding: 0 10rem;
+    //padding: 0 ($container-padding * 7);
+  }
+}
+
+
+@media only screen and (min-width: 375px){
+}
+body{
+  @include breakpoint("small") {
+    padding-top: 0;
+  }
+}
+.main-custom-container{
+  padding: 0;
+}
+.body {
+  margin-bottom: 0;
+  margin-top: 2rem;
+  @include breakpoint("small") {
+    margin-top: 6rem;
+  }
+}
+
+//end important rule
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////shared styles
+
+.main_img {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  @include breakpoint("small") {
+    margin-bottom: 60px;
+  }
+  @include breakpoint("medium") {
+    margin-bottom: 80px;
+  }
+}
+.main_title{
+  font-family: 'Optima', serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  color:$gray-d;
+  text-align: center;
+}
+
+.main_p{
+  font-family: 'Optima', serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 40px;
+  color: $gray-d;
+
+}
+
+
+
+.grey-m{
+  position: absolute;
+  width: 100%;
+  bottom: 31%;
+  height: 120vh;
+  background-color: $low_gray;
+  z-index: -1;
+}
+.border-helper{
+  border-bottom: 1px solid $gray-l;
+}
+
+/////// gray-background
+
+.home-gray{
+  height: 74vh;
+  bottom: 25%;
+  @include breakpoint("small"){
+    height: 80vh;
+    bottom: 14%;
+  }
+}

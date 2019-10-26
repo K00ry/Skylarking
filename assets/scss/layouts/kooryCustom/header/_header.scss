@@ -1,12 +1,3 @@
-/// color palate variables
-
-$gray-d :#555465;
-$gray-m: rgba($gray-d ,.6);
-$gray-l :#DEDEE0;
-$low_gray:#F7F7F7;
-
-
-//
 .header{
  border:none;
   position: fixed;
@@ -62,7 +53,7 @@ $low_gray:#F7F7F7;
   text-align: center;
   width: 100%;
   margin: auto;
-  border-bottom: 1px solid #DFDFE1;
+  //border-bottom: 1px solid #DFDFE1;
   height: 75px;
   @include breakpoint("small") {
 
@@ -176,8 +167,8 @@ $low_gray:#F7F7F7;
   width: 10px;
   line-height: 10px;
   font-size: 11px;
-  top: 21px;
-  right: 16px;
+  top: 23px;
+  right: 19px
 
 }
 .navUser{
@@ -274,9 +265,9 @@ $low_gray:#F7F7F7;
 
 
 .navUser-action svg{
-  margin-top: 10px;
-  fill: #515060;
-  stroke:#515060;
+  margin-top: 2px;
+  fill: $gray-d;
+  stroke:$gray-d;
   width: 20px;
   height: 20px;
   @include breakpoint("small") {

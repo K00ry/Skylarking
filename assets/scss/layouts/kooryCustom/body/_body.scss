@@ -1,100 +1,3 @@
-// very important rule to change the main body .containerclass
-
-
-@media only screen and (min-width: 375px){
-}
-
-body{
-
-  @include breakpoint("small") {
-    padding-top: 0;
-  }
-}
-.main-custom-container{
-  padding: 0;
-
-
-}
-.body {
-  margin-bottom: 0;
-  margin-top: 2rem;
-  @include breakpoint("small") {
-    margin-top: 6rem;
-
-  }
-}
-
-//end important rule
-
-
-
-
-
-
-
-
-
-
-
-
-
-//////////shared styles
-
-.main_img {
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.main_p{
-  font-family: 'Optima', serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 40px;
-  color: $gray-d;
-}
-
-.main_title{
-  font-family: 'Optima', serif;
-  font-size: 24px;
-  line-height: 30px;
-  margin-bottom: 15px;
-  margin-top: 30px;
-  color:$gray-d;
-  text-align: center;
-}
-
-.grey-m{
-  position: absolute;
-  width: 100%;
-  bottom: 31%;
-  height: 120vh;
-  background-color: $low_gray;
-  z-index: -1;
-}
-.border-helper{
-  border-bottom: 1px solid $gray-l;
-}
-
-///////
-
-
-.home-gray{
-  height: 74vh;
-  bottom: 25%;
-  @include breakpoint("small"){
-    height: 80vh;
-    bottom: 14%;
-
-
-  }
-
-}
-
-
-
-
 .half-white{
   display: flex;
   flex-direction: column;
@@ -243,17 +146,137 @@ body{
   height: auto;
   @include breakpoint("small"){
     width: 187px;;
-
-
   }
 }
 
   .slick-next::before, .slick-prev::before {
-    //@include breakpoint("small"){
-    //  width: 30px;
-    //  height: 30px;
-    //
-    //}
+
 
   }
+
+
+
+  /////////////////////// CATALOG
+
+
+.catalog{
+  display:none;
+  @include breakpoint("small"){
+    display: flex;
+    flex-direction: column;
+    .catalog__title{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.catalog__block{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+//.c-left{
+//  display: flex;
+//  flex-direction: row;
+//  width: 49%;
+//  justify-content: space-between;
+//  .c-one-two{
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: space-between;
+//    width: 47%;
+//    .c-one{
+//
+//    }
+//  }
+//  .c-three{
+//    width: 47%;
+//    //padding-left: 15px;
+//    //padding-right: 15px;
+//
+//  }
+//}
+//.c-right{
+//  display:flex;
+//  flex-direction: column;
+//  justify-content: space-between;
+//  width: 48%;
+//  .c-four-five{
+//    display:flex;
+//    flex-direction: row;
+//    justify-content: space-between;
+//
+//
+//    .c-four{
+//      width: 47%;
+//    }
+//    .c-five{
+//      width: 47%;
+//    }
+//
+//  }
+//  .c-six{
+//
+//
+//
+//  }
+//}
+
+$cat_pad: 12px;
+.c-left{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+  .c-one-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .c-one{
+      padding-bottom: $cat_pad;
+      padding-right:$cat_pad;
+
+    }
+    .c-two{
+      padding-top: $cat_pad;
+      padding-right:$cat_pad;
+    }
+  }
+  .c-three{
+
+    padding-left: $cat_pad;
+    padding-right: $cat_pad;
+
+  }
+}
+.c-right{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  .c-four-five{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .c-four{
+      padding-left: $cat_pad;
+      padding-bottom: $cat_pad;
+      padding-right: $cat_pad;
+    }
+    .c-five{
+      padding-left: $cat_pad;
+      padding-bottom: $cat_pad;
+
+    }
+
+  }
+  .c-six{
+    padding-top: $cat_pad;
+    padding-left: $cat_pad;
+  }
+}
+
+
 
