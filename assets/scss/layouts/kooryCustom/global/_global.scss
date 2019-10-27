@@ -17,7 +17,7 @@ $line-gray: #ECEAEA;
 
 
   @include breakpoint("large") {
-    padding: 0 10rem;
+    //padding: 0 10rem;
     //padding: 0 ($container-padding * 7);
   }
 }
@@ -42,17 +42,6 @@ body{
 }
 
 //end important rule
-
-
-
-
-
-
-
-
-
-
-
 
 
 //////////shared styles
@@ -94,7 +83,7 @@ body{
 .grey-m{
   position: absolute;
   width: 100%;
-  bottom: 31%;
+  top: 31%;
   height: 120vh;
   background-color: $low_gray;
   z-index: -1;

@@ -1,3 +1,16 @@
+.home-gray{
+
+  height: 600px;
+  top: 28%;
+  @include breakpoint("small"){
+    height: 655px;
+    top: 20%
+
+  }
+
+}
+
+
 .half-white{
   display: flex;
   flex-direction: column;
@@ -5,9 +18,7 @@
   @include breakpoint("small"){
     height: auto;
     padding-top: 40px;
-
   }
-
 }
 
 
@@ -101,6 +112,7 @@
     position: relative;
     padding: 1em 0;
     .main-intro-mob__pics--small{
+      width: 101px;
       position: absolute;
       left: 1em;
       bottom: 0;
@@ -141,11 +153,11 @@
   line-height: 16px;
 }
 
-.slick-initialized .slick-slide{
+.productCarousel-slide{
   width: 150px;
   height: auto;
   @include breakpoint("small"){
-    width: 187px;;
+    width: 187px;
   }
 }
 
@@ -164,8 +176,9 @@
   @include breakpoint("small"){
     display: flex;
     flex-direction: column;
+    margin-bottom: 80px;
     .catalog__title{
-      margin-bottom: 30px;
+      margin: 40px 0;
     }
   }
 }
@@ -278,5 +291,16 @@ $cat_pad: 12px;
   }
 }
 
+
+.catalogCarousel-slide{
+  width: 245px;
+  height: auto;
+  margin-right: 8px;
+
+  @include breakpoint("small"){
+
+  }
+
+}
 
 

@@ -26,13 +26,13 @@ blog:
     <div class="half-white">
         <div class="main-intro-desk container">
             <div class="main-intro-desk__left">
-                <img class="main_img" src="{{cdn 'assets/img/added/skylarking_newtown_2.jpg'}}">
+                <img class="main_img"  src="{{cdn 'webdav:home-page/necklace-d.jpg'}}">
                 <p>{{lang "home.intro_left"}}</p>
 
             </div>
             <div class="main-intro-desk__right">
                 <p>{{lang "home.intro_right"}}</p>
-                <img class="main_img" src="{{cdn 'assets/img/added/skylarking_newtown_1.jpg'}}" >
+                <img class="main_img" src="{{cdn 'webdav:home-page/bracelets-d.jpg'}}" >
             </div>
 
         </div>
@@ -46,8 +46,8 @@ blog:
 
             </div>
             <div class="main-intro-mob__pics">
-                <img class="main-intro-mob__pics--big" src="{{cdn 'assets/img/added/skylarking_newtown_2_mob.jpg'}}">
-                <img class="main-intro-mob__pics--small" src="{{cdn 'assets/img/added/skylarking_newtown_1_mob.jpg'}}" >
+                <img class="main-intro-mob__pics--big" src="{{cdn 'webdav:home-page/necklace-m.jpg'}}" >
+                <img class="main-intro-mob__pics--small" src="{{cdn 'webdav:home-page/bracelets-m.jpg'}}" >
             </div>
         </div>
     </div>
@@ -58,7 +58,6 @@ blog:
                 {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
             {{/if}}
             {{{region name="home_below_new_products"}}}
-
         </div>
 
 
@@ -68,30 +67,51 @@ blog:
             <div class="c-left">
                 <div class="c-one-two">
                     <div class="c-one">
-                        <img alt="Bracelets" src="{{cdn 'webdav:home-catalog/bracelets.png'}}">
+                        <img alt="Bracelets" src="{{cdn 'webdav:home-catalog/bracelets.jpg'}}">
                     </div>
                     <div class="c-two">
-                        <img alt="Bracelets" src="{{cdn 'webdav:home-catalog/rings.png'}}">
+                        <img alt="Bracelets" src="{{cdn 'webdav:home-catalog/rings.jpg'}}">
                     </div>
                 </div>
                 <div class="c-three">
-                        <img alt="Bracelets" src="{{cdn 'webdav:home-catalog/earrings.png'}}">
+                        <img alt="Bracelets" src="{{cdn 'webdav:home-catalog/earrings.jpg'}}">
                 </div>
             </div>
             <div class="c-right">
                 <div class="c-four-five">
                     <div class="c-four">
-                        <img alt="Bracelets" src="{{cdn 'webdav:home-catalog/bangels.png'}}">
+                        <img alt="Bracelets" src="{{cdn 'webdav:home-catalog/bangels.jpg'}}">
                     </div>
                     <div class="c-five">
-                        <img alt="Bracelets" src="{{cdn 'webdav:home-catalog/hoop-earrings.png'}}">
+                        <img alt="Bracelets" src="{{cdn 'webdav:home-catalog/hoop-earrings.jpg'}}">
                     </div>
                 </div>
                 <div class="c-six">
-                    <img alt="Bracelets" src="{{cdn 'webdav:home-catalog/necklaces.png'}}">
+                    <img alt="Bracelets" src="{{cdn 'webdav:home-catalog/necklaces.jpg'}}">
                 </div>
             </div>
         </div>
+    </div>
+    <div class=" container catalog-slider">
+        <script>console.log({{{JSONstringify categories}}});</script>
+{{!--        {{pluck (limit categories 6) 'name'}}--}}
+
+                <section class="catalogCarousel"
+                         data-slick-catalog='{}'>
+                    {{#each categories}}
+                        {{#if name '!==' 'Shop' }}
+                            {{#or (if name '!==' 'collections')}}
+                                <div class="catalogCarousel-slide">
+                                    <a href="{{url}}">
+                                        <img src="{{getImage image "default"}}" alt="{{image.alt}}">
+                                    </a>
+                                </div>
+                            {{/or}}
+                        {{/if}}
+                    {{/each}}
+                </section>
+
+
     </div>
 
 

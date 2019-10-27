@@ -2,10 +2,10 @@
 
 .bespoke_m{
   height: 800px;
-  bottom: 42%;
+  top: 16%;
   @include breakpoint('small') {
-    height: 50vh;
-    bottom: 68%;
+    height: 340px;
+    top: 12%;
   }
 
 
@@ -73,6 +73,9 @@
   }
   .bs-left{
     width: 45%;
+    .bs-first__img{
+      margin-bottom: 40px;
+    }
 
   }
   .bs-right{
@@ -80,6 +83,10 @@
     flex-direction: column;
     justify-content: flex-end;
     width: 45%;
+  }
+
+  .bs-second__img{
+    margin-bottom: 0;
   }
 
 }

@@ -2,6 +2,8 @@ import 'slick-carousel';
 
 export default function () {
     const $carousel = $('[data-slick]');
+    const $catalog = $('[data-slick-catalog]');
+
 
     if ($carousel.length) {
         const multipleSlides = $carousel[0].childElementCount > 1;
@@ -26,6 +28,28 @@ export default function () {
             ]
         });
     }
+    $catalog.slick({
+        dots: false,
+        variableWidth: true,
+        arrows:false,
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                arrows:false,
+                breakpoint: 551,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+
+        ]
+    });
+
+
+
+
+
 
     // Alternative image styling for IE, which doesn't support objectfit
     if (typeof document.documentElement.style.objectFit === 'undefined') {

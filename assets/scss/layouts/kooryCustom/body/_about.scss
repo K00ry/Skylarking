@@ -44,11 +44,11 @@ flex-direction: column;
 }
 .quote__grey-m{
   height: 300px;
-  bottom: 38%;
+  top: 47%;
 
   @include breakpoint('small') {
-    height: 340px;
-    bottom: 44%;
+    height: 400px;
+    top: 27%;
   }
 
 }
