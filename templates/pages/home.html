@@ -93,8 +93,9 @@ blog:
         </div>
     </div>
     <div class=" container catalog-slider">
-        <script>console.log({{{JSONstringify categories}}});</script>
+{{!--        <script>console.log({{{JSONstringify categories}}});--}}
 {{!--        {{pluck (limit categories 6) 'name'}}--}}
+{{!--        if (document.documentElement.clientWidth < 500) {--}}
 
                 <section class="catalogCarousel"
                          data-slick-catalog='{}'>
@@ -110,6 +111,8 @@ blog:
                         {{/if}}
                     {{/each}}
                 </section>
+{{!--        }--}}
+{{!--        </script>--}}
 
 
     </div>
