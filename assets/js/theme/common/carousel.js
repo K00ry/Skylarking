@@ -5,6 +5,7 @@ export default function () {
     const $catalog = $('[data-slick-catalog]');
 
 
+
     if ($carousel.length) {
         const multipleSlides = $carousel[0].childElementCount > 1;
         // console.log(multipleSlides);
@@ -45,6 +46,8 @@ export default function () {
 
         ]
     });
+
+
 
 
 
