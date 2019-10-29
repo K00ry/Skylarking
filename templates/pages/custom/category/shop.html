@@ -11,19 +11,19 @@
 --}}
 
 {{#partial "page"}}
-    {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
-    {{#if category.image}}
+    {{!--{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}--}}
+   {{!-- {{#if category.image}}
         {{> components/common/responsive-img
                 image=category.image
                 fallback_size=theme_settings.zoom_size
                 lazyload=theme_settings.lazyload_mode
         }}
-    {{/if}}
-    {{#unless theme_settings.hide_category_page_heading }}
+    {{/if}}--}}
+    {{!--{{#unless theme_settings.hide_category_page_heading }}
         <h1 class="page-heading">{{category.name}}</h1>
         {{{region name="category_below_header"}}}
-    {{/unless}}
-    {{{category.description}}}
+    {{/unless}}--}}
+    {{!--{{{category.description}}}--}}
     <div class="page">
        {{!-- <script>console.log({{{JSONstringify categories}}});</script>
         {{#if category.faceted_search_enabled}}
@@ -44,6 +44,7 @@
 
         <main class="page-content" id="product-listing-container">
             <script>console.log({{{JSONstringify ../pages}}});</script>
+            <div class=" categoryNav " data-slick-nav='{}'>
             {{#each ../categories}}
                 {{!--{{#if name '!==' 'Shop' }}
                     {{#or (if name '!==' 'collections')}}
@@ -53,18 +54,23 @@
                 {{#if name '==' 'Shop' }}
                 {{!-- {{#or (if name '!==' 'collections')}}--}}
                     {{#each children}}
-                        <a href="{{url}}" class="custom-nav-item {{#if is_active}}activePage{{/if}}">{{name}}</a>
+                        <div class="categoryNav-slide main_title " >
+                         <a href="{{url}}" class="category-nav-item {{#if is_active}}activePage{{/if}}">{{name}}</a>
+                        </div>
                     {{/each}}
                 {{!--{{/or}}--}}
                 {{/if}}
             {{/each}}
+            </div>
 
-            {{#if category.products}}
-                {{> components/category/product-listing}}
-            {{else}}
-                <p>{{lang 'categories.no_products'}}</p>
-            {{/if}}
-            {{{region name="category_below_content"}}}
+               <div class="container">
+                {{#if category.products}}
+                    {{> components/category/product-listing}}
+                {{else}}
+                    <p>{{lang 'categories.no_products'}}</p>
+                {{/if}}
+                {{{region name="category_below_content"}}}
+               </div>
         </main>
     </div>
 

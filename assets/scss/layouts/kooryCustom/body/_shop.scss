@@ -1,0 +1,27 @@
+.categoryNav{
+  display: flex;
+  flex-direction: row;
+
+}
+.categoryNav-slide{
+  padding: 0 spacing('half');
+
+
+}
+
+.category-nav-item{
+  color:rgba($gray-d,.5);
+  text-underline: none;
+  text-decoration: none;
+  font-size: 14px;
+
+}
+
+.categoryNav .slick-center a{
+  text-decoration: underline;
+  color:$gray-d;
+
+}
+//.category-nav-item .activePage{
+//
+//}

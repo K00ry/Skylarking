@@ -5,11 +5,11 @@
 export default function () {
 
   $.get( "https://www.instagram.com/skylarking_silver/?__a=1", function(data) {
-        console.log(data.graphql.user.edge_owner_to_timeline_media.edges);
+        // console.log(data.graphql.user.edge_owner_to_timeline_media.edges);
     }).done(function(data) {
       const forLoop = data.graphql.user.edge_owner_to_timeline_media.edges;
 
-      if (document.documentElement.clientWidth < 500) {
+      if (document.documentElement.clientWidth < 551) {
           let slideContent="";
           $.each(forLoop, function(index, value) {
               let altCap= value.node.edge_media_to_caption.edges[0].node.text;
@@ -49,5 +49,9 @@ export default function () {
 
              }
 
-        })
+        });
+
+
+
+
 }
