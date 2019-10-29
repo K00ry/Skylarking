@@ -44,12 +44,18 @@
 
         <main class="page-content" id="product-listing-container">
             <script>console.log({{{JSONstringify ../pages}}});</script>
-
             {{#each ../categories}}
-                {{#if name '!==' 'Shop' }}
+                {{!--{{#if name '!==' 'Shop' }}
                     {{#or (if name '!==' 'collections')}}
                         <a href="{{url}}" class="custom-nav-item {{#if is_active}}activePage{{/if}}">{{name}}</a>
                     {{/or}}
+                {{/if}}--}}
+                {{#if name '==' 'Shop' }}
+                {{!-- {{#or (if name '!==' 'collections')}}--}}
+                    {{#each children}}
+                        <a href="{{url}}" class="custom-nav-item {{#if is_active}}activePage{{/if}}">{{name}}</a>
+                    {{/each}}
+                {{!--{{/or}}--}}
                 {{/if}}
             {{/each}}
 

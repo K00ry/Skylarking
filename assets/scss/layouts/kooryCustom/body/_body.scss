@@ -14,7 +14,7 @@
 .half-white{
   display: flex;
   flex-direction: column;
-  height: 40vh;
+
   @include breakpoint("small"){
     height: auto;
     padding-top: 40px;
@@ -86,7 +86,7 @@
 
 
 .main-intro-mob{
-  position: relative;
+ margin-bottom: 40px;
 
 
   .main-intro-mob__title{
@@ -122,14 +122,12 @@
 
 }
 
-.my-carousel{
-  padding-top: 13em;
-  @include breakpoint("small"){
-    padding-top: 5em;
-
-  }
-
-}
+//.my-carousel{
+//  padding-top: 13em;
+//  @include breakpoint("small"){
+//    padding-top: 5em;
+//  }
+//}
 
 .page-heading{
   font-family: 'Optima', serif;
@@ -151,6 +149,10 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
+}
+.productCarousel{
+
+  margin-bottom: 40px;
 }
 
 .productCarousel-slide{
@@ -291,16 +293,93 @@ $cat_pad: 12px;
   }
 }
 
+.catalogCarousel{
+  @include breakpoint("small"){
+display: none;
+  }
 
+}
 .catalogCarousel-slide{
   width: 245px;
   height: auto;
   margin-right: 8px;
+  margin-bottom: 40px;
 
   @include breakpoint("small"){
 
   }
 
 }
+
+.instagram{
+  display: flex;
+  flex-direction: column;
+  //padding-top: 40px;
+
+
+  @include breakpoint("small"){
+
+    padding-bottom: 80px;
+
+  }
+  .instagram__header{
+    .main_title{
+    margin-top: 15px;
+    }
+    .instagram__header--m{
+      text-align: center;
+
+
+      @include breakpoint("small"){
+        display: none;
+      }
+    }
+    .instagram__header--d{
+      display: none;
+      @include breakpoint("small"){
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+.instaCarousel{
+  padding-bottom: 40px;
+  border-bottom: 1px solid $gray-l;
+
+
+}
+.instaCarousel-slide{
+    width: 128px;
+    height: auto;
+    margin-right: 8px;
+    @include breakpoint("small"){
+    display: none;
+    }
+}
+
+.instagram__feed{
+  display: none;
+  @include breakpoint("small"){
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  .instagram__feed--item{
+    width: 130px;
+    @include breakpoint("small"){
+
+    }
+
+  }
+
+  }
+
+
+
+
 
 

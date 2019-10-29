@@ -15,7 +15,7 @@ export default function () {
               let altCap= value.node.edge_media_to_caption.edges[0].node.text;
               if(index !== 5) {
                   slideContent += '<div class="instaCarousel-slide instagram__feed--item " >';
-                  slideContent += '<img src="' + value.node.display_url + '" alt=" ' + altCap + '">';
+                  slideContent += '<img src="' + value.node.thumbnail_resources[0].src + '" alt=" ' + altCap + '">';
                   slideContent += '</div>';
               } else{
                   return false
@@ -39,7 +39,7 @@ export default function () {
               let altCap= value.node.edge_media_to_caption.edges[0].node.text;
               if(index !== 5) {
                   photoHTML += '<div class="instagram__feed--item">';
-                  photoHTML += '<img src="' + value.node.display_url + '" alt=" ' + altCap + '">';
+                  photoHTML += '<img src="' + value.node.thumbnail_resources[1].src  + '" alt=" ' + altCap + '">';
                   photoHTML += '</div>';
               } else{
                   return false

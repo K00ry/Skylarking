@@ -46,6 +46,20 @@
 }
 
 
+.nav-for-mob,.nav-for-mob {
+  @include breakpoint("small") {
+    display: none;
+  }
+}
+.nav-for-desk{
+  display: none;
+  @include breakpoint("small") {
+    display: block;
+  }
+
+
+}
+
 
 .header-logo {
   display: flex;
@@ -99,6 +113,16 @@
     flex-direction: row;
 
   }
+}
+.custom-nav-top-links{
+  margin: 0;
+  text-align: left;
+
+}
+
+.custom-nav-bottom-links{
+  margin-bottom: 0;
+
 }
 
 .navPages {

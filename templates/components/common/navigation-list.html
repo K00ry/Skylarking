@@ -1,5 +1,5 @@
-{{!--{{#if children}}
-<a class="navPages-action has-subMenu{{#if is_active}} activePage{{/if}}" href="{{url}}" data-collapsible="navPages-{{id}}">
+{{#if children}}
+<a class="navPages-action nav-for-mob  has-subMenu{{#if is_active}} activePage{{/if}}" href="{{url}}" data-collapsible="navPages-{{id}}">
     {{name}} <i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down" /></svg></i>
 </a>
 <div class="navPage-subMenu" id="navPages-{{id}}" aria-hidden="true" tabindex="-1">
@@ -33,8 +33,10 @@
         {{/each}}
     </ul>
 </div>
-{{else}}--}}
+{{else}}
+
 <li class="navPages-item">
     <a class="navPages-action{{#if is_active}} activePage{{/if}}" href="{{url}}">{{name}}</a>
 </li>
-{{!--{{/if}}--}}
+
+{{/if}}
