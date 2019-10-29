@@ -26,12 +26,12 @@
 
         {{#each categories}}
             {{#if this.name '==' 'collections' }}
-                <li class="navPages-item nav-for-desk main_title">
-                    <a class="navPages-action{{#if is_active}} activePage{{/if}}" href="{{url}}">{{name}}</a>
+                <li class="navPages-item nav-for-desk ">
+                    <a class="navPages-action{{#if is_active}} activePage{{/if}} desk-no-padding" href="{{url}} ">{{name}}</a>
                 </li>
             {{else}}
                 {{#if this.name '==' 'Shop' }}
-                    <li class="navPages-item nav-for-desk main_title">
+                    <li class="navPages-item nav-for-desk ">
                         <a class="navPages-action{{#if is_active}} activePage{{/if}}" href="{{url}}">{{name}}</a>
                     </li>
                 {{else}}
@@ -43,16 +43,16 @@
 
             {{#each pages}}
                 {{#if name '===' 'Bespoke' }}
-                        <li class="navPages-item navPages-item-page custom-nav-top-links main_title">
-                            <a class="navPages-action{{#if name '==' ../../page.title}} activePage{{/if}}" href="{{url}}">{{name}}</a>
+                        <li class="navPages-item navPages-item-page ">
+                            <a class="navPages-action{{#if name '==' ../../page.title}} activePage{{/if}} custom-nav-top-links" href="{{url}}">{{name}}</a>
                         </li>
                 {{/if}}
              {{/each}}
             {{#each pages}}
                 {{#if name '!==' 'Shipping & Returns'}}
                      {{#or (if name '!==' 'Contacts')}}
-                        <li class=" navPages-item-page-for-mobile custom-nav-top-links main_title">
-                            <a class="navPages-action{{#if name '==' ../page.title}} activePage{{/if}}" href="{{url}}">{{name}}</a>
+                        <li class=" navPages-item-page-for-mobile ">
+                            <a class="navPages-action{{#if name '==' ../page.title}} activePage{{/if}} custom-nav-top-links" href="{{url}}">{{name}}</a>
                         </li>
                     {{/or}}
                 {{/if}}
@@ -62,13 +62,13 @@
         <ul class="navPages-list navPages-list--custom">
             {{#each pages}}
                 {{#if name '===' 'Shipping & Returns'}}
-                    <li class=" navPages-item-page-for-mobile custom-nav-bottom-links main_p">
-                        <a class="navPages-action{{#if name '==' ../../page.title}} activePage{{/if}}" href="{{url}}">{{name}}</a>
+                    <li class=" navPages-item-page-for-mobile ">
+                        <a class="navPages-action{{#if name '==' ../../page.title}} activePage{{/if}} custom-nav-bottom-links" href="{{url}}">{{name}}</a>
                     </li>
                    {{else}}
                     {{#if name '===' 'Contacts'}}
-                        <li class=" navPages-item-page-for-mobile custom-nav-bottom-links main_p">
-                            <a class="navPages-action{{#if name '==' ../../page.title}} activePage{{/if}}" href="{{url}}">{{name}}</a>
+                        <li class=" navPages-item-page-for-mobile custom-nav-bottom-links ">
+                            <a class="navPages-action{{#if name '==' ../../page.title}} activePage{{/if}} custom-nav-bottom-links" href="{{url}}">{{name}}</a>
                         </li>
                     {{else}}
 

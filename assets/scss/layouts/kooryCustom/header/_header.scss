@@ -26,7 +26,11 @@
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
-  border-bottom: 1px solid #ECEAEA;
+  @include breakpoint("small") {
+    border-bottom: 1px solid $gray-l;
+  }
+
+
 
 }
 
@@ -45,20 +49,67 @@
 
 }
 
+////////////////////Open navigation menu for mobile styles \\\\\\\\\\\\\
 
-.nav-for-mob,.nav-for-mob {
+
+.nav-for-mob {
   @include breakpoint("small") {
     display: none;
   }
 }
+
 .nav-for-desk{
   display: none;
   @include breakpoint("small") {
     display: block;
   }
-
+}
+.custom-nav-top-links{
+  margin: 0;
+  text-align: left;
+  font-family: 'Optima', serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: $gray-d;
+  padding: spacing("quarter") 0;
+  text-transform: none;
 
 }
+
+.custom-nav-bottom-links{
+  text-align: left;
+  font-family: 'Optima', serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: $gray-d;
+  padding: spacing("quarter") 0;
+  text-transform: none;
+
+}
+.navPages .navPage-subMenu-list{
+
+  margin-bottom: 15px;
+}
+.navPage-subMenu-action{
+  text-align: left;
+  font-family: 'Optima', serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.navPages-list + .navPages-list{
+  border: none;
+  padding-top: 0;
+  margin-top: 40px;
+}
+
+
+/////////////////// end of open navigation ////////////
+
+
+
+
+
 
 
 .header-logo {
@@ -67,8 +118,10 @@
   text-align: center;
   width: 100%;
   margin: auto;
-  //border-bottom: 1px solid #DFDFE1;
   height: 75px;
+  border-bottom: 1px solid $gray-l;
+  z-index: 1;
+
   @include breakpoint("small") {
 
     width: auto;
@@ -114,21 +167,11 @@
 
   }
 }
-.custom-nav-top-links{
-  margin: 0;
-  text-align: left;
 
-}
-
-.custom-nav-bottom-links{
-  margin-bottom: 0;
-
-}
 
 .navPages {
-
-    height: 100vh;
-
+  height: 100vh;
+  background-color: #fff;
   @include breakpoint("small") {
     height: 100%;
     display: flex;
@@ -150,7 +193,6 @@
   .navPage-subMenu-list {
 
     @include breakpoint("small") {
-
       @include grid-row();
       border-left: 0;
       margin: auto;
@@ -261,7 +303,13 @@
     }
   }
 
-  .navPages ul :first-child a{
+  //.navPages ul :first-child a{
+  //  @include breakpoint("small") {
+  //    padding: 1em 1em 1em 0em;
+  //
+  //  }
+  //}
+  .desk-no-padding{
     @include breakpoint("small") {
       padding: 1em 1em 1em 0em;
 
