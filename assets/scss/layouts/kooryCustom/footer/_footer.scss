@@ -1,7 +1,15 @@
 .footer{
 
   border-top: none;
+  //.footer-info{
+  //  padding-top: 3rem;
+  //  border-top: 1px solid $gray-l;
+  //}
   @include breakpoint("small") {
+    //.footer-info{
+    //  padding-top: 0;
+    //}
+
     background-color: $low_gray;
   }
 }

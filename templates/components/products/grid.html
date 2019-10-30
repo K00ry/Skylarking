@@ -1,20 +1,89 @@
-<h2>Leaf and Flora</h2>
-<ul class="productGrid">
-    {{#each products}}
-        {{#if this.brand.name '==' 'Leaf and flora' }}
-            <li class="product">
-                    {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
-            </li>
-        {{/if}}
-    {{/each}}
-</ul>
-<h2>Beaded collection</h2>
-<ul class="productGrid">
+<section class=" shop-section">
+<h2 class="main_title">Leaf and flora</h2>
+    <div class="shop"
+             data-list-name="{{list}}"
+             data-slick-shop='{}'>
+        {{#each products}}
+            {{#if this.brand.name '==' 'Leaf and flora' }}
+                <div class="shop-slide">
+                        {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
+                </div>
+            {{/if}}
+
+        {{/each}}
+    </div>
+</section>
+
+<section class=" shop-section">
+<h2 class="main_title">Beaded collection</h2>
+<div class="shop" data-list-name="{{list}}"
+     data-slick-shop='{}'>
     {{#each products}}
         {{#if this.brand.name '==' 'Beaded' }}
-            <li class="product">
+            <div class="shop-slide">
                 {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
-            </li>
+            </div>
         {{/if}}
     {{/each}}
-</ul>
+</div>
+</section>
+<section class=" shop-section">
+    <h2 class="main_title">Bamboo and Petal</h2>
+    <div class="shop "
+         data-list-name="{{list}}"
+         data-slick-shop='{}'>
+        {{#each products}}
+            {{#if this.brand.name '==' 'Bamboo' }}
+                <div class="shop-slide">
+                    {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
+                </div>
+            {{/if}}
+        {{/each}}
+    </div>
+</section>
+
+<section class=" shop-section">
+    <h2 class="main_title">Forge collection</h2>
+    <div class="shop"
+         data-list-name="{{list}}"
+         data-slick-shop='{}'>
+        {{#each products}}
+            {{#if this.brand.name '==' 'Forge' }}
+                <div class="shop-slide">
+                    {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
+                </div>
+            {{/if}}
+        {{/each}}
+    </div>
+</section>
+<section class=" shop-section">
+    <h2 class="main_title">Oxidized</h2>
+    <div class="shop"
+         data-list-name="{{list}}"
+         data-slick-shop='{}'>
+        {{#each products}}
+            {{#if this.brand.name '==' 'Oxidized' }}
+                <div class="shop-slide">
+                    {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
+                </div>
+            {{/if}}
+        {{/each}}
+    </div>
+</section>
+
+<section class=" shop-section shop-section-last ">
+    <h2 class="main_title">Reflections</h2>
+    <div class="shop"
+         data-list-name="{{list}}"
+         data-slick-shop='{}'>
+        {{#each products}}
+            {{#if this.brand.name '==' 'Reflections' }}
+                <div class="shop-slide">
+                    {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
+                </div>
+            {{/if}}
+        {{/each}}
+    </div>
+</section>
+
+

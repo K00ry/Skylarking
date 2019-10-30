@@ -30,6 +30,7 @@ export default function () {
           infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
+          touchMove:false,
       });
 
       } else {

@@ -1,12 +1,76 @@
+.categoryNav__block{
+  display: flex;
+}
+.categoryNav{
+  @include breakpoint("small") {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+
+
+
+.shop{
+  @include breakpoint("small") {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+.shop-section{
+  @include breakpoint("small") {
+    margin-bottom: 60px;
+  }
+
+  .main_title{
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+}
+
+.shop-slide{
+  width: 135px;
+  padding-right: 10px;
+  @include breakpoint("small") {
+    width: width("3/12");;
+    padding-right: 20px;
+  }
+  @include breakpoint("medium") {
+    //width: 230px;
+    padding-right: 30px;
+  }
+  .card-body{
+    @include breakpoint("small") {
+      text-align: center;
+    }
+  }
+  .card{
+    margin-bottom: 0;
+  }
+
+}
+
 .categoryNav{
   display: flex;
   flex-direction: row;
+  @include breakpoint("small") {
 
+  }
 }
+
 .categoryNav-slide{
   padding: 0 spacing('half');
+  margin-bottom: 20px;
+  @include breakpoint("medium") {
+    padding: 0 spacing('single');
 
-
+  }
 }
 
 .category-nav-item{
@@ -14,7 +78,6 @@
   text-underline: none;
   text-decoration: none;
   font-size: 14px;
-
 }
 
 .categoryNav .slick-center a{
@@ -22,6 +85,10 @@
   color:$gray-d;
 
 }
-//.category-nav-item .activePage{
-//
-//}
+
+.activeLink{
+  @include breakpoint("small") {
+    color: $gray-d;
+    text-decoration: underline;
+  }
+}

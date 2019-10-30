@@ -24,7 +24,7 @@
         {{{region name="category_below_header"}}}
     {{/unless}}--}}
     {{!--{{{category.description}}}--}}
-    <div class="page">
+{{!--    <div class="page">--}}
        {{!-- <script>console.log({{{JSONstringify categories}}});</script>
         {{#if category.faceted_search_enabled}}
             <aside class="page-sidebar" id="faceted-search-container">
@@ -42,25 +42,21 @@
             {{/if}}
         {{/if}}--}}
 
-        <main class="page-content" id="product-listing-container">
+        <main class="" id="product-listing-container">
             <script>console.log({{{JSONstringify ../pages}}});</script>
-            <div class=" categoryNav " data-slick-nav='{}'>
-            {{#each ../categories}}
-                {{!--{{#if name '!==' 'Shop' }}
-                    {{#or (if name '!==' 'collections')}}
-                        <a href="{{url}}" class="custom-nav-item {{#if is_active}}activePage{{/if}}">{{name}}</a>
-                    {{/or}}
-                {{/if}}--}}
-                {{#if name '==' 'Shop' }}
-                {{!-- {{#or (if name '!==' 'collections')}}--}}
-                    {{#each children}}
-                        <div class="categoryNav-slide main_title " >
-                         <a href="{{url}}" class="category-nav-item {{#if is_active}}activePage{{/if}}">{{name}}</a>
-                        </div>
-                    {{/each}}
-                {{!--{{/or}}--}}
-                {{/if}}
-            {{/each}}
+
+           <div class="categoryNav__block">
+                <div class=" categoryNav" data-slick-nav='{}'>
+                {{#each ../categories}}
+                    {{#if name '==' 'Shop' }}
+                        {{#each children}}
+                            <div class="categoryNav-slide main_title " >
+                             <a href="{{url}}" class="category-nav-item {{#if is_active}}activeLink{{/if}}">{{name}}</a>
+                            </div>
+                        {{/each}}
+                    {{/if}}
+                {{/each}}
+                </div>
             </div>
 
                <div class="container">
@@ -72,7 +68,7 @@
                 {{{region name="category_below_content"}}}
                </div>
         </main>
-    </div>
+{{!--    </div>--}}
 
 {{/partial}}
 {{> layout/base}}

@@ -5,9 +5,25 @@ export default function () {
     const $catalog = $('[data-slick-catalog]');
 
 
+
     if (document.documentElement.clientWidth < 551) {
-        /* the viewport is less than 768 pixels wide */
+        const $shopSlider = $('[data-slick-shop]');
+        $shopSlider.slick({
+            dots: false,
+            variableWidth: true,
+            arrows:false,
+            infinite: false,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            touchMove:false,
+            touchThreshold:10,
+            swipeToSlide:false,
+        });
+
+
         const $nav_slider = $('[data-slick-nav]');
+
+
         $nav_slider.slick({
             dots: false,
             variableWidth: true,
@@ -20,6 +36,9 @@ export default function () {
             touchThreshold:5,
             swipeToSlide:false,
         });
+
+            let activeLink =  $('.activeLink').parent().attr("data-slick-index");
+        $nav_slider.slick('slickGoTo',activeLink)
     }
 
 
@@ -55,6 +74,7 @@ export default function () {
         infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
+        touchMove:false,
         responsive: [
             {
                 arrows:false,
