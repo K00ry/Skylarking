@@ -1,0 +1,47 @@
+{{#partial "page"}}
+    <main class="" id="product-listing-container">
+        <script>console.log({{{JSONstringify ../categories}}});</script>
+        {{!--        <h1 class="page-heading">{{category.name}}</h1>--}}
+        <h1 class="page-heading">Collections</h1>
+        <div class="categoryNav__block">
+            <div class=" categoryNav" data-slick-nav='{}'>
+                {{#each ../categories}}
+                    {{#if name '==' 'Collections' }}
+                        {{#each  children}}
+                            <div class="categoryNav-slide main_title " >
+                                <a href="{{url}}" class="category-nav-item {{#if is_active}}activeLink{{/if}}">{{name}}</a>
+                            </div>
+                        {{/each}}
+                    {{/if}}
+                {{/each}}
+            </div>
+        </div>
+
+        <img src="/product_images/uploaded_images/skylarking-newtown-2.jpg">
+
+        <div class="container">
+            {{#each ../categories}}
+                {{#if name '==' 'Collections' }}
+                    {{#each children}}
+                        {{#if is_active}}
+                            {{#each (limit children 1) }}
+
+                                <div class=" " >
+                                    <a href="{{url}}" class="category-nav-item">SHOP COLLECTION</a>
+                                </div>
+
+                            {{/each}}
+                        {{/if}}
+                    {{/each}}
+                {{/if}}
+            {{/each}}
+            {{!-- {{#if category.products}}
+                 {{> components/category/product-listing}}
+             {{else}}
+                 <p>{{lang 'categories.no_products'}}</p>
+             {{/if}}
+             {{{region name="category_below_content"}}}--}}
+        </div>
+    </main>
+{{/partial}}
+{{> layout/base}}

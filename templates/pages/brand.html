@@ -27,9 +27,23 @@ brand:
 <h1 class="page-heading">{{brand.name}}</h1>
 {{{region name="brand_below_header"}}}
 <div class="page">
-    <aside class="page-sidebar" id="faceted-search-container">
-        {{> components/brand/sidebar}}
-    </aside>
+{{!--    <aside class="page-sidebar" id="faceted-search-container">--}}
+{{!--        {{> components/brand/sidebar}}--}}
+{{!--    </aside>--}}
+    <script>console.log({{{JSONstringify ../categories}}});</script>
+    <div class="categoryNav__block">
+        <div class=" categoryNav" data-slick-nav='{}'>
+            {{#each ../categories}}
+                {{#if name '==' 'Shop' }}
+                    {{#each children}}
+                        <div class="categoryNav-slide main_title " >
+                            <a href="{{url}}" class="category-nav-item {{#if is_active}}activeLink{{/if}}">{{name}}</a>
+                        </div>
+                    {{/each}}
+                {{/if}}
+            {{/each}}
+        </div>
+    </div>
 
     <main class="page-content" id="product-listing-container">
         {{#if brand.products}}

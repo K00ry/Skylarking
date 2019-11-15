@@ -50,14 +50,16 @@ export default function () {
         $carousel.slick({
             dots: false,
             variableWidth: true,
-            arrows:true,
+            arrows:false,
             infinite: false,
             slidesToShow: 4,
             slidesToScroll: 1,
-          //  multipleSlides
+            touchMove:false,
+            touchThreshold:5,
+            swipeToSlide:false,
             responsive: [
                 {
-                    arrows:false,
+                    arrows:true,
                     breakpoint: 551,
                     slidesToShow: 2,
                     slidesToScroll: 1,

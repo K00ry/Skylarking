@@ -14,8 +14,6 @@ $line-gray: #ECEAEA;
 
 
 .container {
-
-
   @include breakpoint("large") {
     //padding: 0 10rem;
     //padding: 0 ($container-padding * 7);

@@ -1,0 +1,57 @@
+
+{{#partial "page"}}
+    <main class="" id="product-listing-container">
+        <script>console.log({{{JSONstringify ../categories}}});</script>
+        {{#each ../categories}}
+            {{#if name '==' 'collections' }}
+                {{#each children}}
+                    {{#if is_active}}
+                            <h1 class="page-heading">{{name}}</h1>
+                    {{/if}}
+                {{/each}}
+            {{/if}}
+        {{/each}}
+
+
+        {{#each ../categories}}
+            {{#if name '==' 'collections' }}
+                {{#each children}}
+                    {{#if is_active}}
+                        {{#each children}}
+                            <div class="categoryNav-slide main_title " >
+                                <a href="{{url}}" class="category-nav-item {{#if is_active}}activeLink{{/if}}">{{name}}</a>
+                            </div>
+                        {{/each}}
+                    {{/if}}
+                {{/each}}
+            {{/if}}
+        {{/each}}
+
+        <div class="container">
+            {{#if category.products}}
+
+                <form action="{{urls.compare}}" method='POST' {{#if settings.data_tag_enabled}} data-list-name="Category: {{category.name}}" {{/if}} data-product-compare>
+                    {{#if theme_settings.product_list_display_mode '===' 'grid'}}
+                        {{#if settings.data_tag_enabled}}
+                            {{> components/products/koory products=category.products show_compare=category.show_compare theme_settings=theme_settings event="list" }}
+                        {{else}}
+                            {{> components/products/koory products=category.products show_compare=category.show_compare theme_settings=theme_settings}}
+                        {{/if}}
+                    {{else}}
+                        {{#if settings.data_tag_enabled}}
+                            {{> components/products/koory products=category.products show_compare=category.show_compare theme_settings=theme_settings event="list" }}
+                        {{else}}
+                            {{> components/products/koory products=category.products show_compare=category.show_compare theme_settings=theme_settings}}
+                        {{/if}}
+                    {{/if}}
+                </form>
+            {{else}}
+                <p>{{lang 'categories.no_products'}}</p>
+            {{/if}}
+            {{{region name="category_below_content"}}}
+        </div>
+    </main>
+
+
+{{/partial}}
+{{> layout/base}}

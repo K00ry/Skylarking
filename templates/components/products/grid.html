@@ -1,17 +1,17 @@
 <section class=" shop-section">
 <h2 class="main_title">Leaf and flora</h2>
-    <div class="shop"
-             data-list-name="{{list}}"
-             data-slick-shop='{}'>
-        {{#each products}}
-            {{#if this.brand.name '==' 'Leaf and flora' }}
-                <div class="shop-slide">
-                        {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
-                </div>
-            {{/if}}
+<div class="shop"
+     data-list-name="{{list}}"
+     data-slick-shop='{}'>
+    {{#each products}}
+        {{#if this.brand.name '==' 'Leaf and flora' }}
+            <div class="shop-slide">
+                {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
+            </div>
+        {{/if}}
 
-        {{/each}}
-    </div>
+    {{/each}}
+</div>
 </section>
 
 <section class=" shop-section">
