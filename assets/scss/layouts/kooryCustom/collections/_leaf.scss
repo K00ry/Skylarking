@@ -1,5 +1,15 @@
+
+.col-page-heading{
+text-align: center;
+  margin-top: 30px;
+  @include breakpoint("small") {
+    margin-top: 55px;
+  }
+}
+
 .category_collection{
-  @include breakpoint("medium") {
+  margin-bottom: 40px;
+  @include breakpoint("small") {
     margin-bottom: 85px;
   }
   .categoryNav-slide{
@@ -11,12 +21,25 @@
 .collection-background{
   height: 1371px;
   top: 12%;
+  @include breakpoint("small") {
+    top: 35%;
+    height: 1025px;
+
+  }
+  @include breakpoint("medium") {
+    top: 37%;
+    height: 1200px;
+  }
+  @include breakpoint("large") {
+    top: 33%;
+    height: 1500px;
+  }
 }
 .intro-half-height{
 
   display: flex;
   flex-direction: column;
-  @include breakpoint("medium") {
+  @include breakpoint("small") {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -31,8 +54,8 @@
 
   &__img{
     width: 100%;
-    margin-bottom: 40px;
-    @include breakpoint("medium") {
+
+    @include breakpoint("small") {
       margin-bottom: 0px;
   align-self: center;
       width: 47%;
@@ -40,15 +63,23 @@
   }
   &__desc{
     margin: 40px 0;
-    @include breakpoint("medium") {
-     width:100%;
-      margin: 85px 0;
+    @include breakpoint("small") {
+     width:70%;
+      margin: 85px auto;
     }
     .main_title{
+      margin-top: 0;
       text-align: center;
+      @include breakpoint("small") {
+
+      }
     }
     .main_p{
+      margin-bottom: 0;
       text-align: center;
+      @include breakpoint("small") {
+
+      }
     }
   }
 }
@@ -56,17 +87,37 @@
 .mid-full{
   margin: 40px 0;
   width: 100%;
+  @include breakpoint("small") {
+    margin-top: 0 ;
+    margin-bottom: 80px ;
+  }
 }
 
 
 .last-half-height{
+  @include breakpoint("small") {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   &__img:first-child{
     margin-bottom: 40px;
-
+    @include breakpoint("small") {
+      margin-bottom: 0;
+    }
   }
+  &__img{
+    @include breakpoint("small") {
+      margin-bottom: 0px;
+      align-self: center;
+      width: 47%;
+    }
+  }
+
 }
 .shop-collection-btn{
 display: flex;
+
   &__link{
     margin: 40px auto;
     font-family: songti;
@@ -81,19 +132,51 @@ display: flex;
     text-decoration: none;
     background-color: $gray-d;
     width: 230px;
-    padding: 22px 0;
+    padding: 14px 0;
+    @include breakpoint("small") {
+      margin: 80px auto;
+    }
   }
 }
 
 .voucher{
+  @include breakpoint("small") {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width:100%;
+
+    margin-bottom: 80px;
+
+  }
 
   &__desc{
+    @include breakpoint("small") {
+      align-self: center;
+     width: width("5/12")
+    }
+
+    .main_title{
+      margin-top: 0;
+      @include breakpoint("small") {
+
+        text-align: left;
+      }
+    }
     .main_p{
       text-align: center;
+      @include breakpoint("small") {
+        margin-bottom: 0;
+        text-align: left;
+      }
     }
 
   }
   &__img{
+    @include breakpoint("small") {
+      width: width("6/12");
+
+    }
 
   }
 }

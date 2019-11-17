@@ -1,11 +1,19 @@
 .home-gray{
 
-  height: 600px;
-  top: 28%;
+  height: 472px;
+  top: 18%;
   @include breakpoint("small"){
     height: 655px;
-    top: 20%
+    top: 16%
 
+  }
+  @include breakpoint("medium"){
+    height: 750px;
+    top: 19%
+  }
+  @include breakpoint("large"){
+    height: 750px;
+    top: 21%
   }
 
 }
@@ -27,12 +35,16 @@
   @include breakpoint("small"){
     display: flex;
     justify-content: space-between;
+    margin-bottom: 80px;
   }
-    .main-intro-desk__left{
+    &__left{
       @include breakpoint("small") {
         display: flex;
         flex-direction: column;
         width: 45%;
+        .main_img{
+          margin-bottom: 0;
+        }
         p {
           margin-top: 1.5rem;
           font-family: 'Optima', serif;
@@ -53,11 +65,14 @@
 
       }
     }
-    .main-intro-desk__right {
+    &__right {
       @include breakpoint("small") {
         display: flex;
         flex-direction: column;
         width: 45%;
+        .main_img{
+          margin-bottom: 0;
+        }
         p {
           font-family: 'Optima', serif;
           font-style: normal;
@@ -122,12 +137,16 @@
 
 }
 
-//.my-carousel{
-//  padding-top: 13em;
-//  @include breakpoint("small"){
-//    padding-top: 5em;
-//  }
-//}
+.my-carousel{
+
+  .main_title{
+    margin-bottom: 26px;
+    @include breakpoint("small"){
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+  }
+}
 
 .page-heading{
   font-family: 'Optima', serif;
@@ -293,10 +312,24 @@ $cat_pad: 12px;
   }
 }
 
-.catalogCarousel{
+
+.catalog-slider{
   @include breakpoint("small"){
-display: none;
+    display: none;
   }
+  &__title{
+    margin-bottom: 26px;
+    @include breakpoint("small"){
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+
+
+  }
+}
+
+.catalogCarousel{
+
 
 }
 .catalogCarousel-slide{
@@ -348,16 +381,16 @@ display: none;
 .instaCarousel{
   padding-bottom: 40px;
   border-bottom: 1px solid $gray-l;
-
+  @include breakpoint("small"){
+    display: none;
+  }
 
 }
 .instaCarousel-slide{
     width: 128px;
     height: auto;
     margin-right: 8px;
-    @include breakpoint("small"){
-    display: none;
-    }
+
 }
 
 .instagram__feed{

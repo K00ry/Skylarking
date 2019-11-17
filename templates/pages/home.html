@@ -23,6 +23,7 @@ blog:
 <div class="grey-m home-gray"></div>
 
 {{#partial "page"}}
+    {{inject 'pageType' page_type}}
     <div class="half-white">
         <div class="main-intro-desk container">
             <div class="main-intro-desk__left">
@@ -106,15 +107,11 @@ blog:
         </div>
     </div>
     <div class=" container catalog-slider">
-        <script>console.log({{{JSONstringify categories}}});</script>
-{{!--        {{pluck (limit categories 6) 'name'}}--}}
-{{!--        if (document.documentElement.clientWidth < 500) {--}}
-
+        <h3 class="catalog-slider__title main_title">{{lang "home.catalog"}}</h3>
                 <section class="catalogCarousel"
                          data-slick-catalog='{}'>
                     {{#each categories}}
                         {{#if name '==' 'Shop'}}
-                           {{!-- {{#or (if name '!==' 'collections')}}--}}
                             {{#each children}}
                                 <div class="catalogCarousel-slide">
                                     <a href="{{url}}">
@@ -122,16 +119,11 @@ blog:
                                     </a>
                                 </div>
                             {{/each}}
-                            {{!--{{/or}}--}}
                         {{/if}}
                     {{/each}}
                 </section>
-{{!--        }--}}
-
-
-
     </div>
-{{!--    <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/4808fddcace45d91aa90af5467f65fd2.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>--}}
+
 
 
     <div class="container instagram">
@@ -177,6 +169,7 @@ blog:
         {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
     {{/if}}
     {{{region name="home_below_new_products"}}}--}}
+
 {{!--</div>--}}
 {{/partial}}
 {{> layout/base}}

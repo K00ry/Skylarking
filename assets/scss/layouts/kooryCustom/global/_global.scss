@@ -64,6 +64,13 @@ body{
   margin-top: 30px;
   color:$gray-d;
   text-align: center;
+  @include breakpoint("small") {
+    font-size: 29px;
+  }
+  @include breakpoint("medium") {
+    font-size: 34px;
+  }
+
 }
 
 .main_p{
@@ -73,7 +80,12 @@ body{
   line-height: 20px;
   margin-bottom: 40px;
   color: $gray-d;
-
+  @include breakpoint("small") {
+    font-size: 16px;
+  }
+  @include breakpoint("medium") {
+    font-size: 18px;
+  }
 }
 
 

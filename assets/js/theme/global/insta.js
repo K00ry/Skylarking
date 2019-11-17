@@ -2,7 +2,11 @@
 /// fetching resent feed from instagram and checks if the device is mobile builds slider for mobile,
 // else just creates div for to showcase in the desktop
 
-export default function () {
+export default function (jaber) {
+
+
+
+    if (jaber ==="default"){
 
   $.get( "https://www.instagram.com/skylarking_silver/?__a=1", function(data) {
         // console.log(data.graphql.user.edge_owner_to_timeline_media.edges);
@@ -49,8 +53,8 @@ export default function () {
           $('.instagram__feed').html(photoHTML);
 
              }
-
         });
+    }
 
 
 
