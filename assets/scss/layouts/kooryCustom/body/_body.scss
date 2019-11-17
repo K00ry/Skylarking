@@ -8,11 +8,11 @@
 
   }
   @include breakpoint("medium"){
-    height: 750px;
+    height: 780px;
     top: 19%
   }
   @include breakpoint("large"){
-    height: 750px;
+    height: 805px;
     top: 21%
   }
 
@@ -145,6 +145,10 @@
       margin-top: 0;
       margin-bottom: 40px;
     }
+    @include breakpoint("medium"){
+      margin-top: 0;
+      margin-bottom: 65px;
+    }
   }
 }
 
@@ -180,12 +184,15 @@
   @include breakpoint("small"){
     width: 187px;
   }
+  @include breakpoint("medium"){
+    width: 250px;
+  }
+  @include breakpoint("large"){
+    width: 285px;
+  }
 }
 
-  .slick-next::before, .slick-prev::before {
 
-
-  }
 
 
 
@@ -201,6 +208,12 @@
     .catalog__title{
       margin: 40px 0;
     }
+  }
+  @include breakpoint("medium"){
+    .catalog__title{
+      margin: 65px 0;
+    }
+
   }
 }
 
@@ -402,7 +415,7 @@ $cat_pad: 12px;
 
   }
   .instagram__feed--item{
-    width: 130px;
+    width: 19%;
     @include breakpoint("small"){
 
     }
@@ -410,6 +423,38 @@ $cat_pad: 12px;
   }
 
   }
+
+
+
+
+.slick-next::before, .slick-prev::before {
+
+height: 1rem;
+  width: 10px;
+}
+.slick-next, .slick-prev {
+   background-color: white;
+   background-color: rgba(255, 255, 255, 0.9);
+  width: 34px;
+  height: 34px;
+  border-radius: 34px;
+  @include breakpoint("large"){
+    right:-13px;
+
+  }
+
+}
+.slick-prev {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 34px;
+  height: 34px;
+  border-radius: 34px;
+  @include breakpoint("large"){
+    left:-13px;
+
+  }
+}
 
 
 
