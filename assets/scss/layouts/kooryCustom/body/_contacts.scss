@@ -8,11 +8,15 @@
 }
 
 .contact-gray{
-  height: 71vh;
-  bottom: 37%;
+  height: 482px;
+  top: 27%;
   @include breakpoint('small'){
-    height: 72vh;
-    bottom: 30%;
+    top: 25%;
+
+  }
+  @include breakpoint('medium'){
+    height: 528px;
+    top: 30%;
   }
 }
 
@@ -22,6 +26,9 @@
   @include breakpoint('small'){
     display: none;
   }
+  .main_title{
+    margin-bottom: 30px;
+  }
 }
 .contacts-intro{
   @include breakpoint('small'){
@@ -29,9 +36,9 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    img{
+    &__img{
       width: 50%;
-      margin-bottom: 80px;
+
     }
   }
 }
@@ -49,6 +56,9 @@
       display: block;
       font-style: normal;
       text-align: left;
+    }
+    @include breakpoint('medium'){
+     margin-top: 50px;
     }
   }
 

@@ -1,0 +1,31 @@
+.productGrid-flex{
+
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  @include breakpoint("small") {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+  }
+  .product{
+    @include breakpoint("small") {
+      width: width("3/12");;
+      padding-right: 20px;
+
+    }
+    @include breakpoint("medium") {
+      //width: 230px;
+      padding-right: 30px;
+      margin-bottom: 50px;
+    }
+    .card-title{
+      text-align: center;
+    }
+    .card-text{
+      text-align: center;
+    }
+
+  }
+}

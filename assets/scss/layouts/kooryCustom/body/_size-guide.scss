@@ -9,13 +9,21 @@
   @include breakpoint('small'){
     flex-direction: row;
     justify-content: center;
-    .size-guide-intro__copy{
+    &__copy{
       width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       .main_title{
         text-align: left;
+      }
+
+      &--block{
+        @include breakpoint('small'){
+          width: 90%;
+        }
+
+
       }
     }
   }
@@ -43,11 +51,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   .size-guide-middle__block{
     @include breakpoint('small'){
       padding: 10px 0;
       width: 62%;
       margin: auto;
+    }
+    @include breakpoint('medium'){
+      padding: 90px 0;
 
     }
   }
@@ -71,6 +83,11 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+    @include breakpoint('medium'){
+
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
   }
   .size-guide-third__copy{
     .size-guide-middle__p{
@@ -92,7 +109,18 @@
       .main_p{
         text-align: left;
       }
-
+    }
+    @include breakpoint('medium'){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 47%;
+      .main_title{
+        text-align: left;
+      }
+      .main_p{
+        width:90%
+      }
     }
 
   }
@@ -119,15 +147,20 @@
   padding-top: 40px ;
   @include breakpoint('small'){
   }
+
   .border-helper{
     padding-bottom:40px;
 
 
     @include breakpoint('small'){
-      width: 64%;
-      margin: auto;
-      border: none;
+       width: 64%;
+       margin: auto;
+       border: none;
 
+     }
+    @include breakpoint('medium'){
+      width: 75%;
+      padding-bottom: 80px;
     }
   }
   .main_p{

@@ -113,11 +113,15 @@ blog:
                     {{#each categories}}
                         {{#if name '==' 'Shop'}}
                             {{#each children}}
+                                {{#if name '==' 'All'}}
+
+                                {{else}}
                                 <div class="catalogCarousel-slide">
                                     <a href="{{url}}">
                                         <img src="{{getImage image "default"}}" alt="{{image.alt}}">
                                     </a>
                                 </div>
+                                {{/if}}
                             {{/each}}
                         {{/if}}
                     {{/each}}

@@ -3,16 +3,16 @@
   height: 472px;
   top: 18%;
   @include breakpoint("small"){
-    height: 655px;
+    height: 630px;
     top: 16%
 
   }
   @include breakpoint("medium"){
-    height: 780px;
+    height: 735px;
     top: 19%
   }
   @include breakpoint("large"){
-    height: 805px;
+    height: 750px;
     top: 21%
   }
 
@@ -26,6 +26,10 @@
   @include breakpoint("small"){
     height: auto;
     padding-top: 40px;
+  }
+  @include breakpoint("medium"){
+
+    padding-top: 60px;
   }
 }
 
@@ -58,8 +62,8 @@
       @include breakpoint("medium") {
         p {
 
-          font-size: 34px;
-          line-height: 40px;
+          font-size: 24px;
+          line-height: 30px;
 
         }
 
@@ -270,7 +274,12 @@
 //  }
 //}
 
-$cat_pad: 12px;
+$cat_width_pad: 13px;
+$cat_height_pad: 13px;
+//@include breakpoint("medium"){
+//  $cat_width_pad: 14px;
+//  $cat_height_pad: 14px;
+//}
 .c-left{
   display: flex;
   flex-direction: row;
@@ -280,21 +289,34 @@ $cat_pad: 12px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    //@include breakpoint("small"){
+    //  width: 134%;
+    //}
+    //@include breakpoint("medium"){
+    //  width: auto;
+    //}
+
 
     .c-one{
-      padding-bottom: $cat_pad;
-      padding-right:$cat_pad;
+      padding-bottom: $cat_height_pad;
+      padding-right:$cat_width_pad;
 
     }
     .c-two{
-      padding-top: $cat_pad;
-      padding-right:$cat_pad;
+      padding-top: $cat_height_pad;
+      padding-right:$cat_width_pad;
     }
   }
   .c-three{
 
-    padding-left: $cat_pad;
-    padding-right: $cat_pad;
+    padding-left: $cat_width_pad;
+    padding-right: $cat_width_pad;
+    //@include breakpoint("medium"){
+    //  width: 94%;
+    //}
+    //@include breakpoint("large"){
+    //  width: 84%;
+    //}
 
   }
 }
@@ -303,25 +325,28 @@ $cat_pad: 12px;
   flex-direction: column;
   justify-content: space-between;
   width: 50%;
+  //@include breakpoint("large"){
+  //  width: 51%;
+  //}
   .c-four-five{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     .c-four{
-      padding-left: $cat_pad;
-      padding-bottom: $cat_pad;
-      padding-right: $cat_pad;
+      padding-left: $cat_width_pad;
+      padding-bottom: $cat_height_pad;
+      padding-right: $cat_width_pad;
     }
     .c-five{
-      padding-left: $cat_pad;
-      padding-bottom: $cat_pad;
+      padding-left: $cat_width_pad;
+      padding-bottom: $cat_height_pad;
 
     }
 
   }
   .c-six{
-    padding-top: $cat_pad;
-    padding-left: $cat_pad;
+    padding-top: $cat_height_pad;
+    padding-left: $cat_width_pad;
   }
 }
 
@@ -415,9 +440,10 @@ $cat_pad: 12px;
 
   }
   .instagram__feed--item{
-    width: 19%;
+    width: 18%;
     @include breakpoint("small"){
 
+      width: 19%;
     }
 
   }

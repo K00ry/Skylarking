@@ -45,9 +45,13 @@ flex-direction: column;
 .quote__grey-m{
   height: 300px;
   top: 47%;
-
   @include breakpoint('small') {
     height: 400px;
+    top: 27%;
+  }
+
+  @include breakpoint('medium') {
+    height: 497px;
     top: 27%;
   }
 
@@ -74,13 +78,23 @@ flex-direction: column;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
+    @include breakpoint('medium') {
+      font-size: 22px;
+      line-height: 30px;
+    }
   }
   svg{
     position: absolute;
     width: 140px;
     height: 24px;
     right: 0px;
-    top: 76px
+    top: 76px;
+    @include breakpoint('small') {
+      top: 65px;
+    }
+    @include breakpoint('medium') {
+      top: 105px;
+    }
   }
 }
 

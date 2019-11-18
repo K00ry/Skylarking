@@ -1,15 +1,23 @@
+#product-listing-container{
+  padding-top: 1px;
 
+
+}
 .col-page-heading{
 text-align: center;
   margin-top: 30px;
   @include breakpoint("small") {
-    margin-top: 55px;
+    margin-top: 60px;
+    margin-bottom: 30px;
   }
 }
 
 .category_collection{
   margin-bottom: 40px;
   @include breakpoint("small") {
+    margin-bottom: 70px;
+  }
+  @include breakpoint("medium") {
     margin-bottom: 85px;
   }
   .categoryNav-slide{

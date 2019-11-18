@@ -31,6 +31,9 @@
   .main_title{
     margin-bottom: 30px;
     margin-top: 20px;
+    @include breakpoint("small") {
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -42,12 +45,17 @@
     padding-right: 20px;
   }
   @include breakpoint("medium") {
-    //width: 230px;
+
     padding-right: 30px;
+    margin-bottom: 50px;
   }
   .card-body{
     @include breakpoint("small") {
+      padding-top: 20px;
       text-align: center;
+    }
+    .card-title{
+      margin:auto;
     }
   }
   .card{

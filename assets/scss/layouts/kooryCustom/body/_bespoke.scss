@@ -20,6 +20,11 @@
   display: flex;
   flex-direction: column;
   .bespoke-intro__title{
+    @include breakpoint("small") {
+
+      margin-top: 50px;
+    }
+
 
   }
   .bespoke-intro__p{
@@ -29,7 +34,7 @@
     margin-right: auto;
     @include breakpoint("small") {
      text-align: center;
-      width: 80%;
+      width: 55%;
       //font-size: 22px;
       //line-height: 30px;
     }
@@ -65,10 +70,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    .main_p{
+
+  }
+  .main_p{
+    @include breakpoint("small") {
       font-size: 13px;
       line-height: 18px;
-
+    }
+    @include breakpoint("medium") {
+      font-size: 18px;
+      line-height: 26px;
     }
   }
   .bs-left{
@@ -99,13 +110,24 @@
     .main_p{
       margin: auto;
       font-size: 13px;
-      //line-height: 26px;
       text-align: center;
-      width: 45%;
+      width: 60%;
+      @include breakpoint("medium") {
+        width: 60%;
+        font-size: 18px;
+        line-height: 26px;
+      }
+      @include breakpoint("large") {
+        width: 48%;
 
+      }
     }
 
   }
+
+
+
+
   .bs-third__img--m{
     display: block;
     @include breakpoint("small") {

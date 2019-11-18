@@ -3,29 +3,33 @@
     <main class="" id="product-listing-container">
         <script>console.log({{{JSONstringify ../categories}}});</script>
         {{#each ../categories}}
-            {{#if name '==' 'collections' }}
+            {{#if name '==' 'Collections' }}
                 {{#each children}}
                     {{#if is_active}}
-                            <h1 class="page-heading">{{name}}</h1>
+                            <h1 class="col-page-heading main_title">{{name}}</h1>
                     {{/if}}
                 {{/each}}
             {{/if}}
         {{/each}}
 
-
-        {{#each ../categories}}
-            {{#if name '==' 'collections' }}
-                {{#each children}}
-                    {{#if is_active}}
+        <div class="categoryNav__block">
+            <div class="category_collection categoryNav" data-slick-nav='{}'>
+                {{#each ../categories}}
+                    {{#if name '==' 'Collections' }}
                         {{#each children}}
-                            <div class="categoryNav-slide main_title " >
-                                <a href="{{url}}" class="category-nav-item {{#if is_active}}activeLink{{/if}}">{{name}}</a>
-                            </div>
+                            {{#if is_active}}
+                                {{#each children}}
+                                    <div class="categoryNav-slide main_title " >
+                                        <a href="{{url}}" class="category-nav-item {{#if is_active}}activeLink{{/if}}">{{name}}</a>
+                                    </div>
+                                {{/each}}
+                            {{/if}}
                         {{/each}}
                     {{/if}}
                 {{/each}}
-            {{/if}}
-        {{/each}}
+            </div>
+        </div>
+
 
         <div class="container">
             {{#if category.products}}
