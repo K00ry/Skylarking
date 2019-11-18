@@ -134,12 +134,13 @@
   margin: 15px auto;
   color: #333333;
   display: inline-block;
-  padding:  -1em;
+  padding:  0em;
   position: relative;
   text-decoration: none;
   width: 30%;
   z-index: 20;
   @include breakpoint("small") {
+    padding:  -1em;
     width: 80%;
     padding-top:1em;
     }
