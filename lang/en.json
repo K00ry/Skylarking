@@ -691,6 +691,7 @@
         "file_option_set": "Currently: <a href=\"{url}\" target=\"_blank\">{name}</a>",
         "new": "New Arrivals",
         "warranty": "Warranty Information",
+        "need-help": "Need help with size?  \nVisit the Size guide page or contact us via email hello@skylarking.com or by phone 07707270936 \nto get an advice.",
         "reviews": {
             "hide": "Hide Reviews",
             "new": "Write a Review",

@@ -144,6 +144,11 @@
     width: 80%;
     padding-top:1em;
     }
+  @include breakpoint("medium") {
+
+    width: 60%;
+
+  }
 }
 
 

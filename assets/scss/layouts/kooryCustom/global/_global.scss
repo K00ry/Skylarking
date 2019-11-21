@@ -23,7 +23,9 @@ $line-gray: #ECEAEA;
 
 @media only screen and (min-width: 375px){
 }
+
 body{
+
   @include breakpoint("small") {
     padding-top: 0;
   }
@@ -34,6 +36,7 @@ body{
   //padding-top: 59px;
 }
 .body {
+  overflow: hidden;
   margin-bottom: 0;
   margin-top: 2rem;
   @include breakpoint("small") {
@@ -42,6 +45,25 @@ body{
 }
 
 //end important rule
+
+
+
+.breadcrumb:before {
+  color: #757575;
+  content: ">";
+  margin-right: 10px;
+  position: relative;
+  top: 1px;
+}
+.breadcrumb-label{
+  font-family: 'Optima', serif;
+  font-weight: 500;
+  font-size: 14px;
+
+}
+.breadcrumb a {
+  color: $gray-d;
+}
 
 
 //////////shared styles
@@ -150,4 +172,9 @@ body{
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+
+.ExpressCheckoutContent .CreateAccount {
+  display:none;
 }

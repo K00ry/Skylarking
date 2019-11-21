@@ -397,15 +397,15 @@ export default class ProductDetails {
             }
 
             // Open preview modal and update content
-            if (this.previewModal) {
-                this.previewModal.open();
-
-                this.updateCartContent(this.previewModal, response.data.cart_item.id);
-            } else {
+            // if (this.previewModal) {
+            //     this.previewModal.open();
+            //
+            //     this.updateCartContent(this.previewModal, response.data.cart_item.id);
+            // } else {
                 this.$overlay.show();
                 // if no modal, redirect to the cart page
                 this.redirectTo(response.data.cart_item.cart_url || this.context.urls.cart);
-            }
+            // }
         });
     }
 
