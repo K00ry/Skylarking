@@ -1,0 +1,54 @@
+.layout{
+  //padding-top: 108px;
+  //padding-right: 0;
+  //padding-left: 0;
+  //padding-bottom: 40px;
+  padding: 75px 0 0 0;
+  @media (min-width: 801px) {
+      padding: 108px 0 0 0;
+
+  }
+
+}
+.form-legend{
+border: none;
+}
+.layout-main{
+  padding: 0;
+}
+.optimizedCheckout-headingPrimary{
+  font-family: 'Optima', serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+
+}
+.optimizedCheckout-contentPrimary{
+  font-family: 'Optima', serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+}
+.optimizedCheckout-headingSecondary{
+  font-family: 'Optima', serif;
+  font-weight: 500;
+}
+.optimizedCheckout-contentSecondary{
+  font-family: 'Optima', serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+}
+.form-fieldset{
+
+  width: 100%;
+}
+.modal.modal--afterOpen{
+left: 50%;
+}
+.footer{
+
+  padding-bottom:100px;
+}
