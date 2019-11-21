@@ -5,19 +5,19 @@ product:
     reviews:
         limit: {{theme_settings.productpage_reviews_count}}
     related_products:
-        limit: {{theme_settings.productpage_related_products_count}}
+        limit: 4
     similar_by_views:
         limit: {{theme_settings.productpage_similar_by_views_count}}
 ---
 {{#partial "page"}}
     {{inject 'productThumbSize' theme_settings.productthumb_size}}
-    {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+    {{!--{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}--}}
 
     {{#each product.shipping_messages}}
         {{> components/common/alert-info message}}
     {{/each}}
 
-    <div itemscope itemtype="http://schema.org/Product">
+    <div class="container" itemscope itemtype="http://schema.org/Product">
         {{> components/products/product-view schema=true  }}
 
         {{{region name="product_below_content"}}}
@@ -29,8 +29,12 @@ product:
         {{#all settings.show_product_reviews (if theme_settings.show_product_reviews_tabs '!==' true)}}
             {{> components/products/reviews reviews=product.reviews product=product urls=urls}}
         {{/all}}
-
-        {{> components/products/tabs}}
+    </div>
+    {{> components/products/tabs}}
+    <div class=" container need-help">
+        <p class="main_p">{{lang 'products.need-help'}}</p>
     </div>
 {{/partial}}
+
+
 {{> layout/base}}

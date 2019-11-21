@@ -3,7 +3,15 @@ import 'slick-carousel';
 export default function () {
     const $carousel = $('[data-slick]');
     const $catalog = $('[data-slick-catalog]');
+    const $productViewCarou = $('[data-pruduct-view-slick]');
 
+    $productViewCarou.slick({
+        "infinite": false,
+        "mobileFirst": true,
+        "slidesToShow": 5,
+        "slidesToScroll": 1
+
+    });
 
 
     if (document.documentElement.clientWidth < 551) {
