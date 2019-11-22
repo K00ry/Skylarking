@@ -1,0 +1,202 @@
+
+
+
+
+.page-content{
+padding: 0;
+  .page-heading{
+text-align: left;
+
+  }
+}
+
+.cart-list{
+  display: none;
+  @include breakpoint("medium"){
+    display: block;
+  }
+
+
+}
+
+.mob-cart-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @include breakpoint("small"){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @include breakpoint("medium"){
+   display: none;
+  }
+
+  &__image{
+    width: 35%;
+    @include breakpoint("small"){
+      width: 30%;
+    }
+
+  }
+
+  &__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include breakpoint("small"){
+      justify-content: space-around;
+    }
+
+    &--p-t{
+      display: flex;
+      flex-direction: column;
+      .price{
+        span{
+          font-family: 'Optima', serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+        padding: 0;
+        }
+      }
+      .title{
+        margin-bottom: 20px;
+      }
+      .cart-item-name{
+        a{
+          font-family: 'Optima', serif;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          text-decoration: none;
+
+        }
+      }
+    }
+
+    &--q-c{
+      display: flex;
+      flex-direction: row;
+      .quantity{
+        .button{
+          border: none;
+        }
+        .form-input--incrementTotal{
+            width: 1rem;
+        }
+
+
+      }
+      .cart-item-label {
+        width: auto;
+        float: none;
+        text-align: center;
+        font-family: 'Optima', serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .definitionList{
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+        margin-bottom: 0px;
+        dt{
+          font-family: 'Optima', serif;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          text-decoration: none;
+          color: $gray-d-l ;
+          margin-bottom: 5px;
+
+        }
+        dd{
+          font-family: 'Optima', serif;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          text-decoration: none;
+          color: $gray-d;
+        }
+
+
+      }
+    }
+  }
+  &__close{
+    display: flex;
+    a{
+      margin: auto;
+      background-color: transparent;
+      width: 20px;
+      height: 20px;
+      @include breakpoint("small"){
+        width: 30px;
+        height: 30px;
+      }
+
+    }
+
+
+  }
+
+}
+
+
+
+.cart{
+  margin-bottom: 30px;
+  @include breakpoint("small"){
+    margin-bottom: 60px;
+  }
+}
+.cart-totals{
+  @include breakpoint("small"){
+    width: auto;
+    float: left;
+  }
+}
+
+
+
+
+  .cart-total{
+    display: flex;
+    .cart-total-label{
+      width: auto;
+      padding: 0;
+      font-family: 'Optima', serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      text-decoration: none;
+      color: $gray-d-l ;
+    }
+    .cart-total-grandTotal{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .cart-total-grandTotal{
+      font-family: 'Optima', serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      text-decoration: none;
+      color: $gray-d ;
+
+    }
+  }
+.cart-actions{
+  @include breakpoint("small"){
+    display: flex;
+  }
+  margin-bottom: 40px;
+  .button--primary{
+    margin-top: 20px;
+    width: 230px;
+  }
+}

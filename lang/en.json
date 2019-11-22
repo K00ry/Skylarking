@@ -58,7 +58,7 @@
             "enter_code": "Coupon code / Gift certificate",
             "gift_wrapping": "Gift wrapping",
             "shipping": "Shipping",
-            "grand_total": "Grand total",
+            "grand_total": "Subtotal",
             "select": "Select",
             "update": "Update shipping cost"
         },
