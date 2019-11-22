@@ -53,6 +53,7 @@
             "price": "Price",
             "quantity": "Quantity",
             "total": "Total",
+            "size": "Size",
             "change": "Change",
             "subtotal": "Subtotal",
             "enter_code": "Coupon code / Gift certificate",
