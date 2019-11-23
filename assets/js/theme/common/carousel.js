@@ -23,6 +23,8 @@ export default function () {
             slidesToShow: 1,
             slidesToScroll: 1,
             touchMove:false,
+            touchThreshold:20,
+            swipeToSlide:false,
             responsive: [
                 {
                     arrows:false,
@@ -42,7 +44,7 @@ export default function () {
             slidesToShow: 2,
             slidesToScroll: 1,
             touchMove:false,
-            touchThreshold:10,
+            touchThreshold:20,
             swipeToSlide:false,
         });
         const $nav_slider = $('[data-slick-nav]');
@@ -55,7 +57,7 @@ export default function () {
             slidesToShow: 5,
             slidesToScroll: 1,
             touchMove:false,
-            touchThreshold:5,
+            touchThreshold:20,
             swipeToSlide:false,
         });
 
@@ -77,7 +79,7 @@ export default function () {
             slidesToShow: 4,
             slidesToScroll: 1,
             touchMove:false,
-            touchThreshold:5,
+            touchThreshold:20,
             swipeToSlide:false,
             responsive: [
                 {

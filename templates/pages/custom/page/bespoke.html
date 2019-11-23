@@ -1,5 +1,6 @@
 <div class="grey-m bespoke_m"></div>
 {{#partial "page"}}
+    {{inject 'pageType' template}}
 
     <div class="container bespoke-intro">
         <h1 class="bespoke-intro__title main_title">Bespoke</h1>
@@ -38,6 +39,22 @@
         <img class="bs-third__img--m main_img" src="{{cdn 'webdav:unique_m.jpg'}}">
         <img class="bs-third__img--d main_img" src="{{cdn 'webdav:unique_d.jpg'}}">
         <p class="bs-third__p main_p">{{lang 'bespoke.third_section_p'}}</p>
+    </div>
+    <div class="container instagram">
+        <div class="instagram__header">
+            <h3 class="main_title">{{lang 'home.instagram_title'}}</h3>
+            <p class="main_p instagram__header--m">{{lang 'home.instagram_p_m'}}</p>
+            <p class="main_p instagram__header--d">{{lang 'home.instagram_p_d'}}</p>
+
+        </div>
+        <section class="instaCarousel"
+                 data-slick-insta='{}'>
+        </section>
+        <div class="instagram__feed">
+
+        </div>
+
+
     </div>
 
 {{/partial}}

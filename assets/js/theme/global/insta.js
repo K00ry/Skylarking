@@ -6,7 +6,7 @@ export default function (jaber) {
 
 
 
-    if (jaber ==="default"){
+    if (jaber ==="default" || jaber === "pages/custom/page/bespoke"){
 
   $.get( "https://www.instagram.com/skylarking_silver/?__a=1", function(data) {
         // console.log(data.graphql.user.edge_owner_to_timeline_media.edges);
@@ -35,6 +35,8 @@ export default function (jaber) {
           slidesToShow: 1,
           slidesToScroll: 1,
           touchMove:false,
+          touchThreshold:20,
+          swipeToSlide:false,
       });
 
       } else {

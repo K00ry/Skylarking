@@ -906,5 +906,39 @@
         "last_two": "Just let us know and we will create a bespoke item especially for you. If you need help with sizing, please don’t hesitate to contact us for advice via email hello@skylarking.com or by phone 07707270936."
 
     },
-    "collections":{}
+    "collections":{
+        "voucher": {
+            "title": "Voucher",
+            "p": "If you have a friend or loved one who already shops with us or you would like to introduce someone\n                    to our beautiful handmade jewellery a voucher could be the perfect gift! It can be used for online\n                    and in-store purchases."
+        },
+        "leaf": {
+            "mid_title": "Delicate designs inspired by nature",
+            "mid_p": "The natural world is a boundless source for inspiration and exploration.\n                    Each design in this collection draws on a love of all things botanical."
+        },
+        "forge": {
+            "mid_title": "",
+            "mid_p": ""
+        },
+        "beaded": {
+            "mid_title": "",
+            "mid_p": ""
+        },
+        "bamboo": {
+            "mid_title": "A traditional handmade process",
+            "mid_p": "Hammers are used to shape and form the metal and add a dappled texture \nto the surface reflecting light. These designs are coveted for the organic \nelemental feel that they evoke."
+        },
+        "reflections": {
+            "mid_title": "",
+            "mid_p": ""
+        },
+        "oxidized": {
+            "mid_title": "",
+            "mid_p": ""
+        },
+        "classic": {
+            "mid_title": "",
+            "mid_p": ""
+        }
+
+    }
 }

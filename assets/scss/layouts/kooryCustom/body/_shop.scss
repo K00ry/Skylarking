@@ -73,9 +73,11 @@
 }
 
 .categoryNav-slide{
-  padding: 0 spacing('half');
-  margin-bottom: 20px;
+  padding: 20px spacing('half');
+  margin-bottom: 0px;
+  margin-top: 0px;
   @include breakpoint("medium") {
+    margin-bottom: 20px;
     padding: 0 spacing('single');
 
   }

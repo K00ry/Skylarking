@@ -2,11 +2,61 @@
 
 $gray-d :rgba(#555465,1);
 $gray-d-l :rgba(#555465,.5);
-//$gray-d :rgba(#555465,.6);
-//$gray-m: rgba($gray-d ,.6);
+$gray-hover:rgb(153, 152, 163);
 $gray-l : #DEDEE0;
 $low_gray:  #F7F7F7;
 $line-gray: #ECEAEA;
+
+
+
+.hbtn {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px 20px;
+  margin: 0px 3px 6px;
+  text-align: center;
+  border: 2px solid rgb(255, 255, 255);
+  text-decoration: none;
+  color: rgb(158, 158, 158);
+  white-space: nowrap;
+  z-index: 0;
+}
+/////button hover
+.hbtn i {
+  padding-right: 8px;
+}
+
+
+.hb-fill-bottom::before {
+  position: absolute;
+  content: "";
+  background: $gray-hover;
+  transition-duration: 0.3s;
+  z-index: -1;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  left: 0px;
+  width: 100%;
+  height: 0px;
+  opacity: 1;
+}
+
+
+.hb-fill-bottom:hover::before {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+
+.hb-fill-bottom:hover {
+  color: rgb(255, 255, 255);
+  background: $gray-hover;
+  transition: color 0.3s ease 0s, background 0s ease 0.3s;
+}
 
 
 
