@@ -1,8 +1,8 @@
 {{#partial "page"}}
     <main class="" id="product-listing-container">
-        <script>console.log({{{JSONstringify ../categories}}});</script>
+
         <h1 class="page-heading">{{category.name}}</h1>
-        <div class="categoryNav__block">
+
             <div class=" categoryNav" data-slick-nav='{}'>
                 {{#each ../categories}}
                     {{#if name '==' 'collections' }}
@@ -14,7 +14,7 @@
                     {{/if}}
                 {{/each}}
             </div>
-        </div>
+
 
         <img src="/product_images/uploaded_images/skylarking-newtown-2.jpg">
 

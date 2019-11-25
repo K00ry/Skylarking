@@ -61,12 +61,20 @@
 border-radius: 0;
   border-color: #DEDEE0;
   font-family: 'songti',sans-serif;
+  font-weight: normal;
   color:$gray-d;
 
 }
 
 .form-prefixPostfix{
   position: relative;
+
+  .hbtn{
+    padding:0;
+    border: none;
+    margin: 0;
+  }
+
 }
 
 
@@ -76,7 +84,7 @@ border-radius: 0;
   font-size: 16px;
   line-height: 30px;
   text-align: center;
-  font-weight: 300;
+  font-weight: normal;
   margin-bottom: 21px;
 }
 
@@ -111,6 +119,7 @@ margin: auto;
 
 .powered-by{
   font-family: 'songti',sans-serif;
+  font-weight: normal;
   color:$gray-d;
   font-size: 16px;
   line-height: 24px;

@@ -64,7 +64,7 @@
             "update": "Update shipping cost"
         },
         "preview": {
-            "checkout_now": "Check out now",
+            "checkout_now": "Check out",
             "checkout_multiple": "or check out with multiple addresses",
             "view_cart": "View Cart"
         },
@@ -940,5 +940,30 @@
             "mid_p": ""
         }
 
+    },
+    "shipping": {
+        "shipping": {
+            "title": "Shipping & Returns",
+            "p": "All jewelry is made by hand, to order, please allow 2 weeks for your order to be made and shipped. All jewelry is packed in a muslin bag and jewelry box. Shipped via USPS, in the continental United States orders are expected to arrive within 2-3 day of shipment. If you would like to upgrade to a faster shipping method please contact us through the form on the contact page. Ellen Mote Jewelry is not responsible for lost or stolen packages. "
+        },
+        "international": {
+            "title": "International shipping",
+            "p": "International shipping is the flat rate of $15. Packages are shipped via USPS first class mail and tracking is not available once it has left the United States. Most items will arrive within 2 weeks of shipping, but it could take up to 4. Ellen Mote Jewelry is not responsible for any additional taxes or fees charged upon arrival.",
+            "opt-info": "There are two options, availiable for shipping worldwide:",
+            "opt-items": {
+                "opt-item-1": "Standard shipping (takes 5-7 days and costs 7);",
+                "opt-item-2": "Standard plus shipping (4-5 days, 8);",
+                "opt-item-3": "Premium shipping (2-3 days, 10);",
+                "opt-item-4": "Premium plus shipping (1-2 days, 13)."
+            }
+        },
+        "returns": {
+            "title": "Returns",
+            "p": "If for some reason you are unhappy with your purchase, returns are accepted within 14 days of receiving your order. Please include a note stating your reason for return. Because we are a small shop, all returns are subject to a 10% restocking fee. Most stores factor this cost into their product to offer free returns. We prefer to keep our costs lower by not including this cost in the product. Thank you for understanding! The jewelry can be exchanged for another item without the restocking fee. Please note that the cost of shipping will not be refunded. Buyer is responsible for return shipping. "
+        },
+        "gifts": {
+            "title": "Gifts",
+            "p": "If you are ordering a gift, please specify who to address it to in the checkout box!  "
+        }
     }
 }

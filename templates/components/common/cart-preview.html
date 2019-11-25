@@ -17,9 +17,9 @@
                     </div>
 
                     <div class="previewCartItem-content">
-                        <span class="previewCartItem-brand">
-                            {{brand.name}}
-                        </span>
+{{!--                        <span class="previewCartItem-brand">--}}
+{{!--                            {{brand.name}}--}}
+{{!--                        </span>--}}
 
                         <h6 class="previewCartItem-name">
                             <a href="{{url}}" alt="{{name}}" title="{{name}}">{{name}}</a>
@@ -45,7 +45,7 @@
         <div class="previewCartAction">
             {{#if cart.show_primary_checkout_button}}
                 <div class="previewCartAction-checkout">
-                    <a href="{{urls.checkout.single_address}}" class="button button--small button--primary">
+                    <a href="{{urls.checkout.single_address}}" class="button button--small button--primary hbtn hb-fill-bottom">
                         {{lang 'cart.preview.checkout_now'}}
                     </a>
                 </div>
