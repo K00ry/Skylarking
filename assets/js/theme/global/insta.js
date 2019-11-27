@@ -34,9 +34,9 @@ export default function (jaber) {
           infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
-          touchMove:false,
+          touchMove:true,
           touchThreshold:20,
-          swipeToSlide:false,
+          swipeToSlide:true,
       });
 
       } else {

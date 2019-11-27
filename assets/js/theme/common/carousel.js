@@ -22,9 +22,9 @@ export default function () {
             infinite: false,
             slidesToShow: 1,
             slidesToScroll: 1,
-            touchMove:false,
+            touchMove:true,
             touchThreshold:20,
-            swipeToSlide:false,
+            swipeToSlide:true,
             responsive: [
                 {
                     arrows:false,
@@ -43,9 +43,9 @@ export default function () {
             infinite: false,
             slidesToShow: 2,
             slidesToScroll: 1,
-            touchMove:false,
+            touchMove:true,
             touchThreshold:20,
-            swipeToSlide:false,
+            swipeToSlide:true,
         });
         const $nav_slider = $('[data-slick-nav]');
         $nav_slider.slick({
@@ -56,9 +56,9 @@ export default function () {
             infinite: false,
             slidesToShow: 5,
             slidesToScroll: 1,
-            touchMove:false,
+            touchMove:true,
             touchThreshold:20,
-            swipeToSlide:false,
+            swipeToSlide:true,
         });
 
         let activeLink =  $('.activeLink').parent().attr("data-slick-index");
@@ -78,9 +78,9 @@ export default function () {
             infinite: false,
             slidesToShow: 4,
             slidesToScroll: 1,
-            touchMove:false,
+            touchMove:true,
             touchThreshold:20,
-            swipeToSlide:false,
+            swipeToSlide:true,
             responsive: [
                 {
                     arrows:false,

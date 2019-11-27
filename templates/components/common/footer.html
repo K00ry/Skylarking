@@ -34,18 +34,31 @@
 
             <article class="footer-info-col footer-info-col--small footer-logo">
                 <div class="footer-logo__block">
-                    <img alt="footer-logo" src="{{cdn 'webdav:logomark.png'}}"/>
+                    <img alt="footer-logo" src="{{cdn 'webdav:logomark.svg'}}"/>
                 </div>
 
             </article>
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
                 <h5 class="footer-info-heading">{{lang 'footer.about'}}</h5>
                 <ul class="footer-info-list">
-                    {{#each pages}}
-                        <li>
-                            <a a href="{{url}}">{{name}}</a>
-                        </li>
-                    {{/each}}
+                    <li>
+                        <a  href="/collections/">Collections</a>
+                    </li>
+                {{#each pages}}
+                    {{#if name '==' 'Shipping & Returns' }}
+
+                    {{else}}
+                        {{#if name '==' 'Contacts' }}
+
+                        {{else}}
+                            <li>
+                                <a  href="{{url}}">{{name}}</a>
+                            </li>
+                        {{/if}}
+                    {{/if}}
+                {{/each}}
+
+
 {{!--                    <li>--}}
 {{!--                        <a href="{{urls.sitemap}}">{{lang 'sitemap.page_title'}}</a>--}}
 {{!--                    </li>--}}
@@ -67,12 +80,28 @@
             <article class="footer-info-col footer-info-col--small" data-section-type="footer-brands">
                 <h5 class="footer-info-heading">{{lang 'footer.support'}}</h5>
                 <ul class="footer-info-list">
-                    {{#each shop_by_brand}}
+                    {{!--{{#each shop_by_brand}}
                         <li>
                             <a href="{{url}}">{{name}}</a>
                         </li>
                     {{/each}}
-                    <li><a href="{{urls.brands}}">{{lang 'common.view_all'}}</a></li>
+                    <li><a href="{{urls.brands}}">{{lang 'common.view_all'}}</a></li>--}}
+                    {{#each pages}}
+                        {{#if name '==' 'Shipping & Returns' }}
+                            <li>
+                                <a  href="{{url}}">{{name}}</a>
+                            </li>
+                        {{else}}
+                            {{#if name '==' 'Contacts' }}
+                                <li>
+                                    <a  href="{{url}}">{{name}}</a>
+                                </li>
+                            {{else}}
+                            {{/if}}
+                        {{/if}}
+
+                    {{/each}}
+
                 </ul>
             </article>
             {{/and}}

@@ -1,0 +1,64 @@
+.shipping-page-wrapper{
+  @include breakpoint("medium"){
+    max-width: 900px;
+    margin: auto;
+  }
+
+}
+.shipping-page-title{
+  margin-bottom: 30px;
+  @include breakpoint("medium"){
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+}
+.shipping-intro{
+  &__title{
+text-align: left;
+    margin-bottom: 20px;
+    font-size: 18px;
+    @include breakpoint("medium"){
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+  }
+}
+.shipping-inter__title,.shipping-return__title,.shipping-gifts__title{
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 18px;
+  @include breakpoint("medium"){
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+.shipping-inter{
+&__p{
+  margin-bottom: 20px;
+
+}
+  &__list{
+
+    margin-left: 50px;
+    margin-bottom: 30px;
+    &--item{
+    font-size: 12px;
+    margin: 0;
+      @include breakpoint("medium"){
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.shipping-gifts{
+
+  &__p{
+    margin-bottom: 0;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $gray-l;
+  }
+}
