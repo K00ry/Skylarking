@@ -46,19 +46,22 @@
   }
 
 }
-
-.form{
-  display:flex;
-}
-.form-fieldset{
-  margin:auto;
-  width: 70%;
-  @include breakpoint("small") {
-    margin: 0;
-    width: 100%;
+.footer-info-col{
+  .form{
+    display:flex;
+  }
+  .form-fieldset{
+    margin:auto;
+    width: 70%;
+    @include breakpoint("small") {
+      margin: 0;
+      width: 100%;
+    }
   }
 }
-.form-input{
+
+
+.form-label,.form-select,.form-inlineMessage,.form-input{
 border-radius: 0;
   border-color: #DEDEE0;
   font-family: 'songti',sans-serif;

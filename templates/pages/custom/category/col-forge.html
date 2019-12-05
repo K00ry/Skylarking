@@ -2,47 +2,47 @@
 {{#partial "page"}}
     <main class="" id="product-listing-container">
 
-        <h1 class="page-heading">Collections</h1>
+        <h1 class="col-page-heading main_title">Collections</h1>
 
-            <div class="category_collection categoryNav" data-slick-nav='{}'>
-                {{#each ../categories}}
-                    {{#if name '==' 'Collections' }}
-                        {{#each  children}}
-                            <div class="categoryNav-slide main_title " >
-                                <a href="{{url}}" class="category-nav-item {{#if is_active}}activeLink{{/if}}">{{name}}</a>
-                            </div>
-                        {{/each}}
-                    {{/if}}
-                {{/each}}
-            </div>
+        <div class="category_collection categoryNav" data-slick-nav='{}'>
+            {{#each ../categories}}
+                {{#if name '==' 'Collections' }}
+                    {{#each  children}}
+                        <div class="categoryNav-slide main_title " >
+                            <a href="{{url}}" class="category-nav-item {{#if is_active}}activeLink{{/if}}">{{name}}</a>
+                        </div>
+                    {{/each}}
+                {{/if}}
+            {{/each}}
+        </div>
 
 
 
         <div class="container intro-half-height">
             <div class="intro-half-height__img">
-                <img src="{{cdn 'webdav:col-forge/col-forge-1.jpg'}}" alt="{{category.name}}" />
+                <img src="{{cdn 'webdav:col-bamboo/col-bamboo-1.jpg'}}" alt="{{category.name}}" />
             </div>
             <div class="intro-half-height__desc">
                 <h3 class="main_title">{{lang 'collections.forge.mid_title'}}</h3>
                 <p class="main_p">{{lang 'collections.forge.mid_p'}}</p>
             </div>
             <div class="intro-half-height__img">
-                <img src="{{getImage (cdn 'webdav:col-forge/col-forge-2.jpg')}}" alt="women with earrings">
+                <img src="{{getImage (cdn 'webdav:col-bamboo/col-bamboo-2.jpg')}}" alt="women with earrings">
             </div>
         </div>
 
         <div class="container mid-full">
-            <img src="{{getImage (cdn 'webdav:col-forge/col-forge-mid.jpg')}}" alt="women in field">
+            <img src="{{getImage (cdn 'webdav:col-bamboo/col-bamboo-mid.jpg')}}" alt="women in field">
         </div>
 
 
 
         <div class="container last-half-height">
             <div class="last-half-height__img">
-                <img src="{{cdn 'webdav:col-forge/col-forge-3.jpg'}}" alt="{{category.name}}" />
+                <img src="{{cdn 'webdav:col-bamboo/col-bamboo-3.jpg'}}" alt="{{category.name}}" />
             </div>
             <div class="last-half-height__img">
-                <img src="{{getImage (cdn 'webdav:col-forge/col-forge-4.jpg')}}" alt="women with earrings">
+                <img src="{{getImage (cdn 'webdav:col-bamboo/col-bamboo-4.jpg')}}" alt="women with earrings">
             </div>
         </div>
 
@@ -69,10 +69,21 @@
             <div class="voucher__desc">
                 <h3 class="main_title">{{lang 'collections.voucher.title'}}</h3>
                 <p class="main_p">{{lang 'collections.voucher.p'}}</p>
+                {{#if settings.gift_certificates_enabled}}
+                    <div class="voucher__desc--desk">
+                        <a class="shop-collection-btn__link hbtn hb-fill-bottom" href="{{urls.gift_certificate.purchase}}">Purchase</a>
+                    </div>
+                {{/if}}
             </div>
+
             <div class="voucher__img">
                 <img src="{{getImage (cdn 'webdav:voucher.jpg')}}" alt="voucher">
             </div>
+            {{#if settings.gift_certificates_enabled}}
+                <div class="voucher__btn">
+                    <a class="shop-collection-btn__link hbtn hb-fill-bottom" href="{{urls.gift_certificate.purchase}}">Purchase</a>
+                </div>
+            {{/if}}
         </div>
 
 

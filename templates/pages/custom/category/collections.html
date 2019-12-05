@@ -69,10 +69,21 @@
             <div class="voucher__desc">
                 <h3 class="main_title">{{lang 'collections.voucher.title'}}</h3>
                 <p class="main_p">{{lang 'collections.voucher.p'}}</p>
+                {{#if settings.gift_certificates_enabled}}
+                    <div class="voucher__desc--desk">
+                        <a class="shop-collection-btn__link hbtn hb-fill-bottom" href="{{urls.gift_certificate.purchase}}">Purchase</a>
+                    </div>
+                {{/if}}
             </div>
+
             <div class="voucher__img">
                 <img src="{{getImage (cdn 'webdav:voucher.jpg')}}" alt="voucher">
             </div>
+            {{#if settings.gift_certificates_enabled}}
+                <div class="voucher__btn">
+                        <a class="shop-collection-btn__link hbtn hb-fill-bottom" href="{{urls.gift_certificate.purchase}}">Choose Value</a>
+                </div>
+            {{/if}}
         </div>
 
 

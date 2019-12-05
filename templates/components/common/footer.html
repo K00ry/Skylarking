@@ -21,15 +21,15 @@
 <footer class="footer" role="contentinfo">
     <div class="container">
 
-        {{#if theme_settings.social_icon_placement_bottom '!==' 'bottom_none'}}
-            <article class="footer-info-col
-                footer-info-col--social
-                footer-info-col--{{#if theme_settings.social_icon_placement_bottom '===' 'bottom_left'}}left{{else}}right{{/if}}"
-                data-section-type="footer-webPages">
-                    <h5 class="footer-info-heading">{{lang 'social.connect'}}</h5>
-                    {{> components/common/social-links}}
-            </article>
-        {{/if}}
+{{!--        {{#if theme_settings.social_icon_placement_bottom '!==' 'bottom_none'}}--}}
+{{!--            <article class="footer-info-col--}}
+{{!--                footer-info-col--social--}}
+{{!--                footer-info-col--{{#if theme_settings.social_icon_placement_bottom '===' 'bottom_left'}}left{{else}}right{{/if}}"--}}
+{{!--                data-section-type="footer-webPages">--}}
+{{!--                    <h5 class="footer-info-heading">{{lang 'social.connect'}}</h5>--}}
+{{!--                    {{> components/common/social-links}}--}}
+{{!--            </article>--}}
+{{!--        {{/if}}--}}
         <section class="footer-info">
 
             <article class="footer-info-col footer-info-col--small footer-logo">
@@ -121,6 +121,14 @@
                     {{> components/common/subscription-form}}
                 {{/if}}
                 {{> components/common/payment-icons}}
+
+                <article class="footer-info-col
+                footer-info-col--social
+                footer-info-col--{{#if theme_settings.social_icon_placement_bottom '===' 'bottom_left'}}left{{else}}right{{/if}}"
+                         data-section-type="footer-webPages">
+{{!--                    <h5 class="footer-info-heading">{{lang 'social.connect'}}</h5>--}}
+                    {{> components/common/social-links}}
+                </article>
             </article>
         </section>
         {{#if theme_settings.geotrust_ssl_common_name}}

@@ -7,7 +7,13 @@ $gray-l : #DEDEE0;
 $low_gray:  #F7F7F7;
 $line-gray: #ECEAEA;
 
-
+body{
+  font-family: Optima, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  //line-height: 17px;
+}
 
 .hbtn {
   position: relative;
@@ -20,8 +26,25 @@ $line-gray: #ECEAEA;
   border: 2px solid rgb(255, 255, 255);
   text-decoration: none;
   color: rgb(158, 158, 158);
+
   //white-space: nowrap;
   z-index: 0;
+}
+
+.hbtn-social{
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px 20px;
+  margin: 0px 3px 6px;
+  text-align: center;
+  border: 2px solid rgb(222, 222, 224);
+  text-decoration: none;
+  color: rgb(158, 158, 158);
+  //white-space: nowrap;
+  z-index: 0;
+
 }
 /////button hover
 .hbtn i {
@@ -56,6 +79,7 @@ $line-gray: #ECEAEA;
   color: rgb(255, 255, 255);
   background: $gray-hover;
   transition: color 0.3s ease 0s, background 0s ease 0.3s;
+
 }
 
 
@@ -198,10 +222,6 @@ body{
   line-height: 20px;
   margin-bottom: 40px;
   color: $gray-d;
-  @include breakpoint("small") {
-    //font-size: 16px;
-    //line-height: 26px;
-  }
   @include breakpoint("medium") {
     font-size: 18px;
     line-height: 26px;
@@ -269,3 +289,38 @@ body{
 .ExpressCheckoutContent .CreateAccount {
   display:none;
 }
+////social media links
+
+.socialLinks-item{
+  border-radius: 50px;
+}
+.socialLinks li{
+  padding: 8px;
+}
+.socialLinks .icon svg:hover {
+  fill: #fff;
+}
+.icon--instagram,.icon--facebook{
+width: 36px;
+  height: 36px;
+}
+
+
+
+///sticky footer rules
+
+//html, body {
+//  height: 100%;
+//}
+//body {
+//  display: flex;
+//  flex-direction: column;
+//}
+//.body {
+//  flex: 1 0 auto;
+//}
+//.footer {
+//  flex-shrink: 0;
+//}
+
+

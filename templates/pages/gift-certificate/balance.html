@@ -1,13 +1,13 @@
 {{#partial "page"}}
-
-{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
-<h1 class="page-heading">{{lang 'gift_certificate.heading' }}</h1>
+    <div class="container voucher-page">
+{{!--{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}--}}
+<h1 class="page-heading main_title">{{lang 'gift_certificate.heading' }}</h1>
 {{> components/gift-certificate/navigation gift_page='balance'}}
 
 <main class="account account--fixed">
-    <h3>{{lang 'gift_certificate.balance.heading'}}</h3>
+    <h3 class="page-heading">{{lang 'gift_certificate.balance.heading'}}</h3>
     <p>
-        <strong>{{lang 'gift_certificate.balance.intro' }}</strong>
+        <strong class="main_p">{{lang 'gift_certificate.balance.intro' }}</strong>
     </p>
 
     {{#if gift_certificate}}
@@ -23,14 +23,15 @@
         <input type="hidden" name="action" value="balance">
         <div class="form-field">
             <label class="form-label" for="giftcertificatecode">
-                {{lang 'forms.gift_certificate.balance.code' }}
+{{!--                {{lang 'forms.gift_certificate.balance.code' }}--}}
             </label>
-            <div class="form-prefixPostfix wrap">
-                <input class="form-input" id="giftcertificatecode" name="giftcertificatecode">
+            <div class="form-prefixPostfix wrap custom-balance-koory">
+                <input class="form-input" placeholder="{{lang 'forms.gift_certificate.balance.code' }}" id="giftcertificatecode" name="giftcertificatecode">
                 <input type="submit" class="button button--primary form-prefixPostfix-button--postfix" value="{{lang 'forms.gift_certificate.balance.submit_value' }}">
             </div>
         </div>
     </form>
 </main>
+    </div>
 {{/partial}}
 {{> layout/base}}

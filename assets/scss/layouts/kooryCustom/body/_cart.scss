@@ -1,9 +1,17 @@
 
+///cart popup
 
+.previewCartItem-name{
+  font-family: 'Optima', serif;
 
+}
+//////
 
 .page-content{
 padding: 0;
+  @include breakpoint("medium"){
+    padding-bottom: 80px;
+  }
   .page-heading{
 text-align: left;
     @include breakpoint("medium"){

@@ -1,0 +1,54 @@
+.voucher-page{
+  @include breakpoint("medium") {
+    padding-bottom: 80px;
+  }
+  .main_title{
+    @include breakpoint("medium") {
+      margin-top: 60px;
+    }
+  }
+}
+.account{
+  h3{
+text-align: left;
+  }
+
+}
+.custom-form-koory{
+  padding: 0;
+}
+.custom-label-koory{
+  margin-bottom: 1.5rem;
+}
+.custom-action-form{
+ text-align: left;
+}
+
+.custom-balance-koory{
+  @include breakpoint("medium") {
+    flex-direction: column;
+    .button{
+      width: 230px;
+    }
+  }
+}
+
+.custom-redeem-li{
+  font-family: 'Optima', serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  color: $gray-d;
+}
+
+
+#gift-certificate-submit{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#gift-certificate-preview{
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 0;
+}

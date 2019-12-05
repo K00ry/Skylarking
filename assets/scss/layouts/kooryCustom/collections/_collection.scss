@@ -62,16 +62,16 @@ text-align: center;
   height: 1371px;
   top: 12%;
   @include breakpoint("small") {
-    top: 35%;
+    top: 37%;
     height: 1025px;
 
   }
   @include breakpoint("medium") {
-    top: 37%;
+    top: 39%;
     height: 1200px;
   }
   @include breakpoint("large") {
-    top: 33%;
+    top: 35%;
     height: 1500px;
   }
 }
@@ -211,11 +211,26 @@ display: flex;
       }
     }
 
+    &--desk{
+      display: none;
+      @include breakpoint("small") {
+        display: block;
+        .shop-collection-btn__link{
+          margin: 30px 0
+        }
+      }
+    }
+
   }
   &__img{
     @include breakpoint("small") {
       width: width("6/12");
 
+    }
+  }
+  &__btn{
+    @include breakpoint("small") {
+      display: none;
     }
 
   }
