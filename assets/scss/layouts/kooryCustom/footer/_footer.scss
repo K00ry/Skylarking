@@ -23,7 +23,9 @@
 
     .footer-info-heading{
       text-align: left;
+      margin-bottom: 16px;
     }
+
   }
 }
 .footer-logo__block{
@@ -49,6 +51,7 @@
 .footer-info-col{
   .form{
     display:flex;
+    margin-bottom: 0px;
   }
   .form-fieldset{
     margin:auto;
@@ -114,6 +117,51 @@ margin: auto;
 
 }
 
+.socialLinks{
+display: flex;
+  flex-direction: row;
+
+  padding-bottom: 20px;
+
+
+  justify-content: center;
+  @include breakpoint("small") {
+    justify-content: initial;
+    padding: 0;
+  }
+  &-item{
+    background-color: white;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    .icon{
+      height: 14px;
+      width: 14px;
+      margin: auto;
+      svg{
+        fill:#555465;
+      }
+    }
+    &:hover{
+      .icon{
+        svg{
+          z-index: 200;
+          fill:#fff;
+        }
+      }
+    }
+  }
+}
+.social-custom-header{
+  display: none;
+  line-height: 20px;
+  @include breakpoint("small") {
+    display: block;
+  }
+
+
+
+}
 
 .footer-copyright{
   padding-top: 2em;
