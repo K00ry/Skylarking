@@ -47,6 +47,12 @@ export default function () {
             touchThreshold:20,
             swipeToSlide:true,
         });
+
+        var mySwiper = new Swiper ('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true
+        });
         const $nav_slider = $('[data-slick-nav]');
         $nav_slider.slick({
             dots: false,
