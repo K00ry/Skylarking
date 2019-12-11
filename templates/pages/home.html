@@ -20,10 +20,11 @@ blog:
     {{{region name="home_below_carousel"}}}
 {{/partial}}--}}
 
-<div class="grey-m home-gray"></div>
+
 
 {{#partial "page"}}
     {{inject 'pageType' page_type}}
+    <div class="grey-m home-gray"></div>
     <div class="half-white">
         <div class="main-intro-desk container">
             <div class="main-intro-desk__left">
@@ -55,11 +56,13 @@ blog:
     </div>
 
 
-        <div class="container my-carousel">
-            {{#if products.new}}
-                {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
-            {{/if}}
-            {{{region name="home_below_new_products"}}}
+        <div class=" full-width-back-home">
+            <div class="container my-carousel">
+                {{#if products.new}}
+                    {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
+                {{/if}}
+                {{{region name="home_below_new_products"}}}
+            </div>
         </div>
 
 

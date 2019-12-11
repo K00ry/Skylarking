@@ -9,14 +9,14 @@
 
 .contact-gray{
   height: 482px;
-  top: 27%;
+  top: 24%;
   @include breakpoint('small'){
-    top: 25%;
+    top: 33%;
 
   }
   @include breakpoint('medium'){
     height: 528px;
-    top: 30%;
+    top: 40%;
   }
 }
 

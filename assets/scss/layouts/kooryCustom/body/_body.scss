@@ -1,16 +1,15 @@
 .home-gray{
-
   height: 472px;
-  top: 24%;
+  top: 20%;
 
   @media only screen
   and (device-width : 375px)
   and (device-height : 812px)
   and (-webkit-device-pixel-ratio : 3) {
-    top: 23%;
+    top: 19%;
   }
   @include breakpoint("small"){
-    height: 630px;
+    height: 530px;
     top: 16%
 
   }
@@ -24,6 +23,9 @@
   }
 
 }
+
+
+
 
 
 .half-white{
@@ -148,7 +150,23 @@
 
 }
 
+.full-width-back-home{
+  background-color: $low_gray;
+  padding-bottom: 30px;
+  @include breakpoint("small"){
+    padding-bottom: 60px;
+
+  }
+
+  @include breakpoint("large") {
+    width: 500%;
+    margin-left: -200%;
+  }
+}
+
 .my-carousel{
+
+
 
   .main_title{
     margin-bottom: 26px;
@@ -186,7 +204,7 @@
 }
 .productCarousel{
 
-  margin-bottom: 40px;
+  //margin-bottom: 40px;
 }
 
 .productCarousel-slide{

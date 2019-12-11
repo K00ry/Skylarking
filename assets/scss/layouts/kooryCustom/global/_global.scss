@@ -7,7 +7,24 @@ $gray-l : #DEDEE0;
 $low_gray:  #F7F7F7;
 $line-gray: #ECEAEA;
 
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.body {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
 body{
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
   font-family: Optima, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -241,9 +258,20 @@ body{
     width: 500%;
     margin-left: -200%;
   }
+}
 
+.full-width-back{
+  background-color: $low_gray;
+  //padding-bottom: 30px;
+  //@include breakpoint("small"){
+  //  padding-bottom: 60px;
+  //
+  //}
 
-
+  @include breakpoint("large") {
+    width: 500%;
+    margin-left: -200%;
+  }
 }
 .border-helper{
   border-bottom: 1px solid $gray-l;

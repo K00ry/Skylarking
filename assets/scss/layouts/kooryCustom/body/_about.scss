@@ -1,5 +1,18 @@
 
+.quote__grey-m{
+  height: 260px;
+  top: 53%;
+  @include breakpoint('small') {
+    height: 400px;
+    top: 37%;
+  }
 
+  @include breakpoint('medium') {
+    height: 497px;
+    top: 36%;
+  }
+
+}
 
 .about-intro-m{
   display: flex;
@@ -42,20 +55,7 @@ flex-direction: column;
     }
   }
 }
-.quote__grey-m{
-  height: 300px;
-  top: 47%;
-  @include breakpoint('small') {
-    height: 400px;
-    top: 27%;
-  }
 
-  @include breakpoint('medium') {
-    height: 497px;
-    top: 27%;
-  }
-
-}
 
 .quote{
   padding-top: 50px;

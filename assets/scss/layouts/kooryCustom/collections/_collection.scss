@@ -1,16 +1,14 @@
 .collection-background{
   height: 1371px;
   top: 12%;
-  //display: none;
   @include breakpoint("small") {
-    //display: block;
-    top: 37%;
-    height: 1025px;
+    top: 18%;
+    height: 1670px;
 
   }
   @include breakpoint("medium") {
-    top: 39%;
-    height: 1200px;
+    top: 17%;
+    height: 2050px;
   }
   @include breakpoint("large") {
     top: 16%;
@@ -234,6 +232,7 @@ display: flex;
   }
   &__btn{
     display: flex;
+      border-bottom: 1px solid $gray-l;
     @include breakpoint("small") {
       display: none;
     }

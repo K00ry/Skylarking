@@ -7,6 +7,10 @@
     height: 340px;
     top: 12%;
   }
+  @include breakpoint('medium') {
+    height: 497px;
+    top: 13%;
+  }
 
 
 }
