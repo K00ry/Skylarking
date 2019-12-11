@@ -1,9 +1,9 @@
 .collection-background{
-  //height: 1371px;
-  //top: 12%;
-  display: none;
+  height: 1371px;
+  top: 12%;
+  //display: none;
   @include breakpoint("small") {
-    display: block;
+    //display: block;
     top: 37%;
     height: 1025px;
 
@@ -13,8 +13,8 @@
     height: 1200px;
   }
   @include breakpoint("large") {
-    top: 35%;
-    height: 1500px;
+    top: 16%;
+    height: 2300px;
   }
 }
 

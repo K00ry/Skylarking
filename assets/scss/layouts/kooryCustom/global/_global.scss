@@ -237,6 +237,13 @@ body{
   height: 120vh;
   background-color: $low_gray;
   z-index: -1;
+  @include breakpoint("large") {
+    width: 500%;
+    margin-left: -200%;
+  }
+
+
+
 }
 .border-helper{
   border-bottom: 1px solid $gray-l;
