@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ head.title }}</title>
+    {{{ head.meta_tags }}}
+    {{{ head.config }}}
+
+    <link href="{{ head.favicon }}" rel="shortcut icon">
+    {{#block "head"}}{{/block}}
+</head>
+<body>
+<svg data-src="{{cdn 'img/icon-sprite.svg'}}" class="icons-svg-sprite"></svg>
+{{#block "page"}}{{/block}}
+<script>window.__webpack_public_path__ = "{{cdn 'assets/dist/'}}";</script>
+<script src="{{cdn 'assets/dist/theme-bundle.main.js'}}"></script>
+<script>
+        {{!-- Exported in app.js --}}
+    window.stencilBootstrap("{{page_type}}", {{jsContext}}).load();
+
+</script>
+
+{{{footer.scripts}}}
+
+</body>
+</html>

@@ -97,11 +97,18 @@ body {
 // -----------------------------------------------------------------------------
 
 .optimizedCheckout-buttonPrimary {
+    width: 250px;
     background-color: stencilColor("optimizedCheckout-buttonPrimary-backgroundColor");
-    border-color: stencilColor("optimizedCheckout-buttonPrimary-borderColor");
+    border-color: #555465;
     color: stencilColor("optimizedCheckout-buttonPrimary-color");
-    font-family: stencilFontFamily("optimizedCheckout-buttonPrimary-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout-buttonPrimary-font");
+    font-family: Songti;
+    font-weight:normal;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-radius: 0;
+
 
     &:focus,
     &:hover {
@@ -140,11 +147,19 @@ body {
 // -----------------------------------------------------------------------------
 
 .optimizedCheckout-buttonSecondary {
+    width: 250px;
     background-color: stencilColor("optimizedCheckout-buttonSecondary-backgroundColor");
     border-color: stencilColor("optimizedCheckout-buttonSecondary-borderColor");
     color: stencilColor("optimizedCheckout-buttonSecondary-color");
-    font-family: stencilFontFamily("optimizedCheckout-buttonSecondary-font"), Arial, Helvetica, sans-serif;
-    font-weight: stencilFontWeight("optimizedCheckout-buttonSecondary-font");
+    //font-family: stencilFontFamily("optimizedCheckout-buttonSecondary-font"), Arial, Helvetica, sans-serif;
+    //font-weight: stencilFontWeight("optimizedCheckout-buttonSecondary-font");
+    font-family: Songti;
+    font-weight:normal;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-radius: 0;
 
     &:focus,
     &:hover {

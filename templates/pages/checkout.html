@@ -24,6 +24,7 @@
 {{/partial}}
 
 {{#partial "page"}}
+
 {{!--<header class="checkoutHeader optimizedCheckout-header">--}}
 {{!--    <div class="checkoutHeader-content">--}}
 {{!--        <h1 class="is-srOnly">{{lang 'checkout.title'}}</h1>--}}
@@ -38,6 +39,7 @@
 {{!--        </h2>--}}
 {{!--    </div>--}}
 {{!--</header>--}}
+    <svg data-src="{{cdn 'img/icon-sprite.svg'}}" class="icons-svg-sprite"></svg>
     {{> components/common/header }}
 <div class="container">
 {{{ checkout.checkout_content }}}
@@ -47,4 +49,4 @@
 {{> components/common/footer}}
 {{/partial}}
 
-{{> layout/empty}}
+{{> layout/customCheck}}
