@@ -98,9 +98,9 @@ body {
 
 .optimizedCheckout-buttonPrimary {
     width: 250px;
+    color: stencilColor("optimizedCheckout-buttonPrimary-color");
     background-color: stencilColor("optimizedCheckout-buttonPrimary-backgroundColor");
     border-color: #555465;
-    color: stencilColor("optimizedCheckout-buttonPrimary-color");
     font-family: Songti;
     font-weight:normal;
     font-size: 16px;
@@ -148,11 +148,14 @@ body {
 
 .optimizedCheckout-buttonSecondary {
     width: 250px;
-    background-color: stencilColor("optimizedCheckout-buttonSecondary-backgroundColor");
+    //background-color: stencilColor("optimizedCheckout-buttonSecondary-backgroundColor");
+    background-color:#555465;
     border-color: stencilColor("optimizedCheckout-buttonSecondary-borderColor");
-    color: stencilColor("optimizedCheckout-buttonSecondary-color");
+    //color: stencilColor("optimizedCheckout-buttonSecondary-color");
+    color: #ffffff;
     //font-family: stencilFontFamily("optimizedCheckout-buttonSecondary-font"), Arial, Helvetica, sans-serif;
     //font-weight: stencilFontWeight("optimizedCheckout-buttonSecondary-font");
+    //border-color: #555465;
     font-family: Songti;
     font-weight:normal;
     font-size: 16px;

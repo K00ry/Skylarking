@@ -1,8 +1,110 @@
+.guest-signup{
+  display: none;
+
+}
+.orderConfirmation .optimizedCheckout-headingPrimary{
+  grid-area: header;
+  margin: 30px 0;
+  text-align: center;
+}
+.orderConfirmation .orderConfirmation-section{
+  grid-area: note;
+  text-align: center;
+}
+.orderConfirmation .continueButtonContainer{
+  grid-area: button;
+  display: flex;
+
+}
+.orderConfirmation .continueButtonContainer a{
+  margin: auto;
+
+}
+.orderConfirmation-section + div{
+  grid-area: image;
+}
+.orderConfirmation-section{
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 0px;
+
+}
+
+
+.orderConfirmation{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: auto;
+  grid-template-areas:
+          "image image image image"
+          "header header header header"
+          "note note note note"
+          "button button button button ";
+}
+
+.orderConfirmation-section + div{
+  height: 81px;
+  width: 171px;
+  background: url(https://cdn11.bigcommerce.com/s-bmnumqp4jm/content/check-logo/birds.png) no-repeat;
+  background-size: cover;
+  margin: auto;
+
+}
+
+  @media (min-width: 801px) {
+    .orderConfirmation-section{
+      border-bottom: 1px solid #ebebeb;
+      margin-bottom: 2.5rem;
+      padding: 0 0 2.5rem;
+    }
+    .orderConfirmation .optimizedCheckout-headingPrimary{
+      text-align: left;
+    }
+    .orderConfirmation .orderConfirmation-section{
+
+      text-align: left;
+    }
+    .orderConfirmation .continueButtonContainer{
+      grid-area: button;
+      display: block;
+    }
+    .orderConfirmation .continueButtonContainer a{
+      margin: auto;
+    }
+
+    .orderConfirmation-section + div{
+      height: 158px;
+      width: 333px;
+      background: url(https://cdn11.bigcommerce.com/s-bmnumqp4jm/content/check-logo/check-logo-s.svg) no-repeat;
+      background-size: cover;
+      margin: auto;
+
+    }
+    .layout-cart{
+      display: none;
+    }
+    .optimizedCheckout-contentPrimary .layout-main{
+      margin: 40px 0;
+      width: 100%;
+    }
+    .orderConfirmation{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+      grid-template-rows: auto;
+      grid-template-areas:
+              "header header header header"
+              "note note image image"
+              "button button . .";
+    }
+
+
+
+
+}
+
+
+
 .layout{
-  //padding-top: 108px;
-  //padding-right: 0;
-  //padding-left: 0;
-  //padding-bottom: 40px;
   padding: 75px 0 0 0;
   @media (min-width: 801px) {
       padding: 108px 0 0 0;

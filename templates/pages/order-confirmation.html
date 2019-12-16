@@ -38,13 +38,15 @@
         {{!--</h2>--}}
     {{!--</div>--}}
 {{!--</header>--}}
+
     {{> components/common/header }}
     <div class="container">
     {{{ checkout.order_confirmation_content }}}
     </div>
-
+    {{> components/common/footer}}
 {{{ footer.scripts }}}
-{{> components/common/footer}}
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 {{/partial}}
 
 {{> layout/customCheck}}
