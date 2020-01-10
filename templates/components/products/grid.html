@@ -33,7 +33,7 @@
          data-list-name="{{list}}"
          data-slick-shop='{}'>
         {{#each products}}
-            {{#if this.brand.name '==' 'Bamboo' }}
+            {{#if this.brand.name '==' 'Bamboo and Pental' }}
                 <div class="shop-slide">
                     {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
                 </div>
