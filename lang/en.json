@@ -907,10 +907,7 @@
 
     },
     "collections":{
-        "voucher": {
-            "title": "Voucher",
-            "p": "If you have a friend or loved one who already shops with us or you would like to introduce someone\n                    to our beautiful handmade jewellery a voucher could be the perfect gift! It can be used for online\n                    and in-store purchases."
-        },
+
         "leaf": {
             "mid_title": "Delicate designs inspired by nature",
             "mid_p": "The natural world is a boundless source for inspiration and exploration.\n                    Each design in this collection draws on a love of all things botanical."
@@ -932,14 +929,17 @@
             "mid_p": "Capturing the essence of water on the surface of the silver, the patterns created mimic the fluidity and reflections of water on a solid form. "
         },
         "oxidized": {
-            "mid_title": "",
-            "mid_p": ""
+            "mid_title": "hello",
+            "mid_p": "Capturing the essence"
         },
         "classic": {
-            "mid_title": "",
-            "mid_p": ""
+            "mid_title": "how are you ?",
+            "mid_p": " water on the surface "
+        },
+        "voucher": {
+            "title": "Voucher",
+            "p": "If you have a friend or loved one who already shops with us or you would like to introduce someone\n                    to our beautiful handmade jewellery a voucher could be the perfect gift! It can be used for online\n                    and in-store purchases."
         }
-
     },
     "shipping": {
         "shipping": {
