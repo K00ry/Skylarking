@@ -9,8 +9,21 @@
                 {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
             </div>
         {{/if}}
-
     {{/each}}
+{{#forEach shop_by_brand}}
+    {{#if this.name '===' 'Leaf and flora' this.count '>' 16}}
+        {{#gt this.count '16'}}
+            <a href="../collections/leaf-and-flora/all/">View More</a>
+        {{else}}
+
+        {{/gt}}
+    {{/if}}
+{{/forEach}}
+
+{{!--    {{#and this.name '===' 'Leaf and flora' this.count '>' 16}}--}}
+
+{{!--    {{/and}}--}}
+    <script>console.log({{{JSONstringify shop_by_brand}}});</script>
 </div>
 </section>
 
@@ -18,13 +31,27 @@
 <h2 class="main_title">Beaded collection</h2>
 <div class="shop" data-list-name="{{list}}"
      data-slick-shop='{}'>
-    {{#each products}}
-        {{#if this.brand.name '==' 'Beaded' }}
-            <div class="shop-slide">
-                {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
-            </div>
-        {{/if}}
-    {{/each}}
+
+            {{#each products}}
+                    {{#if this.brand.name '==' 'Beaded' }}
+                        <div class="shop-slide">
+                            {{>components/products/card settings=../settings show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings customer=../customer event=../event position=(add @index 1)}}
+                        </div>
+                    {{/if}}
+            {{/each}}
+
+            {{#forEach shop_by_brand}}
+                {{#if this.name '===' 'Beaded' }}
+                    {{#gt this.count '16'}}
+                        <a href="../collections/beaded/all/">View More</a>
+                    {{else}}
+
+                    {{/gt}}
+                {{/if}}
+            {{/forEach}}
+
+
+
 </div>
 </section>
 <section class=" shop-section">
@@ -39,6 +66,15 @@
                 </div>
             {{/if}}
         {{/each}}
+        {{#forEach shop_by_brand}}
+            {{#if this.name '===' 'Bamboo and Pental' }}
+                {{#gt this.count '16'}}
+                    <a href="../collections/bamboo-and-pental/all/">View More</a>
+                {{else}}
+
+                {{/gt}}
+            {{/if}}
+        {{/forEach}}
     </div>
 </section>
 
@@ -54,6 +90,15 @@
                 </div>
             {{/if}}
         {{/each}}
+        {{#forEach shop_by_brand}}
+            {{#if this.name '===' 'Forge' }}
+                {{#gt this.count '16'}}
+                    <a href="../collections/forge/all/">View More</a>
+                {{else}}
+
+                {{/gt}}
+            {{/if}}
+        {{/forEach}}
     </div>
 </section>
 <section class=" shop-section">
@@ -68,6 +113,15 @@
                 </div>
             {{/if}}
         {{/each}}
+        {{#forEach shop_by_brand}}
+            {{#if this.name '===' 'Oxidized' }}
+                {{#gt this.count '16'}}
+                    <a href="../collections/oxidized/all/">View More</a>
+                {{else}}
+
+                {{/gt}}
+            {{/if}}
+        {{/forEach}}
     </div>
 </section>
 
@@ -83,6 +137,15 @@
                 </div>
             {{/if}}
         {{/each}}
+        {{#forEach shop_by_brand}}
+            {{#if this.name '===' 'Reflections' }}
+                {{#gt this.count '16'}}
+                    <a href="../collections/reflections/all/">View More</a>
+                {{else}}
+
+                {{/gt}}
+            {{/if}}
+        {{/forEach}}
     </div>
 </section>
 
@@ -98,6 +161,15 @@
                 </div>
             {{/if}}
         {{/each}}
+        {{#forEach shop_by_brand}}
+            {{#if this.name '===' 'Classic' }}
+                {{#gt this.count '16'}}
+                    <a href="../collections/classic/all/">View More</a>
+                {{else}}
+
+                {{/gt}}
+            {{/if}}
+        {{/forEach}}
     </div>
 </section>
 
