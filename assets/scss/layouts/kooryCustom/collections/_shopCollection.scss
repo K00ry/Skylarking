@@ -29,3 +29,29 @@
 
   }
 }
+
+.view-more {
+  display: none;
+  @include breakpoint("small") {
+    display: block;
+    font-family: songti;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #555465;
+    width: 230px;
+    padding: 14px 0;
+    margin: auto;
+  }
+  &__btn{
+
+
+  }
+
+}

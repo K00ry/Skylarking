@@ -10,21 +10,19 @@
             </div>
         {{/if}}
     {{/each}}
-{{#forEach shop_by_brand}}
-    {{#if this.name '===' 'Leaf and flora' this.count '>' 16}}
-        {{#gt this.count '16'}}
-            <a href="../collections/leaf-and-flora/all/">View More</a>
-        {{else}}
-
-        {{/gt}}
-    {{/if}}
-{{/forEach}}
-
-{{!--    {{#and this.name '===' 'Leaf and flora' this.count '>' 16}}--}}
-
-{{!--    {{/and}}--}}
     <script>console.log({{{JSONstringify shop_by_brand}}});</script>
 </div>
+    {{#forEach shop_by_brand}}
+        {{#if this.name '===' 'Leaf and flora'}}
+            {{#gt this.count 12}}
+            <div class="view-more hbtn hb-fill-bottom">
+                <a href="../collections/leaf-and-flora/all/">View More</a>
+            </div>
+            {{else}}
+
+            {{/gt}}
+        {{/if}}
+    {{/forEach}}
 </section>
 
 <section class=" shop-section">
@@ -39,20 +37,18 @@
                         </div>
                     {{/if}}
             {{/each}}
+    </div>
+    {{#forEach shop_by_brand}}
+        {{#if this.name '===' 'Beaded' }}
+            {{#gt this.count 12}}
+                <div class="view-more hbtn hb-fill-bottom">
+                    <a class="view-more__btn" href="../collections/beaded/all/">View More</a>
+                </div>
+            {{else}}
 
-            {{#forEach shop_by_brand}}
-                {{#if this.name '===' 'Beaded' }}
-                    {{#gt this.count '16'}}
-                        <a href="../collections/beaded/all/">View More</a>
-                    {{else}}
-
-                    {{/gt}}
-                {{/if}}
-            {{/forEach}}
-
-
-
-</div>
+            {{/gt}}
+        {{/if}}
+    {{/forEach}}
 </section>
 <section class=" shop-section">
     <h2 class="main_title">Bamboo and Pental</h2>
@@ -66,16 +62,19 @@
                 </div>
             {{/if}}
         {{/each}}
-        {{#forEach shop_by_brand}}
-            {{#if this.name '===' 'Bamboo and Pental' }}
-                {{#gt this.count '16'}}
-                    <a href="../collections/bamboo-and-pental/all/">View More</a>
-                {{else}}
 
-                {{/gt}}
-            {{/if}}
-        {{/forEach}}
     </div>
+    {{#forEach shop_by_brand}}
+        {{#if this.name '===' 'Bamboo and Pental' }}
+            {{#gt this.count 12}}
+                <div class="view-more hbtn hb-fill-bottom">
+                    <a href="../collections/bamboo-and-pental/all/">View More</a>
+                </div>
+            {{else}}
+
+            {{/gt}}
+        {{/if}}
+    {{/forEach}}
 </section>
 
 <section class=" shop-section">
@@ -90,16 +89,18 @@
                 </div>
             {{/if}}
         {{/each}}
-        {{#forEach shop_by_brand}}
-            {{#if this.name '===' 'Forge' }}
-                {{#gt this.count '16'}}
-                    <a href="../collections/forge/all/">View More</a>
-                {{else}}
-
-                {{/gt}}
-            {{/if}}
-        {{/forEach}}
     </div>
+    {{#forEach shop_by_brand}}
+        {{#if this.name '===' 'Forge' }}
+            {{#gt this.count 12}}
+                <div class="view-more hbtn hb-fill-bottom">
+                    <a href="../collections/forge/all/">View More</a>
+                </div>
+            {{else}}
+
+            {{/gt}}
+        {{/if}}
+    {{/forEach}}
 </section>
 <section class=" shop-section">
     <h2 class="main_title">Oxidized</h2>
@@ -113,16 +114,19 @@
                 </div>
             {{/if}}
         {{/each}}
-        {{#forEach shop_by_brand}}
-            {{#if this.name '===' 'Oxidized' }}
-                {{#gt this.count '16'}}
-                    <a href="../collections/oxidized/all/">View More</a>
-                {{else}}
 
-                {{/gt}}
-            {{/if}}
-        {{/forEach}}
     </div>
+    {{#forEach shop_by_brand}}
+        {{#if this.name '===' 'Oxidized' }}
+            {{#gt this.count 12}}
+                <div class="view-more hbtn hb-fill-bottom">
+                    <a href="../collections/oxidized/all/">View More</a>
+                </div>
+            {{else}}
+
+            {{/gt}}
+        {{/if}}
+    {{/forEach}}
 </section>
 
 <section class=" shop-section shop-section-last ">
@@ -137,16 +141,18 @@
                 </div>
             {{/if}}
         {{/each}}
-        {{#forEach shop_by_brand}}
-            {{#if this.name '===' 'Reflections' }}
-                {{#gt this.count '16'}}
-                    <a href="../collections/reflections/all/">View More</a>
-                {{else}}
-
-                {{/gt}}
-            {{/if}}
-        {{/forEach}}
     </div>
+    {{#forEach shop_by_brand}}
+        {{#if this.name '===' 'Reflections' }}
+            {{#gt this.count 12}}
+                <div class="view-more hbtn hb-fill-bottom">
+                    <a href="../collections/reflections/all/">View More</a>
+                </div>
+            {{else}}
+
+            {{/gt}}
+        {{/if}}
+    {{/forEach}}
 </section>
 
 <section class=" shop-section shop-section-last ">
@@ -161,16 +167,18 @@
                 </div>
             {{/if}}
         {{/each}}
-        {{#forEach shop_by_brand}}
-            {{#if this.name '===' 'Classic' }}
-                {{#gt this.count '16'}}
-                    <a href="../collections/classic/all/">View More</a>
-                {{else}}
-
-                {{/gt}}
-            {{/if}}
-        {{/forEach}}
     </div>
+    {{#forEach shop_by_brand}}
+        {{#if this.name '===' 'Classic' }}
+            {{#gt this.count 12}}
+                <div class="view-more hbtn hb-fill-bottom">
+                    <a href="../collections/classic/all/">View More</a>
+                </div>
+            {{else}}
+
+            {{/gt}}
+        {{/if}}
+    {{/forEach}}
 </section>
 
 
