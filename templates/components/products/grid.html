@@ -10,13 +10,15 @@
             </div>
         {{/if}}
     {{/each}}
-    <script>console.log({{{JSONstringify shop_by_brand}}});</script>
+    {{!--<script>console.log({{{JSONstringify shop_by_brand}}});</script>--}}
 </div>
     {{#forEach shop_by_brand}}
         {{#if this.name '===' 'Leaf and flora'}}
-            {{#gt this.count 12}}
-            <div class="view-more hbtn hb-fill-bottom">
-                <a href="../collections/leaf-and-flora/all/">View More</a>
+            {{#gt this.count 18}}
+            <div class="vm-wrapper">
+                <div class="view-more">
+                  <a class="hbtn hb-fill-bottom" href="../collections/leaf-and-flora/all/">View More</a>
+                </div>
             </div>
             {{else}}
 
@@ -40,9 +42,11 @@
     </div>
     {{#forEach shop_by_brand}}
         {{#if this.name '===' 'Beaded' }}
-            {{#gt this.count 12}}
-                <div class="view-more hbtn hb-fill-bottom">
-                    <a class="view-more__btn" href="../collections/beaded/all/">View More</a>
+            {{#gt this.count 20}}
+                <div class="vm-wrapper">
+                    <div class="view-more">
+                        <a class="hbtn hb-fill-bottom" href="../collections/beaded/all/">View More</a>
+                    </div>
                 </div>
             {{else}}
 
@@ -66,9 +70,11 @@
     </div>
     {{#forEach shop_by_brand}}
         {{#if this.name '===' 'Bamboo and Pental' }}
-            {{#gt this.count 12}}
-                <div class="view-more hbtn hb-fill-bottom">
-                    <a href="../collections/bamboo-and-pental/all/">View More</a>
+            {{#gt this.count 20}}
+                <div class="vm-wrapper">
+                    <div class="view-more">
+                        <a class="hbtn hb-fill-bottom" href="../collections/bamboo-and-pental/all/">View More</a>
+                     </div>
                 </div>
             {{else}}
 
@@ -92,9 +98,11 @@
     </div>
     {{#forEach shop_by_brand}}
         {{#if this.name '===' 'Forge' }}
-            {{#gt this.count 12}}
-                <div class="view-more hbtn hb-fill-bottom">
-                    <a href="../collections/forge/all/">View More</a>
+            {{#gt this.count 20}}
+                <div class="vm-wrapper">
+                    <div class="view-more ">
+                        <a class="hbtn hb-fill-bottom" href="../collections/forge/all/">View More</a>
+                    </div>
                 </div>
             {{else}}
 
@@ -118,9 +126,11 @@
     </div>
     {{#forEach shop_by_brand}}
         {{#if this.name '===' 'Oxidized' }}
-            {{#gt this.count 12}}
-                <div class="view-more hbtn hb-fill-bottom">
-                    <a href="../collections/oxidized/all/">View More</a>
+            {{#gt this.count 20}}
+                <div class="vm-wrapper">
+                    <div class="view-more ">
+                        <a class="hbtn hb-fill-bottom" href="../collections/oxidized/all/">View More</a>
+                    </div>
                 </div>
             {{else}}
 
@@ -144,9 +154,11 @@
     </div>
     {{#forEach shop_by_brand}}
         {{#if this.name '===' 'Reflections' }}
-            {{#gt this.count 12}}
-                <div class="view-more hbtn hb-fill-bottom">
-                    <a href="../collections/reflections/all/">View More</a>
+            {{#gt this.count 20}}
+                <div class="vm-wrapper">
+                    <div class="view-more ">
+                        <a class="hbtn hb-fill-bottom" href="../collections/reflections/all/">View More</a>
+                    </div>
                 </div>
             {{else}}
 
@@ -170,9 +182,11 @@
     </div>
     {{#forEach shop_by_brand}}
         {{#if this.name '===' 'Classic' }}
-            {{#gt this.count 12}}
-                <div class="view-more hbtn hb-fill-bottom">
-                    <a href="../collections/classic/all/">View More</a>
+            {{#gt this.count 20}}
+                <div class="vm-wrapper">
+                    <div class="view-more ">
+                        <a class="hbtn hb-fill-bottom" href="../collections/classic/all/">View More</a>
+                    </div>
                 </div>
             {{else}}
 
