@@ -342,10 +342,10 @@
                 "download_items": "Download Items",
                 "card_ending": "ending in {card}",
                 "shipments": {
-                  "date": "Date Shipped",
-                  "method": "Shipping Method",
-                  "link": "Tracking Link",
-                  "header": "Shipping Details"
+                    "date": "Date Shipped",
+                    "method": "Shipping Method",
+                    "link": "Tracking Link",
+                    "header": "Shipping Details"
                 },
                 "actions": "Actions",
                 "reorder": "Reorder",
@@ -386,14 +386,14 @@
                 "visa": "Visa"
             },
             "billing_address_labels": {
-              "address_line_1": "Address Line 1",
-              "address_line_2": "Address Line 2",
-              "suburb_city": "Suburb/City",
-              "state_province": "State/Province",
-              "choose_state": "Choose a State",
-              "country": "Country",
-              "choose_country": "Choose a Country",
-              "zip_postcode": "Zip/Postcode"
+                "address_line_1": "Address Line 1",
+                "address_line_2": "Address Line 2",
+                "suburb_city": "Suburb/City",
+                "state_province": "State/Province",
+                "choose_state": "Choose a State",
+                "country": "Country",
+                "choose_country": "Choose a Country",
+                "zip_postcode": "Zip/Postcode"
             }
         },
         "returns": {
@@ -891,7 +891,7 @@
         "quote": "I work intuitively following a personal journey from the moment \nI am inspired, during the design process and whilst physically \nmaking an item of jewellery.",
         "closing_title": "Handcrafted pieces ",
         "closing_p_first": "Ruth opened Skylarking, her shop and workshop in 2015, all items of jewellery are designed and made by Ruth \non the Isle of Wight. ",
-        "closing_p_last": "All designs go through a careful process. The initial sketch is made and developed, then each design is handcrafted in either silver, gold or white gold adding pearls or precious and semi precious stones sometimes."
+        "closing_p_last": "All designs go through a careful process. The initial sketch is made and developed, then each design is handcrafted in either silver, gold or white gold adding pearls or precious and semi precious stones."
     },
     "size-guide":{
         "intro_title":"Necklaces",
@@ -921,20 +921,20 @@
             "mid_p": "The beaded collection uses beaded elements inspired by traditional indian jewellery with a modern twist. These designs are fun to wear, versatile and will complement your existing jewellery. "
         },
         "bamboo": {
-            "mid_title": "A traditional handmade process",
-            "mid_p": "Hammers are used to shape and form the metal and add a dappled texture \nto the surface reflecting light. These designs are coveted for the organic \nelemental feel that they evoke."
+            "mid_title": "Simplified botanical forms",
+            "mid_p": "Two mini collections. One collection that draws inspiration from the elegant shapes and forms found in bamboo and the contrast of the beautiful bamboo leaf against the stem.  The other collection draws on the beauty of petals, creating patterns and designs representing botanical elements in a fresh way."
         },
         "reflections": {
             "mid_title": "Inspired by water ",
             "mid_p": "Capturing the essence of water on the surface of the silver, the patterns created mimic the fluidity and reflections of water on a solid form. "
         },
         "oxidized": {
-            "mid_title": "hello",
-            "mid_p": "Capturing the essence"
+            "mid_title": "Exploring shape, form and contrast",
+            "mid_p": "This collection of designs focus on imperfect geometric forms, architectural elements and asymmetry. Inspired by anything from the changing shapes seen in shadows to the bold contours found in architecture. The surface is oxidized to blacken areas of the silver to create contrast."
         },
         "classic": {
-            "mid_title": "how are you ?",
-            "mid_p": " water on the surface "
+            "mid_title": "Lasting style with a contemporary aesthetic",
+            "mid_p": "Looking for lasting style? With the Classic collection you will find timeless pieces of jewellery carefully designed to balance jewellery classics with a contemporary aesthetic."
         },
         "voucher": {
             "title": "Voucher",
@@ -943,23 +943,22 @@
     },
     "shipping": {
         "shipping": {
-            "title": "Shipping",
-            "p": "All jewelry is made by hand, to order, please allow 2 weeks for your order to be made and shipped. All jewelry is packed in a muslin bag and jewelry box. Shipped via USPS, in the continental United States orders are expected to arrive within 2-3 day of shipment. If you would like to upgrade to a faster shipping method please contact us through the form on the contact page. Ellen Mote Jewelry is not responsible for lost or stolen packages. "
+            "title": "Delivery and Shipping",
+            "p": "All items are handmade on the Isle of Wight in the Skylarking workshop. If an item is in stock it can be shipped within 2 working days. If an item needs to be made to order you will have to allow up to a week before the item can be posted out. If you are ordering multiple items delivery prices may vary dependong on the value and weight of your order"
         },
         "international": {
-            "title": "International shipping",
-            "p": "International shipping is the flat rate of $15. Packages are shipped via USPS first class mail and tracking is not available once it has left the United States. Most items will arrive within 2 weeks of shipping, but it could take up to 4. Ellen Mote Jewelry is not responsible for any additional taxes or fees charged upon arrival.",
-            "opt-info": "There are two options, availiable for shipping worldwide:",
+            "title": "Delivery and Shipping Prices",
+            "p": "Please see below for delivery options and pricing",
             "opt-items": {
-                "opt-item-1": "Standard shipping (takes 5-7 days and costs 7);",
-                "opt-item-2": "Standard plus shipping (4-5 days, 8);",
-                "opt-item-3": "Premium shipping (2-3 days, 10);",
-                "opt-item-4": "Premium plus shipping (1-2 days, 13)."
+                "opt-item-1": "Standard delivery within the uk £4",
+                "opt-item-2": "Special delivery within the uk £8",
+                "opt-item-3": "Worldwide deivery £12",
+                "opt-item-4": "If you would like an item to be insured (within the United Kingdom) please select special delivery £8."
             }
         },
         "returns": {
             "title": "Returns",
-            "p": "If for some reason you are unhappy with your purchase, returns are accepted within 14 days of receiving your order. Please include a note stating your reason for return. Because we are a small shop, all returns are subject to a 10% restocking fee. Most stores factor this cost into their product to offer free returns. We prefer to keep our costs lower by not including this cost in the product. Thank you for understanding! The jewelry can be exchanged for another item without the restocking fee. Please note that the cost of shipping will not be refunded. Buyer is responsible for return shipping. "
+            "p": "Customer satisfaction is extremely important and I hope that my customers are happy with each purchase. If you do wish to return an item you must do so within 14 days. Skylarking is a small independent shop and therefore cannot take responsibility for the return delivery cost. Please contact directly if you would like to return or exchange an item before making a return."
         },
         "gifts": {
             "title": "Gifts",
